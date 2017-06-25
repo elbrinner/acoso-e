@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfCarousel.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfCarousel.XForms.SfCarousel">
+            <summary>
+            Sf carousel.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCarousel.XForms.SfCarousel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfCarousel.XForms.SfCarousel"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.ItemsSource">
+            <summary>
+            Gets or sets the items source.
+            </summary>
+            <value>The items source.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.ItemsSourceProperty">
+            <summary>
+            The items source property gets the collection of Carousel Item images.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.DataSource">
+            <summary>
+            Gets or sets the data source.
+            </summary>
+            <value>The data source.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.DataSourceProperty">
+            <summary>
+            The data source property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.ItemTemplateProperty">
+            <summary>
+            The item template property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.ViewMode">
+            <summary>
+            Gets or sets the view mode.
+            </summary>
+            <value>The view mode.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.ViewModeProperty">
+            <summary>
+            The view mode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.SelectedIndex">
+            <summary>
+            Gets or sets the index of the selected Item.
+            </summary>
+            <value>The index of the selected Item.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.SelectedIndexProperty">
+            <summary>
+            The selected index property indicates to the selected item index.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.RotationAngle">
+            <summary>
+            Gets or sets the rotation angle.
+            </summary>
+            <value>The rotation angle.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.RotationAngleProperty">
+            <summary>
+            The rotation angle provide the angle which has to be rotated for items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.Offset">
+            <summary>
+            Gets or sets the offset for un seleted items.
+            </summary>
+            <value>The offset.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.OffsetProperty">
+            <summary>
+            The offset value determines the distance between un selected items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.ScaleOffset">
+            <summary>
+            Gets or sets the scale offset for Unselected item.
+            </summary>
+            <value>The scale offset.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.ScaleOffsetProperty">
+            <summary>
+            The scale offset property used to set scaling for un selected items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.SelectedItemOffset">
+            <summary>
+            Gets or sets the scale offset for Unselected item.
+            </summary>
+            <value>The scale offset.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.SelectedItemOffsetProperty">
+            <summary>
+            The scale offset property used to set scaling for un selected items.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.Duration">
+            <summary>
+            Gets or sets the duration.
+            </summary>
+            <value>The duration.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.DurationProperty">
+            <summary>
+            The duration property used to vary animation speed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.ItemWidth">
+            <summary>
+            Gets or sets the selected item offset.
+            </summary>
+            <value>The selected item offset.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.ItemWidthProperty">
+            <summary>
+            The selected item offset property used to vary the distance between selected and un selected item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarousel.ItemHeight">
+            <summary>
+            Gets or sets the selected item offset.
+            </summary>
+            <value>The selected item offset.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarousel.ItemHeightProperty">
+            <summary>
+            The selected item offset property used to vary the distance between selected and un selected item.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfCarousel.XForms.SfCarousel.SelectionChangedEventHandler">
+            <summary>
+            Represents the method that will handle the SfCarousel.SelectionChanged event of a SfCarousel.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="T:Syncfusion.SfCarousel.XForms.SfCarouselItem">
+            <summary>
+            Sf carousel item.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCarousel.XForms.SfCarouselItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfCarousel.XForms.SfCarouselItem"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarouselItem.ItemContent">
+            <summary>
+            Gets or sets the name of the image.
+            </summary>
+            <value>The name of the image.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarouselItem.ItemContentProperty">
+            <summary>
+            The image name property used to get the name of image and added to collection.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCarousel.XForms.SfCarouselItem.ImageName">
+            <summary>
+            Gets or sets the name of the image.
+            </summary>
+            <value>The name of the image.</value>
+        </member>
+        <member name="F:Syncfusion.SfCarousel.XForms.SfCarouselItem.ImageNameProperty">
+            <summary>
+            The image name property used to get the name of image and added to collection.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bully.Views.Bot.BotView"
+             Title="{Binding Title}"
+     Style="{ StaticResource MainPageStyle}">
+
+    <AbsoluteLayout>
+        <WebView Source="https://webchat.botframework.com/embed/BotAppAccesoDirecto?s=xw5jDja8eb4.cwA.Z9c.F6XkxaxQkVIywc-CJvh93vo7YUf5oR_Q3Unkwfzawa0"
+WidthRequest="200" HeightRequest="200" AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                 AbsoluteLayout.LayoutFlags="All" />
+    </AbsoluteLayout>
+
+
+</ContentPage>

@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfNavigationDrawer.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.UI.Xaml.NavigationDrawer.Position">
+            <summary>
+            Defines the Position of the navigationDrawer <see
+            cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.cs"/>.
+            </summary>
+            
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.NavigationDrawer.Position.Left">
+            <summary>
+            DrawerContentView Position can be changed to Left <see
+            cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.NavigationDrawer.Position.Top">
+            <summary>
+            DrawerContentView Position can be changed to Top <see
+            cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.NavigationDrawer.Position.Right">
+            <summary>
+            DrawerContentView Position can be changed to Right <see
+            cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.NavigationDrawer.Position.Bottom">
+            <summary>
+            DrawerContentView Position can be changed to Bottom <see
+            cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.cs"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.NavigationDrawer.Transition">
+            <summary>
+            Defines the Transition of the navigationDrawer <see
+            cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.NavigationDrawer.Transition.Push">
+            <summary>
+            DrawerContentView Transition can be changed to Push <see
+            cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.NavigationDrawer.Transition.Reveal">
+            <summary>
+            DrawerContentView Transition can be changed to Reveal <see
+            cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.NavigationDrawer.Transition.SlideOnTop">
+            <summary>
+            DrawerContentView Transition can be changed to SlideOnTop <see
+            cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.cs"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer">
+            <summary>
+            Represents a panel that displays the navigation options.
+            </summary>
+            <remarks>
+            NavigationDrawer is a <see cref="N:Syncfusion.UI.Xaml.NavigationDrawer"/> which
+            means it displays the app's main navigation options on the edges of the screen. 
+            It is hidden most of the time, but is revealed when the user swipes a finger from the edge of the screen or, 
+            while at the top level of the app, the user touches the app icon.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.IsOpen">
+            <summary>
+            Gets a value indicating whether this instance is currently open.
+            </summary>
+            <value>True if this instance is opened; otherwise, false.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.ContentView">
+             <summary>
+             ContentView is the main view of the NavigationDrawer where the desired items can be placed<see
+             cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>.
+             </summary>
+             <value>
+            The Default value is null.
+             </value>
+             <seealso cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.ContentViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ContentView. This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.DrawerContentView">
+             <summary>
+              DrawerContentView displays the navigation items that you need to jump to<see
+             cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>.
+             </summary>
+             <value>
+            The Default value is null.
+             </value>
+             <seealso cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.DrawerContentViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerContentView.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.DrawerHeaderView">
+             <summary>
+             Gets or sets the DrawerHeaderView of the DrawerView panel in the SfNavigationDrawer control<see
+             cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>.
+             </summary>
+             <value>
+            The Default value is null.
+             </value>
+             <seealso cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.DrawerHeaderViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerHeaderView.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.DrawerFooterView">
+             <summary>
+             Gets or sets the footer for the DrawerView panel in the SfNavigationDrawer control<see
+             cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>.
+             </summary>
+             <value>
+            The Default value is null.
+             </value>
+             <seealso cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.DrawerFooterViewProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DrawerFooterView.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.DrawerHeight">
+             <summary>
+              Gets or sets the height for the DrawerView panel in the SfNavigationDrawer control<see
+             cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>.
+             </summary>
+             <value>
+            The Default value is zero.
+             </value>
+             <seealso cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.OnDrawerHeightChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            DrawerHeight property changed handler.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.DrawerWidth">
+             <summary>
+             Gets or sets the width for the DrawerView panel in the SfNavigationDrawer control<see
+             cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>.
+             </summary>
+             <value>
+            The Default value is zero.
+             </value>
+             <seealso cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.OnDrawerWidthChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            DrawerWidth property changed handler.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.Position">
+             <summary>
+              Gets or Sets the position of the DrawerView panel<see
+             cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>.
+             </summary>
+             <value>
+            The Default value is left.
+             </value>
+             <seealso cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.PositionProperty" -->
+        <member name="M:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.OnPositionChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Position property changed handler.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.Transition">
+             <summary>
+              Gets or Sets the transition for the DrawerView panel<see
+             cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>.
+             </summary>
+             <value>
+            The Default value is SlideOnTop.
+             </value>
+             <seealso cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.TransitionProperty" -->
+        <member name="M:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.OnTransitionChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Transition property changed handler.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.AnimationDuration">
+             <summary>
+             Gets or Sets the value of animation duration<see
+             cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>.
+             </summary>
+             <value>
+            The Default value is 100.
+             </value>
+             <seealso cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.AnimationDurationProperty" -->
+        <member name="P:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.TouchThreshold">
+             <summary>
+             Gets or sets the threshold value from the edges for easy panning from the edges<see
+             cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>.
+             </summary>
+             <value>
+            The Default value is 20.
+             </value>
+             <seealso cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.TouchThresholdProperty" -->
+        <member name="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.DrawerEventHandler">
+            <summary>
+            Represents an Event handler for handling navigationDrawer event.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.Opened">
+            <summary>
+            This event will be raised when the drawercontentview is opened in NavigationDrawer.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.Closed">
+            <summary>
+            This event will be raised when the drawercontentview is closed in NavigationDrawer.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/> class.
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of the <see 
+            cref="T:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer"/> SfTabControl control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.GetDrawerOpen">
+            <summary>
+            DrawerOpen method to open to compute the translations to open the Side Panel (Drawer) irrespective of the Transition applied
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.GetDrawerClose(Syncfusion.UI.Xaml.NavigationDrawer.Transition)">
+            <summary>
+            DrawerClose method to compute the translations to close the Side Panel (Drawer) irrespective of the Transition applied
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.NavigationDrawer.SfNavigationDrawer.ToggleDrawer">
+            <summary>
+            Represents the opening and closing of the navigationDrawer <see
+            cref="T:Syncfusion.UI.Xaml.Navigation.SfNavigationDrawer.cs"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.NavigationDrawer.Syncfusion_SfNavigationDrawer_UWP_2015_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.NavigationDrawer.Syncfusion_SfNavigationDrawer_UWP_2015_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.NavigationDrawer.Syncfusion_SfNavigationDrawer_UWP_2015_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+    </members>
+</doc>

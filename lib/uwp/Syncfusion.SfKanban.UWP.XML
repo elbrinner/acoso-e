@@ -1,0 +1,1175 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfKanban.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanColumnsCollection">
+            <summary>
+            Represents a collection that holds kanban columns
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanCardCollection">
+            <summary>
+            Represents a collection that holds kanban column cards. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanRecords">
+            <summary>
+            Represents a collection that holds kanban swimlane records.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.IndicatorColorPalette">
+            <summary>
+            Represents a  collection that holds kanban indicator mappings.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.WorkflowCollection">
+            <summary>
+            Represents a  collection that holds the kanban work flows.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.PointerFlowDirection">
+            <summary>
+            Indicates mouse move direction in kanban area. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.ColorMapping">
+            <summary>
+            Provides the color indication support which includes the indication properties. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.ColorMapping.Key">
+            <summary>
+            Gets or sets a object which indicates field for color mapping. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.ColorMapping.KeyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Key.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.ColorMapping.Color">
+            <summary>
+            Gets or sets a Color which applies to the corresponding key field card's indicator. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.ColorMapping.ColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Color.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanColumn">
+            <summary>
+            It have contains base class properties and provides limit validation, title, items grouping support. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.KanbanColumn.#ctor">
+            <summary>
+            Initializes a new instance of the KanbanColumn class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanColumn.InternalAllowDrop">
+            <summary>
+            Gets the possibilities for drop the card in this column. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanColumn.CardsCount">
+            <summary>
+            Gets or sets a int value that used to identify items count in kanban column. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanColumn.Title">
+            <summary>
+            Gets or sets a object that indicates header for KanbanColumn. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanColumn.TitleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Title.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanColumn.Categories">
+            <summary>
+            Gets or sets a string value that indicates grouping fields in model. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanColumn.CategoriesProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for KeyValue.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanColumn.MinimumLimit">
+            <summary>
+            Gets or sets a int value that indicates minimum validation limit using validation color. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanColumn.MinimumLimitProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MinimumLimit.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanColumn.MaximumLimit">
+            <summary>
+            Gets or sets a int value that indicates maximum validation limit using validation color. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanColumn.MaximumLimitProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MaximumLimit.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanColumn.ErrorBarSettings">
+            <summary>
+            Gets or sets ErrorBarSettings which used to set minimum and maximum validation color for KanbanColumn. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanColumn.ErrorBarSettingsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for WIPLimit.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanColumn.IsExpanded">
+            <summary>
+            Gets or sets a bool value that used to extend/shrink column size. 
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Syncfusion.UI.Xaml.Kanban.KanbanColumn.IsExpandedProperty" -->
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanColumn.AllowDrag">
+            <summary>
+            Gets or sets a bool value that allows dragging in this column. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanColumn.AllowDragProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AllowDrag.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanColumn.ValidationColor">
+            <summary>
+            Gets a Brush value that indicates errorbar color of the kanban column. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanColumn.Items">
+            <summary>
+            Gets a kanban cards collection. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanColumn.Cards">
+            <summary>
+            Gets or sets a KanbanCardCollection which indicates itemssource of kanban column. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanColumn.CardsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Cards.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanColumn.Tags">
+            <summary>
+            Gets or sets a ColumnTag which used to customize header properties like Header, Minimum, Maximum, IsExpanded. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.ColumnTag">
+            <summary>
+            Contains the kanban column header properties. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.ColumnTag.Header">
+            <summary>
+            Gets or sets a object which indicates KanbanColumn header. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.ColumnTag.Minimum">
+            <summary>
+            Gets or sets a int value that indicates cards collection minimum limit of kanban column. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.ColumnTag.Maximum">
+            <summary>
+            Gets or sets a int value that indicates cards collection maximum limit of kanban column. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.ColumnTag.IsExpanded">
+            <summary>
+            Gets or sets a bool value that indicates kanban column expanded or not. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.IKanbanDataManager.CreateRecords">
+            <summary>
+            To create the kanban records.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs">
+            <summary>
+            Contains arguments relevant to drag event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs.SelectedCard">
+            <summary>
+            Holds the selected card's instance. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs.SelectedColumn">
+            <summary>
+            Holds the selected card's column instance. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs.SelectedCardIndex">
+            <summary>
+            Interger value that indicates the index of dragging card. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanDragStartEventArgs">
+            <summary>
+            Contains arguments relevant to drag start event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragStartEventArgs.IsCancel">
+            <summary>
+            Boolean value that used to cancel the drag start operation. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragStartEventArgs.KeepCard">
+            <summary>
+            Boolean value that used to keep the original card in drag start place.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanDragOverEventArgs">
+            <summary>
+            Contains arguments relevant to drag over event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragOverEventArgs.IsCancel">
+            <summary>
+            Boolean value that used to cancel the drag over operation in KanbanCOlumn. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragOverEventArgs.CurrentColumn">
+            <summary>
+            Holds the current KanbanColumn. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragOverEventArgs.CurrentIndex">
+            <summary>
+            Holds the index value that indicates the target card index. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanDragEnterEventArgs">
+            <summary>
+            Contains arguments relevant to drag enter event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragEnterEventArgs.IsCancel">
+            <summary>
+            Boolean value that used to cancel the drag operation in that particular column. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragEnterEventArgs.CurrentColumn">
+            <summary>
+            Holds the drag entered column object.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragEnterEventArgs.CurrentIndex">
+            <summary>
+            Gets the integer value that indicates the index of card. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanDragLeaveEventArgs">
+            <summary>
+            Contains arguments relevant to drag leave event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragLeaveEventArgs.LeftColumn">
+            <summary>
+            Gets the KanbanColumn value which indicates the drag leaving column. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragLeaveEventArgs.PreviousCardIndex">
+            <summary>
+            Gets the integer value that indicates the previous card index while drag enter into next column. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs">
+            <summary>
+            Contains arguments relevant to drag end event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs.IsCancel">
+            <summary>
+            Boolean value that used to return the card to drag start place.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs.TargetColumn">
+            <summary>
+            Holds the drag end column value. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs.TargetCardIndex">
+            <summary>
+            Gets the integer value that holds the drag end place index value. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs.TargetKey">
+            <summary>
+            Gets the object value which holds the target model key. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanTappedEventArgs">
+            <summary>
+            Contains arguments relevant to tapped event.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanColumnsGeneratedEventArgs">
+            <summary>
+            Contains arguments relevant to columns generated event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanColumnsGeneratedEventArgs.Columns">
+            <summary>
+            Gets the collection value which indicates the generated columns. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanColumnGeneratedEventArgs">
+            <summary>
+            Contains arguments relevant to column generated event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanColumnGeneratedEventArgs.IsCancel">
+            <summary>
+            Sets the bool value which used to cancel the column added to SfKanban. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanColumnGeneratedEventArgs.CurrentColumn">
+            <summary>
+            Gets the KabanColumn instance which indicates the generated column. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanWorkflow">
+            <summary>
+            Provides the work flow of kanban card. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.#ctor">
+            <summary>
+            Provides the base initialization for objects derived from the KanbanWorkflow class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.Category">
+            <summary>
+            Gets or sets a object which indicates drag start field. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.CategoryProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Category.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.AllowedTransitions">
+            <summary>
+            Gets or sets a object collection that indicates drag end fields. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.AllowedTransitionsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AllowedTransitions.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanCardItem">
+            <summary>
+            Provides the kanban card visual. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardItem.Column">
+            <summary>
+            Contains corresponding column of this card item. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardItem.BoundRect">
+            <summary>
+            Returns the bounds of a card.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.KanbanCardItem.#ctor">
+            <summary>
+            Initialize the new instance of the KanbanCardItem class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.KanbanCardItem.#ctor(Syncfusion.UI.Xaml.Kanban.KanbanColumn)">
+            <summary>
+            Initialize the new instance of the KanbanCardItem class.
+            </summary>
+            <param name="column"></param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardItem.CardStyle">
+            <summary>
+            Gets or sets a KanbanCardStyle that used to customize card visual style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanCardItem.CardStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CardStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardItem.IndicatorColor">
+            <summary>
+            Gets or sets a Color that used to set indication color. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanCardItem.IndicatorColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IndicatorColor.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardItem.ProfileIconSource">
+            <summary>
+            Gets or sets a ImageSource that used to set card icon image.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanCardItem.ProfileIconSourceProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ProfileIconSource.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.KanbanCardItem.OnPointerPressed(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Called when pointer pressed in KanbanCardItem. 
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.KanbanCardItem.MeasureOverride(Windows.Foundation.Size)">
+            <summary>
+            Called to remeasure a control.
+            </summary>
+            <param name="availableSize"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle" -->
+        <member name="M:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.#ctor">
+             <summary>
+            Initializes a new instance of the KanbanCardStyle class.
+             </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.TitleColor">
+            <summary>
+            Gets or sets a Brush that indicates header color of kanban card. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.TitleColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TitleColor.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.TitleFontSize">
+            <summary>
+            Gets or sets a int value that indicates card's title font size. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.TitleFontSizeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TitleFontSize.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.TitleHorizontalAlignment">
+            <summary>
+            Gets or sets a alignment value that used to align card's title horizontally.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.TitleHorizontalAlignmentProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TitleHorizontalAlignment.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.TagVisibility">
+            <summary>
+            Gets or sets visibility that indicates TagPanel visibility. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.TagVisibilityProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TagVisibility.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.IconVisibility">
+            <summary>
+            Gets or sets visibility that indicates card's icon visibility. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.IconVisibilityProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IconVisibility.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.IndicatorVisibility">
+            <summary>
+            Gets or sets visibility value that indicates card's indicator visibility. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.IndicatorVisibilityProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IndicatorVisibility.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.FontSize">
+            <summary>
+            Gets or sets a int value that used to customize font size in card's description. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.FontSizeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for FontSize.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.Foreground">
+            <summary>
+            Gets or sets a Brush that used to customize card's description foreground. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.ForegroundProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Foreground.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.BorderBrush">
+            <summary>
+            Gets or sets a Brush that indicates card's border Brush.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.BorderBrushProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Stroke.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.BorderThickness">
+            <summary>
+            Gets or sets a thickness that indicates border thickness of card. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.BorderThicknessProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for StrokeThickness.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.CornerRadius">
+            <summary>
+            Gets or sets a corner radius that indicates card's round corner radius value. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.CornerRadiusProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CornerRadius.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.Background">
+            <summary>
+            Gets or sets a Brush that used to change card's back color. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.BackgroundProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Background.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanModel">
+            <summary>
+            Provides base data model for Kanban card. It includes properties which used to visualize the information in visual. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanModel.ID">
+            <summary>
+            Gets or sets the string value which indicates identity number of the card.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanModel.Title">
+            <summary>
+            Gets or sets the string value which is used to display card's header string. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanModel.Description">
+            <summary>
+            Gets or sets the string value which is used to display card's content.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanModel.Tags">
+            <summary>
+            Gets or sets the string array which indicates tag value of the card. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanModel.Category">
+            <summary>
+            Gets or sets the object which indicates card's section. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanModel.ImageURL">
+            <summary>
+            Gets or sets the Uri value which used to display profile picture of card.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.KanbanModel.ColorKey">
+            <summary>
+            Gets or sets the object that used to set indication color for card. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.IKanbanModel">
+            <summary>
+            Establishes the common properties for kanban model. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.IKanbanModel.ID">
+            <summary>
+            Gets or sets a value that indicates identity numder of card. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.IKanbanModel.Title">
+            <summary>
+            Gets or sets a value that indicates card's header. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.IKanbanModel.Description">
+            <summary>
+            Gets or sets a value that indicates card's description. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.IKanbanModel.Tags">
+            <summary>
+            Gets or sets a value that indicates card's tag collection. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.IKanbanModel.Category">
+            <summary>
+            Gets or sets a value that indicates card's section. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.IKanbanModel.ImageURL">
+            <summary>
+            Gets or sets a Uri that indicates card's image url. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.IKanbanModel.ColorKey">
+            <summary>
+            Gets or sets a object that indicates card's color key. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle">
+            <summary>
+            Provides customization support for kanban's placeholder. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.#ctor">
+            <summary>
+            Initializes a new instance of the PlaceholderStyle class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.TextHorizontalAlignment">
+            <summary>
+            Gets or sets alignment value which is used to align place holder text horizontally. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.TextHorizontalAlignmentProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TextHorizontalAlignment.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.TextVerticalAlignment">
+            <summary>
+             Gets or sets alignment value which is used to align place holder text vertically. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.TextVerticalAlignmentProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TextVerticalAlignment.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.Stroke">
+            <summary>
+            Gets or sets a Brush which is used to set border color of place holder. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.StrokeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Stroke.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.SelectedStroke">
+            <summary>
+            Gets or sets the brush that specifies how the selected placeholder outline is painted.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.StrokeThickness">
+            <summary>
+            Gets or sets a double value which is used to set border thickness of placeholder. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.StrokeThicknessProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for StrokeThickness.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.SelectedStrokeThickness">
+            <summary>
+            Gets or sets the width of the selected placeholder outline.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.StrokeDashArray">
+            <summary>
+            Gets or sets a double collection which is used to set border dash array of placeholder. 
+            </summary>       
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.StrokeDashArrayProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for StrokeDashArray.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.SelectedStrokeDashArray">
+            <summary>
+            Gets or sets a brush that describes the selected placeholder foreground color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.FontSize">
+            <summary>
+            Gets or sets a double value which is used to set font size of placeholder text. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.SelectedFontSize">
+            <summary>
+            Gets or sets a double value which is used to set font size of selected placeholder text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.Foreground">
+            <summary>
+            Gets or sets a Brush value that used to set foreground of placeholder text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.ForegroundProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Foreground.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.SelectedForeground">
+            <summary>
+            Gets or sets a brush that describes the selected placeholder foreground color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.SelectedBackground">
+            <summary>
+            Gets or sets a brush that describes the selected placeholder background color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.Fill">
+            <summary>
+            Gets or sets a Brush value that used to set background color placeholder. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.FillProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Fill.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.RadiusX">
+            <summary>
+            Gets or sets a double value that used to radiusx of placeholder. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.RadiusXProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CornerRadius.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.RadiusY">
+            <summary>
+            Gets or sets a double value that used to radiusy of placeholder. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.PlaceholderTemplate">
+            <summary>
+            Gets or sets a DataTemplate which is used to customize placeholder visual. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.PlaceholderTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PlaceholderTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.ItemsStackPanel">
+            <summary>
+            Arranges child elements into a single line that can be oriented vertically.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.ItemsStackPanel.MeasureOverride(Windows.Foundation.Size)">
+             <summary>
+            Measures the child elements of a ItemsStackPanel in anticipation of arranging them during the ArrangeOverride pass.
+             </summary>
+             <param name="availableSize"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.ItemsStackPanel.ArrangeOverride(Windows.Foundation.Size)">
+            <summary>
+            Arranges the content of a ItemsStackPanel element.
+            </summary>
+            <param name="finalSize"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.PreviewPanel">
+            <summary>
+             Arranges child elements into a single line that can be oriented vertically.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.PreviewPanel.MeasureOverride(Windows.Foundation.Size)">
+             <summary>
+            Measures the child elements of a PreviewPanel in anticipation of arranging them during the ArrangeOverride pass.
+             </summary>
+             <param name="availableSize"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.PreviewPanel.ArrangeOverride(Windows.Foundation.Size)">
+            <summary>
+            Arranges the content of a PreviewPanel element.
+            </summary>
+            <param name="finalSize"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.TagsStackPanel">
+            <summary>
+            Arranges child elements into a single line that can be oriented horizontally.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.TagsStackPanel.#ctor">
+            <summary>
+            Provides the base initialization for objects derived from the TagsStackPanel class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.TagsStackPanel.ContentTemplate">
+            <summary>
+            Gets or sets DataTemplate which used to customize individual tag item. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.TagsStackPanel.ContentTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ContentTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.TagsStackPanel.TagsCollection">
+            <summary>
+            Gets or sets a value that indicates itemssource of this panel. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.TagsStackPanel.TagsCollectionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for WIPLimit.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.TagsStackPanel.MeasureOverride(Windows.Foundation.Size)">
+             <summary>
+            Measures the child elements of a TagsStackPanel in anticipation of arranging them during the ArrangeOverride pass.
+             </summary>
+             <param name="availableSize"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.TagsStackPanel.ArrangeOverride(Windows.Foundation.Size)">
+            <summary>
+            Arranges the content of a TagsStackPanel element.
+            </summary>
+            <param name="finalSize"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.KanbanDictionaries">
+            <summary>
+            KanbanDictionaries class implementation. Which holds the resource dictionaries. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.KanbanDictionaries.GenericCommonDictionary">
+            <summary>
+            Which holds the Styles and Templates in Generic.Common.xaml file. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.SfKanban">
+            <summary>
+            Kanban represents to monitor the tasks in progress of the organization.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.SfKanban.#ctor">
+            <summary>
+            Provides the initialization for objects derived from the SfKanban class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.ActualColumns">
+            <summary>
+            Gets a collection of actual Kanban columns.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.ActualColumnWidth">
+            <summary>
+            Gets the double value which indicates width of individual column. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.ActualColumnWidthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ActualColumnWidth.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.ItemsSource">
+            <summary>
+            Gets or sets a IEnumerable which indicates source for kanban. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.ItemsSourceProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemsSource.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.CardStyle">
+            <summary>
+            Gets or sets a object that used to customize kanban card. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.CardStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CardStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.PlaceholderStyle">
+            <summary>
+            Gets or sets a PlaceholderStyle which helps to customize place holder. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.PlaceholderStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PlaceholderStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.Workflows">
+            <summary>
+            Gets or sets a workflow collection which contains the dragging work flows.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.WorkflowsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Workflows.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.Columns">
+            <summary>
+            Gets or sets a collection of KanbanColumn. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.ColumnsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Columns.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.ColumnMappingPath">
+            <summary>
+            Gets or sets a string which indicates column grouping field. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.ColumnMappingPathProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ColumnKey.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.SwimlaneKeyProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SwimlaneKey.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.HeaderAlignment">
+            <summary>
+            Gets or sets a alignment value which used to align header horizontally.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.HeaderAlignmentProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderAlignment.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.CardTemplate">
+            <summary>
+            Gets or sets a DataTemplate which used to customize card visual.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.CardTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CardTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.ColumnHeaderTemplate">
+            <summary>
+            Gets or sets a DataTemplate used to customize KanbanColumn's header. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.ColumnHeaderTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ColumnHeaderTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.Header">
+            <summary>
+            Gets or sets object which is used to set title of SfKanban. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.HeaderProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.AutoGenerateColumns">
+            <summary>
+            Gets or sets a bool value which indicating whether columns generation done by automatically or manually. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.AutoGenerateColumnsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IsAutoGeneratedColumns.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.ColumnWidth">
+            <summary>
+            Gets or sets a double value which indicates each KanbanColumn width. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.ColumnWidthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ColumnWidth.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.MaxColumnWidth">
+             <summary>
+            Gets or sets a double value which indicates each KanbanColumn width maximum value.  
+             </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.MaxColumnWidthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MaximumColumnWidth.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.MinColumnWidth">
+            <summary>
+            Gets or sets a double value which indicates each KanbanColumn width minimum value.  
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.MinColumnWidthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MinColumnWidth.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.SfKanban.IndicatorColorPalette">
+            <summary>
+            Gets or sets IndicatorColorPalette which is used to set indication color for card. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.SfKanban.IndicatorColorPaletteProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IndicatorColorPalette.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Kanban.SfKanban.CardDragStart">
+            <summary>
+            Occurs when card drag started in KanbanColumn. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.SfKanban.OnCardDragStart(Syncfusion.UI.Xaml.Kanban.KanbanDragStartEventArgs)">
+            <summary>
+            Called when DragSart event occurs. 
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Kanban.SfKanban.CardDragOver">
+            <summary>
+            Occurs when card dragging over to the KanbanColumn. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.SfKanban.OnCardDragOver(Syncfusion.UI.Xaml.Kanban.KanbanDragOverEventArgs)">
+            <summary>
+            Called when DragOver event occurs. 
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Kanban.SfKanban.CardDragEnter">
+            <summary>
+            Occurs when dragging enter into another column. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.SfKanban.OnCardDragEnter(Syncfusion.UI.Xaml.Kanban.KanbanDragEnterEventArgs)">
+            <summary>
+            Called when DragEnter event occurs. 
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.NamespaceDoc">
+            <summary>
+            Defines the namespace to initialize the kanban control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.ErrorBarSettings">
+            <summary>
+            Provides the validation support which includes validation color properties. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.Color">
+            <summary>
+            Gets or sets a SolidColorBrush which indicates error bar color. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.ColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Color.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.MinValidationColor">
+            <summary>
+            Gets or sets a SolidColorBrush which indicates error bar color for minimum exceeds case. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.MinValidationColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MinValidationColor.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.MaxValidationColor">
+            <summary>
+            Gets or sets a SolidColorBrush which indicates error bar color for maximum exceeds case. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.MaxValidationColorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MaxValidationColor.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.Height">
+            <summary>
+            Gets or sets the suggested height of the error bar.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Kanban.ErrorBarSettings.ValidateCards">
+            <summary>
+            Method used to update the error bar color in column header. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Kanban.NotificationObject">
+            <summary>
+            Provides the notification support for property changed. 
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Kanban.NotificationObject.PropertyChanged">
+            <summary>
+            Occurs when property changed in class. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.UWP.Syncfusion_SfKanban_UWP_2015_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.UWP.Syncfusion_SfKanban_UWP_2015_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfKanban.UWP.Syncfusion_SfKanban_UWP_2015_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+    </members>
+</doc>

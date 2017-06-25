@@ -1,0 +1,745 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfGridConverter.iOS</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.DataGridCellExcelExportingEventHandler">
+            <summary>
+            Delegate for Cell Exporting Event 
+            </summary>
+            <param name="sender">SfDataGrid</param>
+            <param name="e">GridCellExcelExportingEventArgs</param>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.DataGridRowExcelExportingEventHandler">
+            <summary>
+             Delegate for Row Exporting Event 
+            </summary>
+            <param name="sender">SfDataGrid</param>
+            <param name="e">GridRowExcelExportingEventArgs</param>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.DataGridCellExcelExportingEventArgs">
+            <summary>
+            Class which is passed as the argument of  Cell exporting Event
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridCellExcelExportingEventArgs.CellType">
+            <summary>
+            Gets or private sets exporting Cell Type
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridCellExcelExportingEventArgs.Range">
+            <summary>
+            Gets or private sets exporting Cell Range 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridCellExcelExportingEventArgs.CellValue">
+            <summary>
+            Gets or private sets exporting Value 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridCellExcelExportingEventArgs.ColumnName">
+            <summary>
+            Gets or private sets exporting Column Name
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridCellExcelExportingEventArgs.Record">
+            <summary>
+            Gets or private sets record of exporting column
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridCellExcelExportingEventArgs.Handled">
+            <summary>
+            Gets or sets , whether cell exporting need to handle further or not.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.DataGridRowExcelExportingEventArgs">
+            <summary>
+            Class which is passed as argument of  Row exporting Event
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridRowExcelExportingEventArgs.Range">
+            <summary>
+            Gets or private sets exporting range 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridRowExcelExportingEventArgs.WorkSheet">
+            <summary>
+            Gets or private sets exporting excel worksheet 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridRowExcelExportingEventArgs.RowType">
+            <summary>
+            Gets or private sets exporting RowType , whether the  row is caption summary row or record  
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridRowExcelExportingEventArgs.Record">
+            <summary>
+            Gets or private sets record of the exporting row 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.NamespaceDoc">
+            <summary>
+            Provides classes and interfaces that enables an end-user to export the SfDataGrid to Excel or PDF.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.ExportingHelper.ConvertToExcelColor(UIKit.UIColor)">
+            <summary>
+            Convert Xamarin Forms Color to Syncfusion.Drawing.Color
+            </summary>
+            <param name="color">Xamarin.Forms.Color</param>
+            <returns>Excel Color</returns>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.ExportingHelper.ConvertToPdfColor(UIKit.UIColor)">
+            <summary>
+            Convert Xamarin Forms Color to Pdf Brush color
+            </summary>
+            <param name="color">Xamarin.Forms.Color</param>
+            <returns>PdfBrush</returns>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.ExportingHelper.GetGroupCaptionSummaryText(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Data.Group)">
+            <summary>
+            Return Group Caption text 
+            </summary>
+            <param name="datagrid">SfDataGrid</param>
+            <param name="groupRecord">Group</param>
+            <returns>Group Caption text </returns>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.ExportingHelper.GetColumnIndex(Syncfusion.SfDataGrid.GridColumn,System.Collections.Generic.IEnumerable{Syncfusion.SfDataGrid.GridColumn})">
+            <summary>
+            Returns Index of the given column 
+            </summary>
+            <param name="column">GridColumn</param>
+            <param name="GridColumns"> IEnumerable GridColumns</param>
+            <returns>Column Index</returns>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.ExportingHelper.GetFormattedCellValue(System.Object,Syncfusion.SfDataGrid.GridColumn)">
+            <summary>
+            Returns Formatted Cell value
+            </summary>
+            <param name="value">CellValue</param>
+            <param name="column">GridColumn</param>
+            <returns>Formatted Cell value </returns>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.ExportCellType">
+            <summary>
+            Specifies the type of the exporting cell
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.ExportCellStyle">
+            <summary>
+            Class which is used to set exporting styles for excel   
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.ExportFontInfo">
+            <summary>
+            Class which is used to set font information for the excel exporting
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.ExportRowType">
+            <summary>
+            Specifies the type of the exporting row
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventhandler">
+            <summary>
+            Delegate for Cell Exporting Event 
+            </summary>
+            <param name="sender">SfDataGrid</param>
+            <param name="e">GridCellPdfExportingEventArgs</param>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventhandler">
+            <summary>
+            Delegate for Row Exporting Event 
+            </summary>
+            <param name="sender">SfDataGrid</param>
+            <param name="e">GridPdfRowExportingEventArgs</param>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.PdfHeaderFooterEventHandler">
+            <summary>
+            Delegate for Headerand Footer Exporting  
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventArgs">
+            <summary>
+            Class which is passed as the argument of Row exporting Event
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventArgs.PdfRow">
+            <summary>
+            Gets or private sets exporting PdfGridRow 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventArgs.PdfGrid">
+            <summary>
+            Gets or private sets current exporting  PdfGrid
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventArgs.RowType">
+            <summary>
+            Gets or private sets exporting RowType , whether the  row is caption summary row or record
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridRowPdfExportingEventArgs.Record">
+            <summary>
+            Gets or private sets record of the exporting row 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs">
+            <summary>
+            Class which is passed as the argument of  Cell exporting Event
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs.PdfGridCell">
+            <summary>
+            Gets or private sets exporting PdfGridCell
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs.CellType">
+            <summary>
+            Gets or private sets exporting Cell Type
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs.CellValue">
+            <summary>
+            Gets or private sets exporting Value 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs.ColumnName">
+            <summary>
+             Gets or private sets exporting Column Name
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs.Record">
+            <summary>
+            Gets or private sets record of exporting column
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridCellPdfExportingEventArgs.Handled">
+            <summary>
+            Gets or sets , whether cell exporting need to handle further or not.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.PdfHeaderFooterEventArgs">
+            <summary>
+            Class which is passed as the argument of  Header and Footer exporting Event
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.PdfHeaderFooterEventArgs.PdfDocumentTemplate">
+            <summary>
+            Gets or private sets the template of exporting pdf document 
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.CellExporting">
+            <summary>
+            Ocurrs when cell exported
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.RowExporting">
+            <summary>
+            Occurs when row exported
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.ExportToExcel(Syncfusion.SfDataGrid.SfDataGrid)">
+            <summary>
+            Exports grid to the excel work sheet based on default export option and returns Excel engine 
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <returns>ExcelEngine</returns>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.ExportToExcel(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption)">
+            <summary>
+            Exports grid to the excel work sheet based on given export option and returns Excel engine 
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="exportOption">GridExcelExportingOptions</param>
+            <returns>ExcelEngine</returns>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.ExportToExcel(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Data.ICollectionViewAdv,Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption,Syncfusion.XlsIO.IWorksheet)">
+            <summary>
+            Exports grid to the given excel work sheet based on given export option and returns excel worksheet 
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="collectionView">ICollectionViewAdv</param>
+            <param name="exportingOption">GridExcelExportingOptions</param>
+            <param name="worksheet">IWorksheet</param>
+            <returns>IWorksheet</returns>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.ExportToExcel(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Data.ICollectionViewAdv,Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption)">
+            <summary>
+            Exports grid to the excel work sheet based on given export option and returns excel engine 
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="collectionView">ICollectionViewAdv</param>
+            <param name="exportingOption">GridExcelExportingOptions</param>
+            <returns>ExcelEngine</returns>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.ExportExcelToWorkSheet(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Data.ICollectionViewAdv,Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption)">
+            <summary>
+            Exports grid to the Worksheet based on the export option.
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="collectionView">ICollectionViewAdv</param>
+            <param name="exportOption">GridExcelExportingOptions</param>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.ExportRecordsToExcel(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Data.IRecordsEntryList,Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption)">
+            <summary>
+            Exports records to the excel, exporting styles are applied for whole record region instead of the the single cell.
+            Grid style is applied for records only when record style is not assigned in export option.
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="records">IRecordsEntryList</param>
+            <param name="exportOption">GridExcelExportingOptions</param>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.ExportRecordToExcel(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Data.RecordEntry,Syncfusion.XlsIO.IRange,Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption)">
+            <summary>
+            Exports a record to the excel worksheet.
+            GridRowExcelExporting Eventhandler  for record  is  handled here.
+            When overridden in a derived class, is invoked whenever application code or internal processes call ExportRecordToExcel
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="record">RecordEntry</param>
+            <param name="rowrange">IRange</param>
+            <param name="exportOption">GridExcelExportingOptions</param>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.ExportCellValue(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Data.RecordEntry,Syncfusion.SfDataGrid.GridColumn,Syncfusion.XlsIO.IRange,Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption)">
+            <summary>
+            Exports cellvalue to the excel, cellvalue are obtained from the record using gridcolumn mappping name.
+            when exporting each cell cellexporting  event handler is called. 
+            For image column, image is converted as stream and then image will exports.
+            For switch column, check box will  export.
+            When overridden in a derived class, is invoked whenever application code or internal processes call ExportCellValue
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="record">RecordEntry</param>
+            <param name="column">GridColumn</param>
+            <param name="cellarea">IRange</param>
+            <param name="exportOption">GridExcelExportingOptions</param>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.ExportCellFormat(Syncfusion.XlsIO.IRange,System.Object,Syncfusion.SfDataGrid.GridColumn)">
+            <summary>
+            Applies the cell format for the cellarea based on grid column format such as currency ,percentage , date time etc...
+            </summary>
+            <param name="cellarea">IRange</param>
+            <param name="cellvalue">object</param>
+            <param name="format">GridColumn</param>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.CalculateExcelCellValue(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Data.RecordEntry,Syncfusion.SfDataGrid.GridColumn,Syncfusion.XlsIO.IRange,Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption,System.Boolean)">
+            <summary>
+            Gets the cell value for GridTextColumn/GridUnboundColumn based on the column type and exports it to Excel.
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="record">RecordEntry</param>
+            <param name="column">GridColumn</param>
+            <param name="cellarea">IRange</param>
+            <param name="exportOption">GridExcelExportingOptions</param>
+            <param name="isUnbound">bool</param>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.ExportGroupsToExcel(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Data.ICollectionViewAdv,Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption)">
+            <summary>
+            Exports group caption to the excel, group outlinings are applied based on the Allow outlining  property in the export option 
+            GridRowExcelExporting Eventhandler for groupCaption is handled here.
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="collectionView">ICollectionViewAdv</param>
+            <param name="exportOption">GridExcelExportingOptions</param>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.ExportHeaderToExcel(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption)">
+            <summary>
+            Exports header to the excel  
+            Grid style is applied for Header only when header style is not assigned in export option.
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="exportOption">GridExcelExportingOptions</param>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.SetColumnWidth(Syncfusion.SfDataGrid.SfDataGrid,System.Collections.Generic.IEnumerable{Syncfusion.SfDataGrid.GridColumn},Syncfusion.XlsIO.IWorksheet,System.Int32,System.Collections.Generic.List{System.String})">
+            <summary>
+            Sets row height and column width based on the datagrid default row height and default  column width 
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="columns">IEnumerable collection of GridColumn</param>
+            <param name="worksheet">IWorksheet</param>
+            <param name="columnIndex">int</param>
+            <param name="excludeColumns">List of excluded column names </param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.ApplyCellStyle(Syncfusion.XlsIO.IRange,Syncfusion.SfDataGrid.Exporting.ExportCellStyle)" -->
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController.SetColumnAlignment(Syncfusion.SfDataGrid.GridColumn,Syncfusion.SfDataGrid.Exporting.ExportCellType,Syncfusion.XlsIO.IRange)">
+            <summary>
+            Applies excel column text alignment, based on the Grid column text alignment
+            When overridden in a derived class, is invoked whenever application code or internal processes call SetColumnAlignment
+            </summary>
+            <param name="column">GridColumn</param>
+            <param name="celltype">ExportCellType</param>
+            <param name="cellarea">IRange</param>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption">
+            <summary>
+            Class which is used to set the ExcelExportingOptions. 
+            user can pass this class as an argument to the ExportToExcelMethod.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.AllowOutlining">
+            <summary>
+            Specifies whether the groups should export with expand/collapse options or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.ExcelVersion">
+            <summary>
+            Exports data to Excel in the specificed workbook version
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.StartColumnIndex">
+            <summary>
+            Exports data to the specified column index in Excel.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.StartRowIndex">
+            <summary>
+            Exports data to to the specified row index in Excel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.ApplyGridStyle">
+            <summary>
+             Specifies whether datagrid gridstyle need to be exported or not 
+            </summary>
+            <remarks>Grid Styles are not exported when user sets recordstyle , headerstyle , groupstyle for exporting </remarks>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.ExportGroups">
+            <summary>
+            Specifies whether groups to be exported or not 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.ExportHeader">
+            <summary>
+             Specifies whether header to be exported or not 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.ExportMode">
+            <summary>
+             Specifies whether data should exported as value or text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.ExcludedColumns">
+            <summary>
+             Specifies list of columns that to be excluded from exporting 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.AllowSortingAndFiltering">
+            <summary>
+             Specifies whether need to apply excel filtering and sorting for the exported file  
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.ExportColumnWidth">
+            <summary>
+            Gets or sets whether the column widths can be exported or not, if not default column width will be assigned. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.ExportRowHeight">
+            <summary>
+            Gets or sets whether the row heights can be exported or not,if not default row height will be assigned. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.DefaultColumnWidth">
+            <summary>
+            Gets or sets the default column width for exporting 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.DefaultRowHeight">
+            <summary>
+             Gets or sets the default row height for exporting 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.Sheet">
+            <summary>
+            Gets or sets excel sheet for exporting 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.ExcelRowIndex">
+            <summary>
+            Each row is exported based on this index, which enable to identify current exporting row index
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.ExcelColumnIndex">
+            <summary>
+            Gets or internal sets Excel Column index 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.GridColumns">
+            <summary>
+            Gets or internal sets the columns other than columns specified in the ExcludeColumn list
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.RecordStyle">
+            <summary>
+            Gets or sets recordstyle for exporting
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.GroupCaptionStyle">
+            <summary>
+            Gets or sets groupcaption style for exporting
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption.HeaderStyle">
+            <summary>
+            Gets or sets headerstyle for exporting
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.ExportMode">
+            <summary>
+            Enum which is used to determine whether data is export as value or as text
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDataGrid.Exporting.ExportMode.Text">
+            <summary>
+            Exports the FormattedText to Excel
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDataGrid.Exporting.ExportMode.Value">
+            <summary>
+            Exports the Format into Excel by setting Excel number format.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.PdfGrid">
+            <summary>
+            Gets or private sets the exporing PdfGrid
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.CellExporting">
+            <summary>
+            Ocurrs when cell exported
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.RowExporting">
+            <summary>
+            Occurs when row exported
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.HeaderAndFooterExporting">
+            <summary>
+            Occurs when Header and Footer exported
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.ExportToPdf(Syncfusion.SfDataGrid.SfDataGrid)">
+            <summary>
+            Exports grid to pdf document based on given export option and returns PdfDocument 
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <returns>PdfDocument</returns>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.ExportToPdf(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption)">
+            <summary>
+            Exports grid to the pdf document based on given export option and returns PdfDocument
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="exportOption">GridPdfExportOption</param>
+            <returns>PdfDocument</returns>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.ExportToPdf(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Data.ICollectionViewAdv,Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption)">
+            <summary>
+            Exports grid to the pdf document based on given export option and returns PdfDocument
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="collectionView">ICollectionViewAdv</param>
+            <param name="exportingOption">GridPdfExportOption</param>
+            <returns>PdfDocument</returns>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.ExportToPdfGrid(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Data.ICollectionViewAdv,Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption,Syncfusion.Pdf.PdfDocument)">
+            <summary>
+            Creates PdfGrid equivalent to the SfDataGrid
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="collectionView">ICollectionViewAdv</param>
+            <param name="exportOption">GridPdfExportOption</param>
+            <param name="pdfDocument">PdfDocument</param>
+            <returns>PdfGrid</returns>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.ExportRecordsToPdf(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Data.IRecordsEntryList,Syncfusion.Pdf.Grid.PdfGrid,Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption,Syncfusion.Pdf.PdfDocument)">
+            <summary>
+            Exports records to the pdf document.
+            Grid style is applied for records ,only when record style is not assigned in export option.
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="records">IRecordsEntryList</param>
+            <param name="exportOption">GridPdfExportOption</param>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.ExportHeaderToPdf(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Pdf.Grid.PdfGrid,Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption)">
+            <summary>
+            Exports header to the pdf document   
+            Grid style is applied for Header, only when header style is not assigned in export option.
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="exportOption">GridExcelExportingOptions</param>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.ExportGroupToPdf(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Data.ICollectionViewAdv,Syncfusion.Pdf.Grid.PdfGrid,Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption,Syncfusion.Pdf.PdfDocument)">
+            <summary>
+            Exports group caption to the pdf document.
+            GridRowExcelExporting Eventhandler for groupCaption is handled here.
+            Grid style is applied for groups ,only when group style is not assigned in export option.
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="collectionView">ICollectionViewAdv</param>
+            <param name="exportOption">GridPdfExportOption</param>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.SetColumnWidth(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Pdf.Grid.PdfGrid,System.Collections.Generic.IEnumerable{Syncfusion.SfDataGrid.GridColumn},System.Int32)">
+            <summary>
+            Sets row height and column width, based on the datagrid default row height and default column width 
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="columns">IEnumerable collection of Grid Columns</param>
+            <param name="pdfGrid">PdfGrid</param>
+            <param name="columnIndex">int</param>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.ApplyGridStyle(Syncfusion.SfDataGrid.DataGridStyle,Syncfusion.Pdf.Grid.PdfGridCellStyle,Syncfusion.SfDataGrid.Exporting.ExportCellType)">
+            <summary>
+            Applies DataGrid Style to PdfGridCellStyle based on the ExportCellType
+            </summary>
+            <param name="dataGridStyle"> DataGridStyle</param>
+            <param name="pdfGridStyle">PdfGridCellStyle</param>
+            <param name="cellType">ExportCellType</param>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.SetColumnAlignment(Syncfusion.SfDataGrid.GridColumn,Syncfusion.SfDataGrid.Exporting.ExportCellType,Syncfusion.Pdf.Grid.PdfGridCell)">
+            <summary>
+            Applies PdfGridCell text alignment, based on the Grid column text alignment
+            When overridden in a derived class, is invoked whenever application code or internal processes call SetColumnAlignment
+            </summary>
+            <param name="column">GridColumn</param>
+            <param name="celltype">ExportCellType</param>
+            <param name="cellarea">PdfGridCell</param>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.ExportRecordToPdf(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Data.RecordEntry,Syncfusion.Pdf.Grid.PdfGridRow,Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption)">
+            <summary>
+            Exports record to pdf.
+            RowExportingEventhadler handled here
+            When overridden in a derived class, is invoked whenever application code or internal processes call ExportRecordToPdf
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="record">RecordEntry</param>
+            <param name="pdfRow">PdfGridRow</param>
+            <param name="exportOption">GridPdfExportOption</param>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.ExportCellValue(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Data.RecordEntry,Syncfusion.SfDataGrid.GridColumn,Syncfusion.Pdf.Grid.PdfGridCell,Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption)">
+            <summary>
+            Exports cellvalue to the pdf document, cellvalue are obtained from the record using gridcolumn mappping name.
+            when exporting each cell cellexporting  event handler is called. 
+            For image column, image is converted as stream and then image will export.
+            For switch column, check box will export.
+            When overridden in a derived class, is invoked whenever application code or internal processes call ExportCellValue
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="record">RecordEntry</param>
+            <param name="column">GridColumn</param>
+            <param name="pdfcell">IRange</param>
+            <param name="exportOption">GridExcelExportingOptions</param>
+        </member>
+        <member name="M:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController.CalculatePdfCellValue(Syncfusion.SfDataGrid.SfDataGrid,Syncfusion.Data.RecordEntry,Syncfusion.SfDataGrid.GridColumn,Syncfusion.Pdf.Grid.PdfGridCell,System.Boolean)">
+            <summary>
+            Gets the cell value for GridTextColumn/GridUnboundColumn based on the column type and exports it to Pdf document.
+            </summary>
+            <param name="dataGrid">SfDataGrid</param>
+            <param name="record">RecordEntry</param>
+            <param name="column">GridColumn</param>
+            <param name="pdfcell">IRange</param>
+            <param name="isUnbound">bool</param>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption">
+            <summary>
+            Class which is used to set the PdfExportingOptions. 
+            user can pass this class as an argument to the ExportToPdf Method.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.RecordStyle">
+            <summary>
+            Gets or sets recordstyle for exporting
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.GroupCaptionStyle">
+            <summary>
+             Gets or sets groupcaption style for exporting
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.HeaderStyle">
+            <summary>
+             Gets or sets headerstyle for exporting
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.RepeatHeaders">
+            <summary>
+            Gets or sets whether the headers can be repeated in each page or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.ExcludeColumns">
+            <summary>
+            Gets or sets the columns that needs to be excluded while exporting
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.ExportColumnWidth">
+            <summary>
+            Gets or sets whether the column widths are automatically assigned or not,if not default column width will be assigned. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.ExportRowHeight">
+            <summary>
+            Gets or sets whether the row heights can be exported or not,if not default row height will be assigned. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.ExportGroups">
+            <summary>
+            Gets or sets whether groups can be exported or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.FitAllColumnsInOnePage">
+            <summary>
+            Gets or sets whether the all columns should be fit on a page or not
+            <value>true</value>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.ApplyGridStyle">
+            <summary>
+            Specifies whether datagrid gridstyle need to be applied or not 
+            </summary>
+            <remarks>Grid Styles are not exported when user sets recordstyle , headerstyle , groupstyle for exporting </remarks>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.ExportHeader">
+            <summary>
+            Specifies whether header to be exported or not 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.DefaultColumnWidth">
+            <summary>
+            Gets or sets the default column width for exporting 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.DefaultRowHeight">
+            <summary>
+            Gets or sets the default row height for exporting 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.PdfDocument">
+            <summary>
+            Returns exporting pdf document  
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.GridLineType">
+            <summary>
+            Gets or sets the type of gridLine 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.GridColumns">
+            <summary>
+            Gets or internal the other than columns specified in the ExcludeColumn list
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption.PageRowHeights">
+            <summary>
+            internal propery maintains row heights for positioning the switch column in pdf 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDataGrid.Exporting.GridLineType">
+            <summary>
+            Enum which used to specify type of GridLine 
+            </summary>
+        </member>
+    </members>
+</doc>

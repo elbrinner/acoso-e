@@ -1,0 +1,2523 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfListView.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.ListView.XForms.Control.Helper.ObjectToStringConverter">
+            <summary>
+            A converter for convert object value to string.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.Control.Helper.ObjectToStringConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Convert object to string.
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.Control.Helper.ObjectToStringConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Convert string to object.
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.Control.Helper.PlatformsHelper">
+            <summary>
+            Helper class for provide information in platform specific.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.Control.Helper.PlatformsHelper.SetItemVisibility(Syncfusion.ListView.XForms.IVisibility,System.Boolean)">
+            <summary>
+            Helper method for set the visibility of item.
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.Orientation">
+            <summary>
+            Orientation for <see cref="T:Syncfusion.ListView.XForms.SfListView"/>
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.Orientation.Vertical">
+            <summary>
+            Indicates that for every items in the <see cref="P:Syncfusion.ListView.XForms.SfListView.ItemsSource"/> property will be layout as vertical orientation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.Orientation.Horizontal">
+            <summary>
+            Indicates that for every items in the <see cref="P:Syncfusion.ListView.XForms.SfListView.ItemsSource"/> property will be layout as horizontal orientation.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.TouchGesture">
+            <summary>
+            Describes the possible values of touch operation. These values are used when updating selection in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.TouchGesture.Tap">
+            <summary>
+            Specifies the gesture recognization type as tap.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.TouchGesture.DoubleTap">
+            <summary>
+            Specifies the gesture recognization type as double tap.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.TouchGesture.Hold">
+            <summary>
+            Specifies the gesture recognization type as hold.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.SwipeDirection">
+            <summary>
+            Defines constants that specify the swipe directions.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SwipeDirection.Left">
+            <summary>       
+            Specifies that the swiping is made in the left direction.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SwipeDirection.Right">
+            <summary>
+            Specifies that the swiping is made in the right direction.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SwipeDirection.Top">
+            <summary>
+            Specifies that the swiping is made in the top direction.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SwipeDirection.Bottom">
+            <summary>
+            Specifies that the swiping is made in the bottom direction.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ListViewCachingStrategy">
+            <summary>
+            Caching strategy for <see cref="T:Syncfusion.ListView.XForms.SfListView"/>
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.ListViewCachingStrategy.RetainElement">
+            <summary>
+            Indicates that for every item in the <see cref="P:Syncfusion.ListView.XForms.SfListView.ItemsSource"/> property will be constructed, a single unique element.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.ListViewCachingStrategy.RecycleElement">
+            <summary>
+            Indicates that cells are created only the items are in view. And updated their binding contexts based on items when view gets updated.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ItemType">
+            <summary>
+            Item type for the <see cref="T:Syncfusion.ListView.XForms.ListViewItemInfoBase"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.ItemType.Record">
+            <summary>
+            Specifies the item type of header item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.ItemType.Header">
+            <summary>
+            Specifies the item type of header item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.ItemType.Footer">
+            <summary>
+            Specifies the item type of footer item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.ItemType.GroupHeader">
+            <summary>
+            Specifies the item type of group header item.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.SelectionMode">
+            <summary>
+            Defines constants that specify the selections that are supported by a <see cref="T:Syncfusion.ListView.XForms.SfListView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SelectionMode.Single">
+            <summary>
+            Specifies the selection mode as single, that restricts selection for only one item at a time in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SelectionMode.Multiple">
+            <summary>
+            Specifies the selection mode as multiple, that allows selection for multiple items in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SelectionMode.None">
+            <summary>
+            Specifies the selection mode as none, that restricts selection in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/> control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ListViewLoadedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.ListView.XForms.SfListView.Loaded"/> event in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+            <param name="sender">The sender of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ListViewLoadedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.ListView.XForms.SfListView.Loaded"/> event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ListViewLoadedEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the GridLoadedEventArgs class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ItemTappedEventHandler">
+            <summary>
+            Represents the method that will handle the ItemTapped event in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+            <param name="sender">The sender of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ItemTappedEventArgs">
+            <summary>
+            Provides data for the ItemTapped event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ItemTappedEventArgs.ItemType">
+            <summary>
+            Gets the item index at the tapped position.
+            </summary>
+            <value>It represents the item index at the tapped position.</value>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ItemTappedEventArgs.ItemData">
+            <summary>
+            Gets the item at the tapped position.
+            </summary>
+            <value>An object that represents the item at the tapped position.</value>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ItemTappedEventArgs.#ctor(Syncfusion.ListView.XForms.ItemType,System.Object)">
+            <summary>
+            Initializes a new instance of the ItemTappedEventsArgs class.
+            </summary>
+            <param name="index">The item index for the tapped position.</param>
+            <param name="itemdata">The item data of the tapped item.</param>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ItemDoubleTappedEventHandler">
+            <summary>
+            Represents the method that will handle the ItemDoubleTapped event in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+            <param name="sender">The sender of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs">
+            <summary>
+            Provides data for the ItemDoubleTapped event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs.ItemType">
+            <summary>
+            Gets the item index at the tapped position.
+            </summary>
+            <value>It represents the item index at the tapped position.</value>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs.ItemData">
+            <summary>
+            Gets the item at the tapped position.
+            </summary>
+            <value>An object that represents the item at the tapped position.</value>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs.#ctor(Syncfusion.ListView.XForms.ItemType,System.Object)">
+            <summary>
+            Initializes a new instance of the ItemDoubleTappedEventsArgs class.
+            </summary>
+            <param name="index">The item index for the double tapped position.</param>
+            <param name="itemData">The item data of the double tapped item.</param>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ItemHoldingEventHandler">
+            <summary>
+            Represents the method that will handle the ItemHold event in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+            <param name="sender">The sender of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ItemHoldingEventArgs">
+            <summary>
+            Provides data for the ItemHold event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ItemHoldingEventArgs.ItemType">
+            <summary>
+            Gets the item index at the tapped position.
+            </summary>
+            <value>It represents the item index at the tapped position.</value>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ItemHoldingEventArgs.ItemData">
+            <summary>
+            Gets the item at the tapped position.
+            </summary>
+            <value>An object that represents the item at the tapped position.</value>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ItemHoldingEventArgs.#ctor(Syncfusion.ListView.XForms.ItemType,System.Object)">
+            <summary>
+            Initializes a new instance of the ItemHoldEvent.
+            </summary>
+            <param name="index">The item index for the item hold position.</param>
+            <param name="itemData">The item data of the holded item.</param>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ItemSelectionChangingEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.ListView.XForms.SfListView.SelectionChanging"/> event in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+            <seealso cref="T:Syncfusion.ListView.XForms.ItemSelectionChangingEventHandler"/>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.ListView.XForms.SfListView.SelectionChanging"/> event.
+            </summary>
+            <seealso cref="T:Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs"/>
+            <seealso cref="T:System.ComponentModel.CancelEventArgs"/>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs.#ctor">
+            <summary>
+            Initialized a new instance of the ItemSelectionChangingEventArgs class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs.AddedItems">
+            <summary>
+            Gets a list that contains the items that were selected.
+            </summary>
+            <value>A list of items to be selection.</value>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs.RemovedItems">
+            <summary>
+            Gets a list that contains the items that were unselected.
+            </summary>
+            <value>A list of items to be removed selection.</value>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ItemSelectionChangedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.ListView.XForms.SfListView.SelectionChanged"/> event in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+            <seealso cref="T:Syncfusion.ListView.XForms.ItemSelectionChangedEventHandler"/>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ItemSelectionChangedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.ListView.XForms.SfListView.SelectionChanged"/> event.
+            </summary>
+            <seealso cref="T:Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs"/>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ItemSelectionChangedEventArgs.#ctor">
+            <summary>
+            Initialized a new instance of the ItemSelectionChangedEventArgs class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ItemSelectionChangedEventArgs.AddedItems">
+            <summary>
+            Gets a list that contains the items that were selected.
+            </summary>
+            <value>A list of items selected.</value>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ItemSelectionChangedEventArgs.RemovedItems">
+            <summary>
+            Gets a list that contains the items that were unselected.
+            </summary>
+            <value>A list of items unselected.</value>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.ListView.XForms.SfListView.GroupExpanding"/> and <see cref="E:Syncfusion.ListView.XForms.SfListView.GroupCollapsing"/> events.
+            </summary>
+            <param name="sender">
+            The source of the event.
+            </param>
+            <param name="e">
+            A <see cref="T:Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs"/> that contains the event data.
+            </param>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.ListView.XForms.SfListView.GroupExpanding"/> and <see cref="E:Syncfusion.ListView.XForms.SfListView.GroupCollapsing"/> events.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.Groups">
+            <summary>
+            Gets a list that corresponding groups that is being expanded or collapsed in view.
+            </summary>
+            <value>
+            The <see cref="T:Syncfusion.DataSource.Extensions.GroupResult"/> that is being changed in view.
+            </value>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.ListView.XForms.SfListView.GroupExpanded"/> and <see cref="E:Syncfusion.ListView.XForms.SfListView.GroupCollapsed"/> events.
+            </summary>
+            <param name="sender">
+            The source of the event.
+            </param>
+            <param name="e">
+            A <see cref="T:Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs"/> that contains the event data.
+            </param>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.ListView.XForms.SfListView.GroupExpanded"/> and <see cref="E:Syncfusion.ListView.XForms.SfListView.GroupCollapsed"/> events.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs.Groups">
+            <summary>
+            Gets a list that corresponding groups that is expanded or collapsed in view.
+            </summary>
+            <value>
+            The <see cref="T:Syncfusion.DataSource.Extensions.GroupResult"/> that is being changed in view.
+            </value>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.SwipeStartedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.ListView.XForms.SfListView.SwipeStarted"/> event in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+            <seealso cref="T:Syncfusion.ListView.XForms.SwipingEventHandler"/>
+            <seealso cref="T:Syncfusion.ListView.XForms.SwipeEndedEventHandler"/>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.SwipeStartedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.ListView.XForms.SfListView.SwipeStarted"/> event.
+            </summary>
+            <seealso cref="T:Syncfusion.ListView.XForms.SwipingEventArgs"/>
+            <seealso cref="T:Syncfusion.ListView.XForms.SwipeEndedEventArgs"/>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipeStartedEventArgs.ItemData">
+            <summary>
+            Gets the underlying data object of the swiped <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> from the binded data source.
+            </summary>
+            <value>The underlying data object of the swiped <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> from the binded data source.</value>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipeStartedEventArgs.SwipeDirection">
+            <summary>
+            Gets the swipe direction of the swiped <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>.
+            </summary>
+            <value>The swipe direction of the swiped listviewitem.</value>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipeStartedEventArgs.ItemIndex">
+            <summary>
+            Gets the index of swiped <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> in the DataSource.DisplayItems of SfListView.
+            </summary>
+            <value>The item index of the swiped listviewitem.</value>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.SwipeEndedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.ListView.XForms.SfListView.SwipeEnded"/> event in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+            <seealso cref="T:Syncfusion.ListView.XForms.SwipeStartedEventHandler"/>
+            <seealso cref="T:Syncfusion.ListView.XForms.SwipingEventHandler"/>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.SwipeEndedEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.ListView.XForms.SfListView.SwipeEnded"/> event.
+            </summary>
+            <seealso cref="T:Syncfusion.ListView.XForms.SwipeStartedEventArgs"/>
+            <seealso cref="T:Syncfusion.ListView.XForms.SwipingEventArgs"/>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipeEndedEventArgs.SwipeOffset">
+            <summary>
+            Gets or sets the swipe offset of the swiped <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>.
+            </summary>
+            <value>The swipe offset of the swiped listviewitem.</value>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipeEndedEventArgs.ItemData">
+            <summary>
+            Gets the underlying data object of the swiped <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> from the binded data source.
+            </summary>
+            <value>The underlying data object of the swiped <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> from the binded data source.</value>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipeEndedEventArgs.SwipeDirection">
+            <summary>
+            Gets the swipe direction of the swiped <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>.
+            </summary>
+            <value>The swipe direction of the swiped listviewitem.</value>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipeEndedEventArgs.ItemIndex">
+            <summary>
+            Gets the index of swiped <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> in the DataSource.DisplayItems of SfListView.
+            </summary>
+            <value>The item index of the swiped listviewitem.</value>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.SwipingEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.ListView.XForms.SfListView.Swiping"/> event in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+            <seealso cref="T:Syncfusion.ListView.XForms.SwipeStartedEventHandler"/>
+            <seealso cref="T:Syncfusion.ListView.XForms.SwipeEndedEventHandler"/>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.SwipingEventArgs">
+            <summary>
+            Provides data for the <see cref="E:Syncfusion.ListView.XForms.SfListView.Swiping"/> event.
+            </summary>
+            <seealso cref="T:Syncfusion.ListView.XForms.SwipeStartedEventArgs"/>
+            <seealso cref="T:Syncfusion.ListView.XForms.SwipeEndedEventArgs"/>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipingEventArgs.SwipeOffSet">
+            <summary>
+            Gets the current swipe offset of the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> being swiped.
+            </summary>
+            <value>The current swipe offset of the listviewitem being swiped.</value>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipingEventArgs.ItemData">
+            <summary>
+            Gets the underlying data object of the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> being swiped from the binded data source.
+            </summary>
+            <value>The underlying data object of the listviewitem being swiped from the binded data source.</value>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipingEventArgs.Handled">
+            <summary>
+            Gets or sets the value that indicates current swiped offset of swiped <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> should be remain same until <see cref="E:Syncfusion.ListView.XForms.SfListView.SwipeEnded"/> is raised.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipingEventArgs.SwipeDirection">
+            <summary>
+            Gets the swipe direction of the swiped <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>.
+            </summary>
+            <value>The swipe direction of the swiped listviewitem.</value>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipingEventArgs.ItemIndex">
+            <summary>
+            Gets the index of swiped <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> in the DataSource.DisplayItems of SfListView.
+            </summary>
+            <value>The item index of the swiped listviewitem.</value>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.SfListViewHelper">
+            <summary>
+            Helper class to provide information for SfListView.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListViewHelper.HasScrollableHeader(Syncfusion.ListView.XForms.SfListView)">
+            <summary>
+            Helper method to find whether listview have header or not.
+            </summary>
+            <param name="listView">SfListView</param>
+            <param name="index">Indicates the header index</param>
+            <returns>Returns true if listview have header else false.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListViewHelper.HasScrollableFooter(Syncfusion.ListView.XForms.SfListView)">
+            <summary>
+            Helper method to find whether listview have footer or not.
+            </summary>
+            <param name="listView">SfListView</param>
+            <returns>Returns true if listview have footer else false.</returns>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ReflectionHelper">
+            <summary>
+            Helper class for reflection the properties, methods etc.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ReflectionHelper.GetProperty(System.Type,System.String)">
+            <summary>
+            Gets the property type and provides the access to property metadata.
+            </summary>
+            <param name="type">Represents the type of the property.</param>
+            <param name="name">Represents the name of the property.</param>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ListViewItemInfoBase">
+            <summary>
+            Provides information for <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ListViewItemInfoBase.ItemData">
+            <summary>
+            Gets the data object of associated with SfListView item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ListViewItemInfoBase.ListView">
+            <summary>
+            Gets the SfListView
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ListViewItemInfoBase.Element">
+            <summary>
+            Gets or sets the element.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ListViewItemInfoBase.IsDirty">
+            <summary>
+            Gets or sets the IsDirty item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ListViewItemInfoBase.ItemType">
+            <summary>
+            Gets or sets the item type of item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ListViewItemInfoBase.IsInSwipe">
+            <summary>
+            Gets or sets the value that indicate the item is in swipe or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ListViewItemInfoBase.SwipeOffset">
+            <summary>
+            Gets or sets the current offset of the swiping item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ListViewItemInfoBase.ItemIndex">
+            <summary>
+            Gets or sets the row index of item.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ListViewItemInfoBase.HandleTouchInteraction(Syncfusion.ListView.XForms.TouchGesture)">
+            <summary>
+            Handles the touch interaction.
+            </summary>
+            <param name="gesture"></param>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ListViewItemInfo">
+            <summary>
+            Provides information for item info for <see cref="T:Syncfusion.ListView.XForms.LinearLayout"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ListViewItemInfo.#ctor">
+            <summary>
+            Create instance for <see cref="T:Syncfusion.ListView.XForms.ListViewItemInfo"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.GridViewRowInfo">
+            <summary>
+            Provides information for grid view row info for <see cref="T:Syncfusion.ListView.XForms.GridLayout"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.GridViewRowInfo.ListViewItems">
+            <summary>
+            Gets or sets the list of <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> for the grid row.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.GridViewRowInfo.RowIndex">
+            <summary>
+            Gets or sets the row index of <see cref="T:Syncfusion.ListView.XForms.GridViewRowInfo"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.GridViewRowInfo.IsEnsured">
+            <summary>
+            Gets or sets whether <see cref="T:Syncfusion.ListView.XForms.GridViewRowInfo"/> is ensured or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.GridViewRowInfo.IsDirty">
+            <summary>
+            Gets or sets the IsDirty <see cref="T:Syncfusion.ListView.XForms.GridViewRowInfo"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.GridViewRowInfo.ItemType">
+            <summary>
+            Gets or sets the item type of <see cref="T:Syncfusion.ListView.XForms.GridViewRowInfo"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridViewRowInfo.Dispose">
+            <summary>
+            Disposes the live instances.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ItemGenerator">
+            <summary>
+            A class that generates the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> instances in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ItemGenerator.DisplayItems">
+            <summary>
+            Get or sets the <see cref="T:Syncfusion.DataSource.DisplayItems"/> from DataSource.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ItemGenerator.#ctor(Syncfusion.ListView.XForms.SfListView)">
+            <summary>
+            Initializes a new instance of the ItemGenerator class.
+            </summary>
+            <param name="_listView">The <see cref="T:Syncfusion.ListView.XForms.SfListView"/> instance</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ItemGenerator.CreateUIElement">
+            <summary>
+            Used to create the UIElement of item.
+            </summary>
+            <returns>The new instance of <see cref="T:Syncfusion.ListView.XForms.SfLabel"/></returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ItemGenerator.CreateTemplate(Syncfusion.ListView.XForms.ListViewItemInfoBase,Xamarin.Forms.DataTemplate)">
+            <summary>
+            Adds the template into the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>
+            </summary>
+            <param name="item">The listview item</param>
+            <param name="template">data template for listview item</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ItemGenerator.GetItemCount">
+            <summary>
+            Returns the number of rows to be created from the display items.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ItemGenerator.ProcessGroupHeaderItem(Syncfusion.ListView.XForms.ListViewItemInfoBase)">
+            <summary>
+            Process the <see cref="T:Syncfusion.ListView.XForms.GroupHeaderItem"/> to be expanded or collapsed when it is tapped.
+            </summary>
+            <param name="item">Represents the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ItemGenerator.Dispose">
+            <summary>
+            Dispose all the allocated resources.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ListViewItem">
+            <summary>
+            Represents a item of data in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ListViewItem.Visibility">
+            <summary>
+            Gets or sets the visibility of Item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ListViewItem.IsSelected">
+            <summary>
+            Gets or sets the IsSelected item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ListViewItem.Clip">
+            <summary>
+            Gets the clip rectangle of the element. It is used to clip when layout with <see cref="T:Syncfusion.ListView.XForms.SwipeView"/> in <see cref="T:Syncfusion.ListView.XForms.GridLayout"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ListViewItem.ListViewItemInfo">
+            <summary>
+            Gets or sets the list view info.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ListViewItem.#ctor">
+            <summary>
+            Create the new instance for <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ListViewItem.AddChild(Xamarin.Forms.View)">
+            <summary>
+            Add the children to content of content view.
+            </summary>
+            <param name="child"></param>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.HeaderItem">
+            <summary>
+            Represents the header item of data in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/> control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.FooterItem">
+            <summary>
+            Represents the footer item of data in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/> control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.GroupHeaderItem">
+            <summary>
+            Represents the group header item in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/> control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ItemStyle">
+            <summary>
+            Defines the item style for <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ItemStyle.BackgroundColor">
+            <summary>
+            Gets or sets the background color for ListViewItem
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ItemStyle.TextColor">
+            <summary>
+            Gets or sets the text color for ListViewItem
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ItemStyle.BorderColor">
+            <summary>
+            Gets or sets the border color for ListViewItem
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ItemStyle.BorderThickness">
+            <summary>
+            Gets or sets the border thickness for ListViewItem
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ItemStyle.Padding">
+            <summary>
+            Gets or sets the padding for ListViewItem
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.SfLabel">
+            <summary>
+            A customized <see cref="T:Xamarin.Forms.View"/> that displays text in single-line as well as multi-lines.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfLabel.#ctor">
+            <summary>
+            Initializes a new instance of the SfLabel class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfLabel.Text">
+            <summary>
+            Gets or sets the text for the SfLabel.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfLabel.TextProperty">
+            <summary>
+            Identifies the Text bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.GridLayout">
+            <summary>
+            Arrange the items in a Grid structure with the specified number of columns. It supports both vertical and horizontal orientation.
+            </summary>
+            <remarks>
+            It supports all functionalities (E.g., Grouping, Sorting, Filtering, Swiping, Real-time updates, etc.) like <see cref="T:Syncfusion.ListView.XForms.LinearLayout"/>.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.GridLayout.SpanCount">
+            <summary>
+            Gets or sets the span count for <see cref="T:Syncfusion.ListView.XForms.GridLayout"/>. (i.e.), number of items to be displayed in a row.
+            For horizontal orientation, it specifies that number of items in a column.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.GridLayout.SpanCountProperty">
+            <summary>
+            Identifies the SpanCount bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.OnSpanCountChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when SpanCount property is changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.AddChildren">
+            <summary>
+            Add the children to <see cref="T:Syncfusion.ListView.XForms.VisualContainer"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.ArrangeItems(Xamarin.Forms.Size)">
+            <summary>
+            Arrange the children in <see cref="T:Syncfusion.ListView.XForms.VisualContainer"/>.
+            </summary>
+            <param name="size">Size of the view</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.EnsureItems(Syncfusion.GridCommon.ScrollAxis.VisibleLinesCollection)">
+            <summary>
+            Ensure the item elements that has to be arranged in the view.
+            </summary>
+            <param name="visibleLines">The visible lines collection</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.GetItemInfo(System.Object)">
+            <summary>
+            Gets the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> based on the <see cref="!:ListViewItem.ItemData"/>.
+            </summary>
+            <param name="itemData">Represents the <see cref="!:ListViewItem.ItemData"/>.</param>
+            <returns>Returns <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>, if item data is available in the <see cref="F:Syncfusion.ListView.XForms.GridLayout.items"/> </returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.GetItemIndex(System.Int32,System.Int32@)">
+            <summary>
+            Helper method to find the item index based on row index and column index.
+            </summary>
+            <param name="rowIndex">Indicates the current rowindex.</param>
+            <param name="childcount">Indicates the item count in a row.</param>
+            <returns>Returns the item index from row index.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.OnItemsCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Refresh the listview item whenever underlying collection changed.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.RefreshListViewItems">
+            <summary>
+            Set dirty and index to -1 to <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>  for refresh the view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.ResetListViewItems">
+            <summary>
+            Reset the listview items when <see cref="P:Syncfusion.ListView.XForms.SfListView.ItemsSource"/> is changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.ResetListViewItems(Syncfusion.ListView.XForms.ItemType,System.Boolean)">
+            <summary>
+            Helper method to reset the listview items with whether want to reload the element based on item type.
+            </summary>
+            <param name="type">The item type of the row</param>
+            <param name="needToReload">If yes, need to reloaded the listview item else no need.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.RefreshListViewItem(System.Object,Syncfusion.ListView.XForms.ListViewItemInfoBase)">
+            <summary>
+            Refresh the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> based on the <see cref="!:ListViewItem.ItemData"/>.
+            </summary>
+            <param name="itemData">Represents the <see cref="!:ListViewItem.ItemData"/>.</param>
+            <param name="itemInfo">Repersents the <see cref="T:Syncfusion.ListView.XForms.ListViewItemInfoBase"/>.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.UnLoadListViewItems">
+            <summary>
+            Helper method to dispose and clear the listview items.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.UpdateRowCount">
+            <summary>
+            Update the row count to <see cref="T:Syncfusion.ListView.XForms.VisualContainer"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.CreateOrUpdateGridViewRowInfo(Syncfusion.ListView.XForms.GridViewRowInfo,System.Int32,Syncfusion.ListView.XForms.ItemType,System.Object,System.Int32,System.Int32)">
+            <summary>
+            Create or update the grid view row items.
+            </summary>
+            <param name="rowInfo">The information of <see cref="T:Syncfusion.ListView.XForms.GridViewRowInfo"/>.</param>
+            <param name="rowIndex">The actual row index.</param>
+            <param name="rowType">Indicates the row type</param>
+            <param name="itemData">The item data of <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>. Getting the itemdata while ensure the items If current row is group.</param>
+            <param name="startItemIndex">The actual start item index of the row.</param>
+            <param name="childCount">Indicates the items count in the row.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.CreateGridViewItems(Syncfusion.ListView.XForms.GridViewRowInfo,System.Object,System.Int32,System.Int32)">
+            <summary>
+            Create the listview items for rows.
+            </summary>
+            <param name="rowInfo">The information of <see cref="T:Syncfusion.ListView.XForms.GridViewRowInfo"/>.</param>
+            <param name="itemData">The item data of <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>. Getting the itemdata while ensure the items If current row is group.</param>
+            <param name="startItemIndex">The actual start item index of the row.</param>
+            <param name="childCount">Indicates the items count in the row.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.UpdateGridViewItems(Syncfusion.ListView.XForms.GridViewRowInfo,System.Object,System.Int32,System.Int32)">
+            <summary>
+            Update the listview item while reuse the rows.
+            </summary>
+            <param name="rowInfo">The information of <see cref="T:Syncfusion.ListView.XForms.GridViewRowInfo"/>.</param>
+            <param name="itemData">The item data of <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>. Getting the itemdata while ensure the items If current row is group.</param>
+            <param name="startItemIndex">The actual start item index of the row.</param>
+            <param name="childCount">Indicates the items count in the row.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.RecycleListViewItem(System.Int32,System.Int32,Syncfusion.ListView.XForms.ItemType)">
+            <summary>
+            Reuse the listview item based on start and end item index and row type.
+            </summary>
+            <param name="startRowIndex">The actual start item index of view.</param>
+            <param name="endRowIndex">The actual end item index of view.</param>
+            <param name="rowType">The row type of the items.</param>
+            <returns>Returns the <see cref="T:Syncfusion.ListView.XForms.GridViewRowInfo"/>.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.GetRowCount">
+            <summary>
+            Get the row count of <see cref="T:Syncfusion.ListView.XForms.GridLayout"/>. Its calculated based on <see cref="P:Syncfusion.ListView.XForms.GridLayout.SpanCount"/> and groups.
+            </summary>
+            <returns>Returns the row count of <see cref="T:Syncfusion.ListView.XForms.GridLayout"/></returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.HasGridViewItem(System.Int32,Syncfusion.ListView.XForms.GridViewRowInfo)">
+            <summary>
+            Helper method to check whether grid view item is already added or not.
+            </summary>
+            <param name="itemIndex">The item index.</param>
+            <param name="rowInfo">The row info.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.ResolveItemIndex(System.Int32)">
+            <summary>
+            Resolve the item index from the given item index.
+            </summary>
+            <param name="itemIndex">The actual item index.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.ScrollToRowIndex(System.Int32)">
+            <summary>
+            Scrolls the SfListView to the row at the given index.
+            </summary>
+            <param name="rowIndex">The index of the row to scroll.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.GetSwipedItem">
+            <summary>
+            Used to get the Swiped ListViewItem.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.LayoutSwipedItem(Syncfusion.ListView.XForms.ListViewItem)">
+            <summary>
+            Arrange the ListViewItem based on SwipeOffset.
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.GridLayout.Dispose">
+            <summary>
+            Dispose the allocated resources.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.LayoutBase">
+            <summary>
+            Defines the base for the Layouts.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.LayoutBase.ListView">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.ListView.XForms.SfListView"/> instance.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LayoutBase.GetSwipedItem">
+            <summary>
+            Returns the swiped item.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LayoutBase.LayoutSwipedItem(Syncfusion.ListView.XForms.ListViewItem)">
+            <summary>
+            Arrange the ListViewItem based on SwipeOffset.
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LayoutBase.GetVisibleLineInfo(System.Int32)">
+            <summary>
+            Helper method for find the <see cref="T:Syncfusion.GridCommon.ScrollAxis.VisibleLineInfo"/> by index
+            </summary>
+            <param name="index">the line index</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LayoutBase.GetVisibleLines">
+            <summary>
+            Helper method for find the visible lines based on orientation.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LayoutBase.CreateListViewItem(System.Int32,Syncfusion.ListView.XForms.ItemType,System.Object)">
+            <summary>
+            Create the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> based on index, itemtype and item data.
+            </summary>
+            <param name="itemIndex">Indicates the item index</param>
+            <param name="itemType">Indicates the item type</param>
+            <param name="itemData">Indicates the item data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LayoutBase.UpdateListViewItem(Syncfusion.ListView.XForms.ListViewItemInfoBase,System.Int32,Syncfusion.ListView.XForms.ItemType,System.Object)">
+            <summary>
+            Update the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>.
+            </summary>
+            <param name="iteminfo">Indicates the information of item info.</param>
+            <param name="itemIndex">Indicates the item index.</param>
+            <param name="itemType">Indicates the item type.</param>
+            <param name="itemData">Indicates the item data.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LayoutBase.UpdateStickyGroupHeader(System.Object)">
+            <summary>
+            Helper method to update the sticky group header while scrolling based on item data.
+            </summary>
+            <param name="itemData">Indicates the item data of <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LayoutBase.Dispose">
+            <summary>
+            Dispose the allocated resource.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.LinearLayout">
+            <summary>
+            <see cref="T:Syncfusion.ListView.XForms.LinearLayout"/> is display the items in vertical and horizontal.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LinearLayout.#ctor">
+            <summary>
+            Create the instance for <see cref="T:Syncfusion.ListView.XForms.LinearLayout"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LinearLayout.ArrangeItems(Xamarin.Forms.Size)">
+            <summary>
+            Arrange the children in <see cref="T:Syncfusion.ListView.XForms.VisualContainer"/>.
+            </summary>
+            <param name="size">Size of the view</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LinearLayout.EnsureItems(Syncfusion.GridCommon.ScrollAxis.VisibleLinesCollection)">
+            <summary>
+            Ensure the item elements that has to be arranged in the view.
+            </summary>
+            <param name="visibleLines">The visible lines collection</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LinearLayout.AddChildren">
+            <summary>
+            Add the children to <see cref="T:Syncfusion.ListView.XForms.VisualContainer"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LinearLayout.UpdateRowCount">
+            <summary>
+            Update the item count of <see cref="T:Syncfusion.ListView.XForms.VisualContainer"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LinearLayout.GetItemInfo(System.Object)">
+            <summary>
+            Gets the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> based on the <see cref="!:ListViewItem.ItemData"/>.
+            </summary>
+            <param name="itemData">Represents the <see cref="!:ListViewItem.ItemData"/>.</param>
+            <returns>Returns <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>, if item data is available in the <see cref="F:Syncfusion.ListView.XForms.LinearLayout.items"/> </returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LinearLayout.GetItemIndex(System.Int32,System.Int32@)">
+            <summary>
+            Helper method to find the item index based on row index and column index.
+            </summary>
+            <param name="rowIndex">Indicates the current rowindex.</param>
+            <param name="childcount">Indicates the item count in a row.</param>
+            <returns>Returns the item index from row index.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LinearLayout.RefreshListViewItem(System.Object,Syncfusion.ListView.XForms.ListViewItemInfoBase)">
+            <summary>
+            Refresh the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> based on the <see cref="!:ListViewItem.ItemData"/>.
+            </summary>
+            <param name="itemData">Represents the <see cref="!:ListViewItem.ItemData"/>.</param>
+            <param name="itemInfo">Repersents the <see cref="T:Syncfusion.ListView.XForms.ListViewItemInfoBase"/>.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LinearLayout.RefreshListViewItems">
+            <summary>
+            Resets the index to the items to refresh the view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LinearLayout.ResetListViewItems">
+            <summary>
+            Reset the items when <see cref="P:Syncfusion.ListView.XForms.SfListView.ItemsSource"/> is changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LinearLayout.ScrollToRowIndex(System.Int32)">
+            <summary>
+            Scrolls the SfListView to the row at the given index.
+            </summary>
+            <param name="rowIndex">The index of the row to scroll.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LinearLayout.GetSwipedItem">
+            <summary>
+            Returns the swiped item.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LinearLayout.LayoutSwipedItem(Syncfusion.ListView.XForms.ListViewItem)">
+            <summary>
+            Arrange the ListViewItem based on SwipeOffset.
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.LinearLayout.Dispose">
+            <summary>
+            Dispose the allocated resources.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.SelectionController">
+            <summary>
+             A class that handles the selection related process and events.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SelectionController.#ctor(Syncfusion.ListView.XForms.SfListView)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.ListView.XForms.SelectionController"/>.
+            </summary>
+            <param name="listView"></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SelectionController.HandleTouchInteraction(Syncfusion.ListView.XForms.TouchGesture,Syncfusion.ListView.XForms.ListViewItemInfoBase)">
+            <summary>
+            Handles the touch operation to handle selection and raises the event based on the <see cref="P:Syncfusion.ListView.XForms.SfListView.SelectionGesture"/>.
+            </summary>
+            <param name="gesture">The <see cref="T:Syncfusion.ListView.XForms.TouchGesture"></see></param>
+            <param name="itemInfo">Represents the selected item.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SelectionController.ProcessSelection(Syncfusion.ListView.XForms.ListViewItemInfoBase)">
+            <summary>
+            Process the selection based on the selection mode and selected item.
+            </summary>
+            <param name="itemInfo">Represents the selected item.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SelectionController.ProcessSingleSelection(Syncfusion.ListView.XForms.ListViewItemInfoBase)">
+            <summary>
+            Process the single selection operation when <see cref="P:Syncfusion.ListView.XForms.SfListView.SelectionMode"/> as single.
+            </summary>
+            <param name="itemInfo">Represents the selected item.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SelectionController.ProcessMultipleSelection(Syncfusion.ListView.XForms.ListViewItemInfoBase)">
+            <summary>
+            Process the multiple selection operation when <see cref="P:Syncfusion.ListView.XForms.SfListView.SelectionMode"/> as multiple.
+            </summary>
+            <param name="itemInfo">Represents the selected item.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SelectionController.ProcessItemSelection(System.Object,System.Object,Syncfusion.ListView.XForms.ListViewItemInfoBase,Syncfusion.ListView.XForms.ListViewItemInfoBase)">
+            <summary>
+            Updates the <see cref="P:Syncfusion.ListView.XForms.SfListView.SelectedItems"/> and also triggers the selection events.
+            </summary>
+            <param name="addedItem">Represents the selected item data.</param>
+            <param name="removedItem">Represents the current selected item data.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SelectionController.ProcessSelectionPropertiesChanged(System.Object,System.Object,System.Boolean)">
+            <summary>
+            Process the <see cref="P:Syncfusion.ListView.XForms.SfListView.SelectedItem"/> and <see cref="P:Syncfusion.ListView.XForms.SfListView.CurrentItem"/> property changes.
+            </summary>
+            <param name="oldValue">Represents the oldValue.</param>
+            <param name="newValue">Represents the item.</param>
+            <param name="isSelectedItem">Set true, if call from SelectedItem property changed. Else, false.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SelectionController.ProcessSelectedItemsCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Handles the selected items collection changed to process the selection.
+            </summary>
+            <param name="e">Represents the <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs"/></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SelectionController.ProcessItemsSourceChanged(System.Object,System.Object)">
+            <summary>
+            Process the selection when ItemsSource changed.
+            </summary>
+            <param name="oldValue"></param>
+            <param name="newValue"></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SelectionController.ProcessSourceCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Process the selection when source collection is changed.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SelectionController.UpdateSelectionProperties">
+            <summary>
+            Used to update the SelectedItem and CurrentItem properties after selection.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SelectionController.RaiseSelectionChanging(System.Collections.Generic.List{System.Object},System.Collections.Generic.List{System.Object})">
+            <summary>
+            Helper method to raise the <see cref="E:Syncfusion.ListView.XForms.SfListView.SelectionChanging"/>.
+            </summary>
+            <param name="addedItems">The list of added items.</param>
+            <param name="removedItems">The list of removed items.</param>
+            <returns>A boolean value specifying whether the selection is changed.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SelectionController.RaiseSelectionChanged(System.Collections.Generic.List{System.Object},System.Collections.Generic.List{System.Object})">
+            <summary>
+            Helper method to raise the <see cref="E:Syncfusion.ListView.XForms.SfListView.SelectionChanged"/>.
+            </summary>
+            <param name="addedItems">The list of added items.</param>
+            <param name="removedItems">The list of removed items.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SelectionController.Dispose">
+            <summary>
+            Dispose all the allocated resources.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SelectionController.Dispose(System.Boolean)">
+            <summary>
+            Dispose the live instances.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.SwipeController">
+            <summary>
+            Handles the Swiping interaction and its related operations.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipeController.LeftSwipeView">
+            <summary>
+            Gets or sets the <see cref="T:Xamarin.Forms.View"/> which is created using left swipe template.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipeController.RightSwipeView">
+            <summary>
+            Gets or sets the <see cref="T:Xamarin.Forms.View"/> which is created using right swipe template
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipeController.IsInSwiping">
+            <summary>
+            Gets or sets a value indicating that <see cref="T:Syncfusion.ListView.XForms.VisualContainer"/> 
+            contain any child is in swipe.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipeController.HasSwipedItem">
+            <summary>
+            Returns true, if any of the item has swiped view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipeController.ItemLocation">
+            <summary>
+            Actual location of the ListViewItem before swiping. It will be used while layouting item with SwipeView in Grid Layout.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeController.RaiseSwipeStarted(Syncfusion.ListView.XForms.ListViewItemInfoBase,System.Double)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.ListView.XForms.SfListView.SwipeStarted"/> event and adds the <see cref="T:Syncfusion.ListView.XForms.SwipeView"/> as child into the <see cref="T:Syncfusion.ListView.XForms.VisualContainer"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeController.RaiseSwiping(Syncfusion.ListView.XForms.ListViewItemInfoBase,System.Double)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.ListView.XForms.SfListView.Swiping"/> event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeController.RaiseSwipeEnded(Syncfusion.ListView.XForms.ListViewItemInfoBase,System.Double)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.ListView.XForms.SfListView.SwipeEnded"/> event and assigns the <see cref="P:Syncfusion.ListView.XForms.ListViewItemInfoBase.SwipeOffset"/> to the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> and <see cref="T:Syncfusion.ListView.XForms.SwipeView"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeController.HandleTouchInteractions(Syncfusion.ListView.XForms.ListViewItemInfoBase,Xamarin.Forms.GestureStatus,Xamarin.Forms.Point)">
+            <summary>
+            Handles the touch interaction. 
+            </summary>
+            <param name="itemInfo">ListViewItemInfo for touch over item</param>
+            <param name="status">Denotes touch action</param>
+            <param name="point">Touch position</param>
+            <returns>Returns true, if SwipeController itself handles the touch.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeController.HandleItemTapped(Syncfusion.ListView.XForms.ListViewItemInfo)">
+            <summary>
+            Handles the item tapped(Clicked) and resets the swipe.
+            </summary>
+            <param name="itemInfo">ListViewItemInfo for tapped item</param>
+            <returns>Returns true, if SwipeController itself handles the touch.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeController.ProcessTouchDown(Syncfusion.ListView.XForms.ListViewItemInfoBase,System.Double)">
+            <summary>
+            Process the touch down related operations.
+            </summary>
+            <param name="itemInfo">ListViewItemInfo under touch</param>
+            <param name="position">Touch position</param>
+            <returns>Returns true, if pass touch notifications to parent. Else, don't pass touch notification further.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeController.ProcessTouchUp(Syncfusion.ListView.XForms.ListViewItemInfoBase,System.Double)">
+            <summary>
+            Process the touch up related operations.
+            </summary>
+            <param name="itemInfo">ListViewItemInfo under touch</param>
+            <param name="position">Touch position</param>
+            <returns>Returns true, if pass touch notifications to parent. Else, don't pass touch notification further.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeController.ProcessTouchMove(Syncfusion.ListView.XForms.ListViewItemInfoBase,System.Double)">
+            <summary>
+            Process the touch move related operations.
+            </summary>
+            <param name="itemInfo">ListViewItemInfo under touch</param>
+            <param name="position">Touch position</param>
+            <returns>Returns true, if pass touch notifications to parent. Else, don't pass touch notification further.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeController.ValidateOffset(Syncfusion.ListView.XForms.ListViewItemInfoBase,System.Double)">
+            <summary>
+            Validate and returns the maximum offset, if offset is greater than Item size.
+            </summary>
+            <param name="offset"></param>
+            <returns>Returns the valid offset.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeController.InitializeSwipeView(Syncfusion.ListView.XForms.ListViewItemInfoBase,System.Double)">
+            <summary>
+            Initialize the corresponding swipe view and collapse the another one.
+            </summary>
+            <param name="itemInfo"></param>
+            <param name="offset"></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeController.LayoutSwipeView(Syncfusion.ListView.XForms.ListViewItemInfoBase)">
+            <summary>
+            Layout the SwipeView and ListViewItem.
+            </summary>
+            <param name="itemInfo"></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeController.CollapseSwipeView(Syncfusion.ListView.XForms.SwipeView)">
+            <summary>
+            Collapse the SwipeView and remove the view from VisualContainer.
+            </summary>
+            <param name="view"></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeController.ResetSwipe(Syncfusion.ListView.XForms.ListViewItem)">
+            <summary>
+            Moves the swiped <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> to its default position.
+            </summary>
+            <param name="item">Represents the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeController.Dispose">
+            <summary>
+            Dispose the instances.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeController.Dispose(System.Boolean)">
+            <summary>
+            Dispose the instances, if parameter is true.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.SwipeView">
+            <summary>
+            Represents a swipe view in a <see cref="T:Syncfusion.ListView.XForms.SfListView"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipeView.ListView">
+            <summary>
+            Gets the <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SwipeView.Visibility">
+            <summary>
+            Gets or sets the visibility of <see cref="T:Syncfusion.ListView.XForms.SwipeView"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeView.#ctor(Syncfusion.ListView.XForms.SfListView)">
+            <summary>
+            Initialize a new instance of the <see cref="T:Syncfusion.ListView.XForms.SwipeView"/> class.
+            </summary>
+            <param name="listView">The <see cref="T:Syncfusion.ListView.XForms.SfListView"/> instance.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeView.ShouldInvalidateOnChildAdded(Xamarin.Forms.View)">
+            <summary>
+            Method to decide whether to call <see cref="M:Xamarin.Forms.VisualElement.InvalidateMeasure"/> or not.
+            </summary>
+            <param name="child">The content of the <see cref="T:Syncfusion.ListView.XForms.SwipeView"/>.</param>
+            <returns>A boolean value to decide whether to invalidate when adding a child.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeView.ShouldInvalidateOnChildRemoved(Xamarin.Forms.View)">
+            <summary>
+            Method to decide whether to call <see cref="M:Xamarin.Forms.VisualElement.InvalidateMeasure"/> or not.
+            </summary>
+            <param name="child">The content of the <see cref="T:Syncfusion.ListView.XForms.SwipeView"/>.</param>
+            <returns>A boolean value to decide whether to invalidate when removing a child.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeView.LayoutSwipeView(Syncfusion.ListView.XForms.ListViewItem)">
+            <summary>
+            Arranges the <see cref="T:Syncfusion.ListView.XForms.SwipeView"/> based on <see cref="!:ListViewItem.SwipeOffset"/>.
+            </summary>
+            <param name="item">Represents the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeView.AddItemChild(Xamarin.Forms.DataTemplate)">
+            <summary>
+            Adds the template into the <see cref="T:Syncfusion.ListView.XForms.SwipeView"/>
+            </summary>
+            <param name="template">data template for swipe view.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SwipeView.AddChild(Xamarin.Forms.View)">
+            <summary>
+            Add the children to content of <see cref="T:Syncfusion.ListView.XForms.SwipeView"/>.
+            </summary>
+            <param name="child"></param>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.ExtendedScrollView">
+            <summary>
+            Represents a customized <see cref="T:Xamarin.Forms.ScrollView"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.ExtendedScrollView.Container">
+            <summary>
+            Gets the VisualContainer.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ExtendedScrollView.#ctor">
+            <summary>
+            Initializes a new instance of ExtendedScrollView class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.ExtendedScrollView.LayoutChildren(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Positions and sizes the children of the ScrollView.
+            </summary>
+            <param name="x">A value that represents the x coordinate of the child.</param>
+            <param name="y">A value that represents the y coordinate of the child.</param>
+            <param name="width">A value that represents the width of the child.</param>
+            <param name="height">A value that represents the height of the child.</param>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.IVisibility">
+            <summary>
+            Define property for visiblity.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.IVisibility.Visibility">
+            <summary>
+            Gets or sets the visibility of Item.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.VisualContainer">
+            <summary>
+            This is a scrollable visual container that holds item elements. And handles the arrange and measure logic of all elements.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.#ctor">
+            <summary>
+            Initializes a new instance of the VisualContainer class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.VisualContainer.ScrollRows">
+            <summary>
+            Gets a reference to the <see cref="T:Syncfusion.GridCommon.ScrollAxis.ScrollAxisBase"/> instance which contains the information of row lines.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.VisualContainer.ScrollOwner">
+            <summary>
+            Gets a reference to the <see cref="T:Syncfusion.ListView.XForms.ExtendedScrollView"/> instance.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.VisualContainer.RowHeights">
+            <summary>
+            Gets the row height from the <see cref="T:Syncfusion.GridCommon.ScrollAxis.LineSizeCollection"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.VisualContainer.ScrollBar">
+            <summary>
+            Gets a reference to the class that implements <see cref="T:Syncfusion.GridCommon.ScrollAxis.IScrollBar"/> which contains the vertical scroll bar information.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.VisualContainer.TotalExtent">
+            <summary>
+            Gets the extent height of a <see cref="T:Syncfusion.ListView.XForms.SfListView"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.VisualContainer.RowCount">
+            <summary>
+            Gets or sets the row count in the <see cref="T:Syncfusion.ListView.XForms.SfListView"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.VisualContainer.ScrollOffset">
+            <summary>
+            Gets or sets the scroll offset
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.VisualContainer.ListViewLayoutManager">
+            <summary>
+            Gets or sets the layout manager.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.OnSizeAllocated(System.Double,System.Double)">
+            <summary>
+            This method is used to allocate the size of item elements.
+            </summary>
+            <param name="width">The new width of the element</param>
+            <param name="height">The new height of the element</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.UpdateRowHeights">
+            <summary>
+            Used to calculate the height of the group header item and update the LineSizeCollection.
+            </summary>
+            <returns>Returns true, if TotalExtent is modified and need to force layout the ScrollOwner.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.LayoutChildren(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Positions and sizes the children of the VisualContainer.
+            </summary>
+            <param name="x">A value that represents the x coordinate of the child.</param>
+            <param name="y">A value that represents the y coordinate of the child.</param>
+            <param name="width">A value that represents the width of the child.</param>
+            <param name="height">A value that represents the height of the child.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.OnMeasure(System.Double,System.Double)">
+            <summary>
+            This method is used to get the desired size of an element.
+            </summary>
+            <param name="widthConstraint">The available width for the element to use.</param>
+            <param name="heightConstraint">The available height for the element to use.</param>
+            <returns> A <see cref="T:Xamarin.Forms.SizeRequest"/> which contains the desired size of the element.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.ShouldInvalidateOnChildAdded(Xamarin.Forms.View)">
+            <summary>
+            Method to decide whether to call <see cref="M:Xamarin.Forms.VisualElement.InvalidateMeasure"/> when adding a child.
+            </summary>
+            <param name="child">The content of the VisualContainer.</param>
+            <returns>A boolean value do decide whether to invalidate when adding a child.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.ShouldInvalidateOnChildRemoved(Xamarin.Forms.View)">
+            <summary>
+            Method to decide whether to call <see cref="M:Xamarin.Forms.VisualElement.InvalidateMeasure"/> when removing a child.
+            </summary>
+            <param name="child">The content of the VisualContainer.</param>
+            <returns>A boolean value do decide whether to invalidate when removing a child.</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.ExtendedScrollView_Scrolled(System.Object,Xamarin.Forms.ScrolledEventArgs)">
+            <summary>
+            Call Back for the Scrolled event of the ScrollView.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The ScrolledEventArgs.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.UpdateScrollBar">
+            <summary>
+            Update the scroll bar.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.InsertRows(System.Int32,System.Int32)">
+            <summary>
+            Inserts the given number of row lines at the given index in the <see cref="T:Syncfusion.GridCommon.ScrollAxis.LineSizeCollection"/>.
+            </summary>
+            <param name="insertAtRowIndex">The index to insert the lines.</param>
+            <param name="count">The count.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.RemoveRows(System.Int32,System.Int32)">
+            <summary>
+            Removes the given number of row lines from the given index in the <see cref="T:Syncfusion.GridCommon.ScrollAxis.LineSizeCollection"/>.
+            </summary>
+            <param name="removeAtRowIndex">The index to remove the lines.</param>
+            <param name="count">The count.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.GetSize(System.Double,System.Double)">
+            <summary>
+            Returns the container size when the layout has changed to update the view.
+            </summary>
+            <param name="width">Its represents available width</param>
+            <param name="height">Its represents available height</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.OnItemsSourceChanged">
+            <summary>
+            Occurs when the <see cref="P:Syncfusion.ListView.XForms.SfListView.ItemsSource"/> is changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.SetDefaultLineSize(System.Double)">
+            <summary>
+            Set the default line size.
+            </summary>
+            <param name="size">The size of the line</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.ClearChildren">
+            <summary>
+            Helper method for clear the children.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.ResetOffset">
+            <summary>
+            Resets the horizontal and vertical offset.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.ResetScrollBars">
+            <summary>
+            Reset the ScrollRows. Because the scrollbar value is not updated when layout changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.CreateScrollAxis(System.Boolean,Syncfusion.GridCommon.ScrollAxis.IScrollBar,Syncfusion.GridCommon.ScrollAxis.ILineSizeHost)">
+            <summary>
+            Creates a new instance of <see cref="T:Syncfusion.GridCommon.ScrollAxis.ScrollAxisBase"/>
+            </summary>
+            <param name="isPixelScroll">A boolean value denoting pixel or line scrolling.</param>
+            <param name="scrollBar">The scroll bar.</param>
+            <param name="lineSizes">The line sizes.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.UpdateAxis(Xamarin.Forms.Size)">
+            <summary>
+            Update the render size of ScrollRows.
+            </summary>
+            <param name="availableSize"></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.EnsureItems">
+            <summary>
+            Ensure the visible items.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.ArrangeItems(Xamarin.Forms.Size)">
+            <summary>
+            Arranges the visible item in the VisualContainer based on the width and Visible lines information.
+            </summary>
+            <param name="size">Size for arrange the elements</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.ResetRowHeights">
+            <summary>
+            Reset the custom heights from the LineSizeCollection.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.SetRowCount(System.Int32)">
+            <summary>
+            Set the item count for create the lines based on Orientation of layout.
+            </summary>
+            <param name="value">The count of item.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.GetRowCount">
+            <summary>
+            Get the item count based on Orientation
+            </summary>
+            <returns>Returns the out of the item</returns>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.ForceLayoutChildren">
+            <summary>
+            Forces the children to layout when the framework layout fails. 
+            </summary>
+            <remarks>Hack code to fix the ListView not loaded issue in UWP platforms. 
+            Need to check for every release and remove if fixed in framework.
+            May get fixed if we arrange the children of ListView manually.</remarks>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.VisualContainer.OnCreateLineSizeCollection">
+            <summary>
+            Creates a new instance of LineSizeCollection for getting the item heights.
+            </summary>
+            <returns>A new instance of the LineSizeCollection.</returns>
+        </member>
+        <member name="T:Syncfusion.ListView.XForms.NamespaceDoc">
+            <summary>
+            Contains classes, interfaces and enumerators which are required to create the SfListView.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Syncfusion.ListView.XForms.SfListView" -->
+        <member name="F:Syncfusion.ListView.XForms.SfListView.IsViewLoaded">
+            <summary>
+            Determines whether ListView is loaded into view or not. (i.e., It will becomes true, once OnSizeAllocated is called.)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.ListView.XForms.SfListView"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.ItemsSource">
+            <summary>
+            Gets or sets the source items to template and display in <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.ItemsSourceProperty">
+            <summary>
+            Identifies the ItemsSource bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.ItemSize">
+            <summary>
+            Gets or sets the height (For vertical orienation) or Width (For horizontal orientation) of the item. The default value is 40d.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.ItemSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.ListView.XForms.SfListView.ItemSize"/> bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.HeaderSize">
+            <summary>
+            Gets or sets the height (For vertical orienation) or Width (For horizontal orientation) of the header. The default value is 40d.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.HeaderSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.ListView.XForms.SfListView.HeaderSize"/> bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.FooterSize">
+            <summary>
+            Gets or sets the height (For vertical orienation) or Width (For horizontal orientation) of the footer. The default value is 40d.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.FooterSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.ListView.XForms.SfListView.FooterSize"/> bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.GroupHeaderSize">
+            <summary>
+            Gets or sets the height (For vertical orienation) or Width (For horizontal orientation) of the group header. The default value is 40d.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.GroupHeaderSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.ListView.XForms.SfListView.GroupHeaderSize"/> bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.LayoutManager">
+            <summary>
+            Layout Definition for <see cref="T:Syncfusion.ListView.XForms.SfListView"/>. The default layout is <see cref="T:Syncfusion.ListView.XForms.LinearLayout"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.LayoutManagerProperty">
+            <summary>
+            Identifies the LayoutManager bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.ItemStyle">
+            <summary>
+            Gets or sets the style for <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.ItemStyleProperty">
+            <summary>
+            Identifies the ListViewItemStyle bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.GroupHeaderItemStyle">
+            <summary>
+            Gets or sets the style for <see cref="P:Syncfusion.ListView.XForms.SfListView.GroupHeaderItem"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.GroupHeaderItemStyleProperty">
+            <summary>
+            Identifies the GroupHeaderItemStyle bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.ItemTemplate">
+            <summary>
+            Gets or sets the data template for <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.ItemTemplateProperty">
+            <summary>
+            Identifies the ItemTemplate bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.HeaderTemplate">
+            <summary>
+            Gets or sets a header template for <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.HeaderTemplateProperty">
+            <summary>
+            Identifies the HeaderTemplate bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.FooterTemplate">
+            <summary>
+            Gets or sets the footer template for <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.FooterTemplateProperty">
+            <summary>
+            Identifies the FooterTemplate bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.GroupHeaderTemplate">
+            <summary>
+            Gets or sets the <see cref="T:Xamarin.Forms.DataTemplate"/> for group headers for <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.GroupHeaderTemplateProperty">
+            <summary>
+            Identifies the GroupHeaderTemplate bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.IsStickyHeader">
+            <summary>
+            Gets or sets the value whether display the sticky header or scrollable header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.IsStickyHeaderProperty">
+            <summary>
+            Identifies the IsStickyHeader bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.IsStickyFooter">
+            <summary>
+            Gets or sets the value whether display the sticky footer or scrollable footer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.IsStickyFooterProperty">
+            <summary>
+            Identifies the IsStickyFooter bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.IsStickyGroupHeader">
+            <summary>
+            Gets or sets the value whether display the sticky group header or scrollable group header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.IsStickyGroupHeaderProperty">
+            <summary>
+            Identifies the IsStickyGroupHeader bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.AllowGroupExpandCollapse">
+            <summary>
+            Gets or sets a value indicating whether to allow expanding and collapsing of groups for <see cref="T:Syncfusion.ListView.XForms.GroupHeaderItem"/>.
+            </summary>
+            <value><b>true</b> If allow expand and collapse groups; otherwise, <b>false</b>.</value>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.AllowGroupExpandCollapseProperty">
+            <summary>
+            Identifies the AllowGroupExpandAndCollapse bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.DataSource">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.DataSource.DataSource"/> for data operations like sorting, filtering and grouping. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.DataSourceProperty">
+            <summary>
+            Identifies the DataSource bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.ItemSpacing">
+            <summary>
+            Gets or sets the item spacing between items.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.ItemSpacingProperty">
+            <summary>
+            Identifies the ItemSpacing bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.SelectedItemTemplate">
+            <summary>
+            Gets or sets the selected item template for selection.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.SelectedItemTemplateProperty">
+            <summary>
+            Identifies the SelectedItemTemplate bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.SelectionGesture">
+            <summary>
+            Gets or sets the selection gesture for selection.
+            </summary>        
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.SelectionGestureProperty">
+            <summary>
+            Identifies the SelectionGesture bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.SelectionMode">
+            <summary>
+            Gets or sets the selection mode for selection.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.SelectionModeProperty">
+            <summary>
+            Identifies the SelectionMode bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.SelectedItems">
+            <summary>
+            Gets or sets the selected items for selection.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.SelectedItemsProperty">
+            <summary>
+            Identifies the SelectedItems bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.CurrentItem">
+            <summary>
+            Gets or sets the current selected item.
+            </summary>
+            <value>The current item.</value>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.CurrentItemProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.ListView.XForms.SfListView.CurrentItem"/> bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.SelectedItem">
+            <summary>
+            Gets or sets the first selected item.
+            </summary>
+            <value>The selected item.</value>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.SelectedItemProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.ListView.XForms.SfListView.SelectedItem"/> bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.SelectionBackgroundColor">
+            <summary>
+            Gets or sets the selection background color for the selected item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.SelectionBackgroundColorProperty">
+            <summary>
+            Identifies the SelectionBackgroundColor bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.Orientation">
+            <summary>
+            Gets or sets the orientation for <see cref="T:Syncfusion.ListView.XForms.SfListView"/>. The default orientation is vertical.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.OrientationProperty">
+            <summary>
+            Identifies the Orientation bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.SwipeOffset">
+            <summary>
+            Gets or sets the value how much the swiped item will be moved to the side and stick there. The default value is 100.
+            </summary>
+            <value>The swipe offset value.</value>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.SwipeOffSetProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.ListView.XForms.SfListView.SwipeOffset"/> bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.SwipeThreshold">
+            <summary>
+            Gets or sets the value that indicates <see cref="T:Syncfusion.ListView.XForms.SwipeView"/> gets sticked when <see cref="P:Syncfusion.ListView.XForms.ListViewItemInfoBase.SwipeOffset"/> is greater than half of the <see cref="P:Syncfusion.ListView.XForms.SfListView.SwipeThreshold"/> value. The default value is 0.
+            </summary>
+            <value>The swipe threshold value.</value>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.SwipeThresholdProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.ListView.XForms.SfListView.SwipeThreshold"/> bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.AllowSwiping">
+            <summary>
+            Gets or sets the value that indicates whether to enable swiping or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.AllowSwipingProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.ListView.XForms.SfListView.AllowSwiping"/> bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.LeftSwipeTemplate">
+            <summary>
+            Gets or sets the template that is used to display when <see cref="T:Syncfusion.ListView.XForms.SwipeDirection"/> is <see cref="F:Syncfusion.ListView.XForms.SwipeDirection.Left"/> and <see cref="F:Syncfusion.ListView.XForms.SwipeDirection.Bottom"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.LeftSwipeTemplateProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.ListView.XForms.SfListView.LeftSwipeTemplate"/> bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.RightSwipeTemplate">
+            <summary>
+            Gets or sets the template that is used to display when <see cref="T:Syncfusion.ListView.XForms.SwipeDirection"/> is <see cref="F:Syncfusion.ListView.XForms.SwipeDirection.Right"/> and <see cref="F:Syncfusion.ListView.XForms.SwipeDirection.Top"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ListView.XForms.SfListView.RightSwipeTemplateProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.ListView.XForms.SfListView.RightSwipeTemplate"/> bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.VisualContainer">
+            <summary>
+            Gets the VisualContainer.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.ItemGenerator">
+            <summary>
+            Gets or sets the ItemGenerator.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.ListViewCachingStrategy">
+            <summary>
+            Gets or sets the ListViewCachingStrategy.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.HeaderItem">
+            <summary>
+            Gets or sets the <see cref="P:Syncfusion.ListView.XForms.SfListView.HeaderItem"/> for add into the <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.FooterItem">
+            <summary>
+            Gets or sets the <see cref="P:Syncfusion.ListView.XForms.SfListView.FooterItem"/> for add into the <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.HasGroups">
+            <summary>
+            Determines whether the <see cref="T:Syncfusion.DataSource.DataSource"/> has groups or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.GroupHeaderItem">
+            <summary>
+            Gets or sets the <see cref="P:Syncfusion.ListView.XForms.SfListView.GroupHeaderItem"/> to add into the <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.SelectionController">
+            <summary>
+            Gets or sets the <see cref="P:Syncfusion.ListView.XForms.SfListView.SelectionController"/> which controls the selection and its related operations.
+            </summary>
+            <value>An instance of <see cref="P:Syncfusion.ListView.XForms.SfListView.SelectionController"/></value>
+        </member>
+        <member name="P:Syncfusion.ListView.XForms.SfListView.SwipeController">
+            <summary>
+            Gets or sets the <see cref="P:Syncfusion.ListView.XForms.SfListView.SwipeController"/> which controls the swiping and its related operations.
+            </summary>
+            <value>An instance of <see cref="P:Syncfusion.ListView.XForms.SfListView.SwipeController"/></value>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnMeasure(System.Double,System.Double)">
+            <summary>
+            This method is called during the measure pass of a layout cycle to get the desired size of an element.
+            </summary>
+            <param name="widthConstraint">The available width for the element to use.</param>
+            <param name="heightConstraint">The available height for the element to use.</param>
+            <returns> A <see cref="T:Xamarin.Forms.SizeRequest"/> which contains the desired size of the element.</returns>
+            <remarks>The results of this method will be (-1, -1) if the element has not yet been realized with a platform specific backing control.
+            Overriding this method does not require a call to the base class so long as a valid SizeRequest is returned.</remarks>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnItemsSourceChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the ItemsSource property is changed.
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnItemSizeChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the <see cref="P:Syncfusion.ListView.XForms.SfListView.ItemSize"/> property is changed
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value of item length</param>
+            <param name="newValue">the new value of item length.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnHeaderSizeChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the <see cref="P:Syncfusion.ListView.XForms.SfListView.HeaderSize"/> property is changed
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value of header length</param>
+            <param name="newValue">the new value of header length.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnFooterSizeChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the <see cref="P:Syncfusion.ListView.XForms.SfListView.FooterSize"/> property is changed
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value of footer length.</param>
+            <param name="newValue">the new value of footer length.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnGroupHeaderSizeChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the <see cref="P:Syncfusion.ListView.XForms.SfListView.GroupHeaderSize"/> property is changed
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value of group header length.</param>
+            <param name="newValue">the new value of group header length.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnHeaderTemplateChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when header, isStickyHeader and header template changed.
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnFooterTemplateChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when footer, isStickyFooter and footer template changed.
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnStickyHeaderChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when <see cref="P:Syncfusion.ListView.XForms.SfListView.IsStickyHeader"/> changed.
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnStickyFooterChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when IsStickyFooter changed.
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnLayoutManagerChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the LayoutManager property is changed
+            </summary>
+            <param name="bindable">SfListView object</param>
+            <param name="oldValue">The old value of LayoutManager</param>
+            <param name="newValue">The new value of LayoutManager</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnItemSpacingChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the ItemSpacing property is changed
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value of item spacing.</param>
+            <param name="newValue">the new value of item spacing.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnItemStyleChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the <see cref="P:Syncfusion.ListView.XForms.SfListView.ItemStyle"/> property is changed
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value of ListViewItemStyle.</param>
+            <param name="newValue">the new value of ListViewItemStyle.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnGroupHeaderItemStyleChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the <see cref="P:Syncfusion.ListView.XForms.SfListView.GroupHeaderItemStyle"/> is changed.
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value of GroupHeaderStyle.</param>
+            <param name="newValue">the new value of GroupHeaderStyle.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnItemTemplateChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the ItemTemplate property is changed.
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value of ItemTemplate.</param>
+            <param name="newValue">The new value of ItemTemplate.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnDataSourceChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the DataSource property is changed. 
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value of the DataSource.</param>
+            <param name="newValue">The new value of the DataSource</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnDataSourceChanged(System.Object,System.Object)">
+            <summary>
+            Occurs when the DataSource is changed after the SfListView is loaded. 
+            </summary>
+            <param name="oldValue">The old value fo the DataSource.</param>
+            <param name="newValue">The new value of the DataSource.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnSelectionModeChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when <see cref="P:Syncfusion.ListView.XForms.SfListView.SelectionMode"/> is changed.
+            </summary>
+            <param name="bindable"></param>
+            <param name="oldValue"></param>
+            <param name="newValue"></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnSelectedItemTemplateChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the <see cref="P:Syncfusion.ListView.XForms.SfListView.SelectedItemTemplate"/> is changed.
+            </summary>
+            <param name="bindable">SfListView object</param>
+            <param name="oldValue">The old value of Selectiontemplate</param>
+            <param name="newValue">The new value of Selectiontemplate</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnSelectedItemChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the <see cref="P:Syncfusion.ListView.XForms.SfListView.SelectedItem"/> property is changed.
+            </summary>
+            <param name="bindable">The <see cref="T:Syncfusion.ListView.XForms.SfListView"/> as bindable object.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnCurrentItemChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the <see cref="P:Syncfusion.ListView.XForms.SfListView.CurrentItem"/> property is changed
+            </summary>
+            <param name="bindable">The <see cref="T:Syncfusion.ListView.XForms.SfListView"/> as bindable object.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnSelectedItemsChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Occurs when the SelectedItems collection is changed. 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnGroupHeaderTemplateChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the <see cref="P:Syncfusion.ListView.XForms.SfListView.GroupHeaderTemplate"/> property is changed.
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value of GroupHeaderTemplate.</param>
+            <param name="newValue">The new value of GroupHeaderTemplate.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnSelectionBackgroundColorChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the <see cref="P:Syncfusion.ListView.XForms.SfListView.SelectionBackgroundColor"/> property is changed
+            </summary>
+            <param name="bindable">SfListView object</param>
+            <param name="oldValue">The old value of selection color</param>
+            <param name="newValue">The new value of selection color</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnStickyGroupHeaderChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when <see cref="P:Syncfusion.ListView.XForms.SfListView.IsStickyGroupHeader"/> property is changed.
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnOrientationChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when the ItemHeight property is changed
+            </summary>
+            <param name="bindable">The SfListView as bindable object.</param>
+            <param name="oldValue">The old value of item height</param>
+            <param name="newValue">the new value of item height.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnAllowSwipingChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when <see cref="P:Syncfusion.ListView.XForms.SfListView.AllowSwiping"/> property is changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnLeftSwipeTemplateChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when <see cref="P:Syncfusion.ListView.XForms.SfListView.LeftSwipeTemplate"/> property is changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.OnRightSwipeTemplateChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Occurs when <see cref="P:Syncfusion.ListView.XForms.SfListView.RightSwipeTemplate"/> property is changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.InitializeListView">
+            <summary>
+            Initialize the SfListView.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.InitializeContainer">
+            <summary>
+            Initialize the VisualContainer and ScrollView. And its added to children of SfListView.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.WireEvents">
+            <summary>
+            Wire the events.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.UnWireEvents">
+            <summary>
+            UnWire the events.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.InitializeBindingProperties">
+            <summary>
+            Initializes the binding properties of SfListView.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.DataSource_SourceCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            To handle the source collection changed.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.ScrollToPosition(System.Double,System.Double)">
+            <summary>
+            Scrolls the SfListView to the given x or y position based on orientation.
+            </summary>
+            <param name="x">The position to scroll when the <see cref="P:Syncfusion.ListView.XForms.SfListView.Orientation"/> is <see cref="F:Syncfusion.ListView.XForms.Orientation.Horizontal"/>.</param>
+            <param name="y">The position to scroll when <see cref="P:Syncfusion.ListView.XForms.SfListView.Orientation"/>  is <see cref="F:Syncfusion.ListView.XForms.Orientation.Vertical"/>.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.RefreshGroupHeaderItem">
+            <summary>
+            Refreshes the <see cref="P:Syncfusion.ListView.XForms.SfListView.GroupHeaderItem"/> when <see cref="T:Syncfusion.DataSource.DisplayItems"/> is changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.RaiseItemTapped(Syncfusion.ListView.XForms.ItemTappedEventArgs)">
+            <summary>
+            Helper method for raise the <see cref="E:Syncfusion.ListView.XForms.SfListView.ItemTapped"/> event when tapped in the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>.
+            </summary>
+            <param name="e">The <see cref="T:Syncfusion.ListView.XForms.ItemTappedEventArgs"/></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.RaiseItemDoubleTapped(Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs)">
+            <summary>
+            Helper method for raise the <see cref="E:Syncfusion.ListView.XForms.SfListView.ItemDoubleTapped"/> event when double tapped in the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>.
+            </summary>
+            <param name="e">The <see cref="T:Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs"/></param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.RaiseItemHolding(Syncfusion.ListView.XForms.ItemHoldingEventArgs)">
+            <summary>
+            Helper method for raise the <see cref="E:Syncfusion.ListView.XForms.SfListView.ItemHolding"/> event when hold in the <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/>.
+            </summary>
+            <param name="e">The <see cref="T:Syncfusion.ListView.XForms.ItemHoldingEventArgs"/></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.ListView.XForms.SfListView.RaiseSelectionChangingEvent(Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs)" -->
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.ListView.XForms.SfListView.RaiseSelectionChangedEvent(Syncfusion.ListView.XForms.ItemSelectionChangedEventArgs)" -->
+        <member name="M:Syncfusion.ListView.XForms.SfListView.RaiseGroupExpandingEvent(Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs)">
+            <summary>
+            Helper method to raise the <see cref="E:Syncfusion.ListView.XForms.SfListView.GroupExpanding"/> event
+            </summary>
+            <param name="args">An <see cref="T:Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs">GroupChangingEventArgs</see> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.RaiseGroupExpandedEvent(Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs)">
+            <summary>
+            Helper method to raise the <see cref="E:Syncfusion.ListView.XForms.SfListView.GroupExpanded"/> event
+            </summary>
+            <param name="args">An <see cref="T:Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs">GroupChangedEventArgs</see> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.RaiseGroupCollapsingEvent(Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs)">
+            <summary>
+            Helper method to raise the <see cref="E:Syncfusion.ListView.XForms.SfListView.GroupCollapsing"/> event
+            </summary>
+            <param name="args">An <see cref="T:Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs">GroupChangingEventArgs</see> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.RaiseGroupCollapsedEvent(Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs)">
+            <summary>
+            Helper method to raise the <see cref="E:Syncfusion.ListView.XForms.SfListView.GroupCollapsed"/> event
+            </summary>
+            <param name="args">An <see cref="T:Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs">GroupChangedEventArgs</see> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.RaiseSwipeStartedEvent(Syncfusion.ListView.XForms.SwipeStartedEventArgs)">
+            <summary>
+            Helper method to raise the <see cref="E:Syncfusion.ListView.XForms.SfListView.SwipeStarted"/> event
+            </summary>
+            <param name="args">An <see cref="T:Syncfusion.ListView.XForms.SwipeStartedEventArgs">SwipeStartedEventArgs</see> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.RaiseSwipingEvent(Syncfusion.ListView.XForms.SwipingEventArgs)">
+            <summary>
+            Helper method to raise the <see cref="E:Syncfusion.ListView.XForms.SfListView.Swiping"/> event
+            </summary>
+            <param name="args">An <see cref="T:Syncfusion.ListView.XForms.SwipingEventArgs">SwipingEventArgs</see> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.RaiseSwipeEndedEvent(Syncfusion.ListView.XForms.SwipeEndedEventArgs)">
+            <summary>
+            Helper method to raise the <see cref="E:Syncfusion.ListView.XForms.SfListView.SwipeEnded"/> event
+            </summary>
+            <param name="args">An <see cref="T:Syncfusion.ListView.XForms.SwipeEndedEventArgs">SwipeEndedEventArgs</see> that contains the event data.</param>
+        </member>
+        <member name="E:Syncfusion.ListView.XForms.SfListView.ItemTapped">
+            <summary>
+            Event that is raised when item is tapped.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.ListView.XForms.SfListView.ItemDoubleTapped">
+            <summary>
+            Event that is raised when item is double tapped.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.ListView.XForms.SfListView.ItemHolding">
+            <summary>
+            Event that is raised when hold the item.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.ListView.XForms.SfListView.SelectionChanged">
+            <summary>
+            Event that is raised when selection is changed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.ListView.XForms.SfListView.SelectionChanging">
+            <summary>
+            Event that is raised when selection is changing.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.ListView.XForms.SfListView.GroupExpanding">
+            <summary>
+            Occurs when a group is being expanded.
+            </summary>
+            <remarks>
+            You can cancel or customize the group being expanded through <see cref="T:Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs"/> event argument.
+            </remarks>
+            <seealso cref="E:Syncfusion.ListView.XForms.SfListView.GroupExpanded"/>
+            <seealso cref="E:Syncfusion.ListView.XForms.SfListView.GroupCollapsing"/>
+            <seealso cref="E:Syncfusion.ListView.XForms.SfListView.GroupCollapsed"/>
+        </member>
+        <member name="E:Syncfusion.ListView.XForms.SfListView.GroupCollapsing">
+            <summary>
+            Occurs when a group is being collapsed. 
+            </summary>
+            <remarks>
+            You can cancel or customize the group being collapsed through <see cref="T:Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs"/> event argument.
+            </remarks>
+            <seealso cref="E:Syncfusion.ListView.XForms.SfListView.GroupCollapsed"/>
+            <seealso cref="E:Syncfusion.ListView.XForms.SfListView.GroupExpanding"/>
+            <seealso cref="E:Syncfusion.ListView.XForms.SfListView.GroupExpanded"/>
+        </member>
+        <member name="E:Syncfusion.ListView.XForms.SfListView.GroupExpanded">
+            <summary>
+            Occurs when a group is expanded. 
+            </summary>
+            <remarks>
+            This event occurs after the <see cref="E:Syncfusion.ListView.XForms.SfListView.GroupExpanding"/> event if that event is not canceled. 
+            </remarks>
+            <seealso cref="E:Syncfusion.ListView.XForms.SfListView.GroupExpanding"/>
+            <seealso cref="E:Syncfusion.ListView.XForms.SfListView.GroupCollapsing"/>
+            <seealso cref="E:Syncfusion.ListView.XForms.SfListView.GroupCollapsed"/>
+        </member>
+        <member name="E:Syncfusion.ListView.XForms.SfListView.GroupCollapsed">
+            <summary>
+            Occurs when a group is collapsed. 
+            </summary>
+            <remarks>
+            This event occurs after the <see cref="E:Syncfusion.ListView.XForms.SfListView.GroupCollapsing"/> event if that event is not canceled.
+            </remarks>
+            <seealso cref="E:Syncfusion.ListView.XForms.SfListView.GroupCollapsing"/>
+            <seealso cref="E:Syncfusion.ListView.XForms.SfListView.GroupExpanding"/>
+            <seealso cref="E:Syncfusion.ListView.XForms.SfListView.GroupExpanded"/>
+        </member>
+        <member name="E:Syncfusion.ListView.XForms.SfListView.SwipeStarted">
+            <summary>
+            Occurs when swipe is started.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.ListView.XForms.SfListView.Swiping">
+            <summary>
+            Occurs when swiping is in progress.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.ListView.XForms.SfListView.SwipeEnded">
+            <summary>
+            Occurs when swipe is ended.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.ListView.XForms.SfListView.Loaded">
+            <summary>
+            Occurs when a SfListView is loaded for the first time.
+            </summary>
+            <remarks>This event occurs only once when a <see cref="T:Syncfusion.ListView.XForms.SfListView"/> is loaded in view for the first time. 
+            Any properties set in this event call back will lead to an additional refresh call when the SfListView is loaded.</remarks>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.RefreshView">
+            <summary>
+            Refresh the view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.SelectAll">
+            <summary>
+            Select all the items in the <see cref="T:Syncfusion.ListView.XForms.SfListView"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.CollapseAll">
+            <summary>
+            Collapses all the groups in <see cref="P:Syncfusion.DataSource.DataSource.Groups"/>.
+            </summary>
+            <remarks>This method collapse all the groups in <see cref="P:Syncfusion.DataSource.DataSource.Groups"/> programmatically.</remarks>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.ExpandAll">
+            <summary>
+            Expands all the groups in <see cref="P:Syncfusion.DataSource.DataSource.Groups"/>.
+            </summary>
+            <remarks>This method expand all the groups in <see cref="P:Syncfusion.DataSource.DataSource.Groups"/> programmatically.</remarks>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.CollapseGroup(Syncfusion.DataSource.Extensions.GroupResult)">
+            <summary>
+            Collapses the specified group.
+            </summary>
+            <param name="group">Specifies the <see cref="T:Syncfusion.DataSource.Extensions.GroupResult"/> to collapse it from view.</param>       
+            <example><code lang="C#"><![CDATA[        
+             var group = (listview.DataSource.Groups[0] as Group);
+               this.listview.CollapseGroup(group);
+            ]]></code></example>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.ExpandGroup(Syncfusion.DataSource.Extensions.GroupResult)">
+            <summary>
+            Expands the specified group.
+            </summary>
+            <param name="group">Specifies the <see cref="T:Syncfusion.DataSource.Extensions.GroupResult"/> to expand it from view.</param>   
+            <example><code lang="C#"><![CDATA[        
+             var group = (listview.DataSource.Groups[0] as Group);
+               this.listview.ExpandGroup(group);
+            ]]></code></example>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.ResetSwipe">
+            <summary>
+            Resets the swiping and moves the swiped <see cref="T:Syncfusion.ListView.XForms.ListViewItem"/> to its default position.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ListView.XForms.SfListView.Dispose">
+            <summary>
+            Dispose all the allocated resources.
+            </summary>
+        </member>
+    </members>
+</doc>

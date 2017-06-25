@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfNumericTextBox.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfNumericTextBox.XForms.Parsers">
+            <summary>
+            Parsers contain enum values of Double and Decimal.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.Parsers.Decimal">
+            <summary>
+            Displays the parser value in Decimal format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.Parsers.Double">
+            <summary>
+            Displays the parser value in Double format.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNumericTextBox.XForms.PercentDisplayMode">
+            <summary>
+            Percent display mode is used to display numeric data in Percent mode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.PercentDisplayMode.Value">
+            <summary>
+            Displays the value with percentage symbol.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.PercentDisplayMode.Compute">
+            <summary>
+            Displays the computed value with percentage symbol.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox">
+            <summary>
+            Sf numeric text box.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.ParserMode">
+            <summary>
+            Gets or sets the parser mode.
+            </summary>
+            <value>The parser mode.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.ParserModeProperty">
+            <summary>
+            The parser mode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.PercentDisplayMode">
+            <summary>
+            Gets or sets the percent display mode.
+            </summary>
+            <value>The percent display mode.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.PercentDisplayModeProperty">
+            <summary>
+            The percent display mode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.ValueChangeMode">
+            <summary>
+            Gets or sets the value change mode.
+            </summary>
+            <value>The value change mode.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.ValueChangeModeProperty">
+            <summary>
+            The value change mode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.MaximumNumberDecimalDigits">
+            <summary>
+            Gets or sets the maximum number decimal digits.
+            </summary>
+            <value>The maximum number decimal digits.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.MaximumNumberDecimalDigitsProperty">
+            <summary>
+            The maximum number decimal digits property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.ValueProperty">
+            <summary>
+            The value property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.AllowNull">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox"/>
+            allow null.
+            </summary>
+            <value><c>true</c> if allow null; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.AllowNullProperty">
+            <summary>
+            The allow null property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.TextAlignmentProperty">
+            <summary>
+            The allow null property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.Watermark">
+            <summary>
+            Gets or sets the watermark.
+            </summary>
+            <value>The watermark.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.WatermarkProperty">
+            <summary>
+            The watermark property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.FormatString">
+            <summary>
+            Gets or sets the format string.
+            </summary>
+            <value>The format string.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.FormatStringProperty">
+            <summary>
+            The format string property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.Culture">
+            <summary>
+            Gets or sets the culture.
+            </summary>
+            <value>The culture.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.CultureProperty">
+            <summary>
+            The culture property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.ValueEventHandler">
+            <summary>
+            Represents the method that will handle the SfNumericTextBox.Value event of a SfNumericTextBox.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.ValueChanged">
+            <summary>
+            Occurs when value changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.RaiseValueChanging(Syncfusion.SfNumericTextBox.XForms.ValueEventArgs)">
+            <summary>
+            Raises the value changing.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="P:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.FontSize">
+            <summary>
+            Gets or sets the TextSize.
+            </summary>
+            <value>The TextSize property.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.FontSizeProperty">
+            <summary>
+            The TextSizeProperty.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.TextColor">
+            <summary>
+            Gets or sets the TextColor.
+            </summary>
+            <value>The TextColor property.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.TextColorProperty">
+            <summary>
+            The TextColorProperty.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.WatermarkColor">
+            <summary>
+            Gets or sets the TextColor.
+            </summary>
+            <value>The TextColor property.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.WatermarkColorProperty">
+            <summary>
+            The TextColorProperty.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.BorderColor">
+            <summary>
+            Gets or sets the BorderColor.
+            </summary>
+            <value>The BorderColor property.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.BorderColorProperty">
+            <summary>
+            The TextColorProperty.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.FontAttributes">
+            <summary>
+            Gets or sets the Font type.
+            </summary>
+            <value>The Font property.</value>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.FontAttributesProperty">
+            <summary>
+            The FontProperty.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNumericTextBox.XForms.ValueEventArgs">
+            <summary>
+            Value event arguments.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNumericTextBox.XForms.ValueChangeMode">
+            <summary>
+            Value change mode is used to update the value property when a key is pressed or focus is lost.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.ValueChangeMode.OnLostFocus">
+            <summary>
+            The value change will be updated when the control is no longer focused.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNumericTextBox.XForms.ValueChangeMode.OnKeyFocus">
+            <summary>
+             The value will be changed for each keypress.
+            </summary>
+        </member>
+    </members>
+</doc>

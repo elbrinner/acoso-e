@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfPullToRefresh.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.PullingThershold">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.TransitionMode">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.ProgressRadius">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.ProgressStrokeColor">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.ProgressBackground">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.ProgressStrokeWidth">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.IsRefreshing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.PullableContent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.RefreshContent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.RefreshContentHeight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.RefreshContentWidth">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.PullDirection">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="E:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.RefreshedEvent">
+            <summary>
+            ScheduleCellTapped event is raised on tapping the schedule cells.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.RefreshingEvent">
+            <summary>
+            ScheduleCellTapped event is raised on tapping the schedule cells.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.PullingEvent">
+            <summary>
+            ScheduleCellTapped event is raised on tapping the schedule cells.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPullToRefresh.XForms.TransitionType.Push">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPullToRefresh.XForms.TransitionType.SlideonTop">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

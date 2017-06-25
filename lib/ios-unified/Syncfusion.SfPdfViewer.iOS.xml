@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfPdfViewer.iOS</name>
+    </assembly>
+    <members>
+        <member name="P:Syncfusion.SfPdfViewer.iOS.PageChangedEventArgs.PageNumber">
+             <summary>
+             Gets the current page number
+             </summary>
+            </member>
+        <member name="T:Syncfusion.SfPdfViewer.iOS.PageChangedEventHandler">
+             <summary>
+             Represents the method that will handle the PageChanged/&gt; event. 
+             </summary>
+             <param name="sender">The sender the contains SfPdfViewer.</param>
+             <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.iOS.PageChangedEventArgs" /> that contains the event data.</param>
+            </member>
+        <member name="T:Syncfusion.SfPdfViewer.iOS.DocumentLoadedEventHandler">
+             <summary>
+             Represents the method that will handle the DocumentLoaded/&gt; event. 
+             </summary>
+             <param name="sender">The sender the contains SfPdfViewer.</param>
+             <param name="args">The <see cref="T:System.EventArgs" /> that contains the event data.</param>
+            </member>
+        <member name="E:Syncfusion.SfPdfViewer.iOS.SfPdfViewer.PageChanged">
+             <summary>
+             Occurs when current page is changed.
+             </summary>
+            </member>
+        <member name="E:Syncfusion.SfPdfViewer.iOS.SfPdfViewer.DocumentLoaded">
+             <summary>
+             Occurs when document is loaded.
+             </summary>
+            </member>
+        <member name="P:Syncfusion.SfPdfViewer.iOS.SfPdfViewer.PageCount">
+             <summary>
+             Gets the page count
+             </summary>
+            </member>
+        <member name="P:Syncfusion.SfPdfViewer.iOS.SfPdfViewer.Frame">
+             <summary>
+             Coordinates of the view relative to its container.
+             </summary>
+            </member>
+        <member name="P:Syncfusion.SfPdfViewer.iOS.SfPdfViewer.PageNumber">
+             <summary>
+             Gets or Sets the page number
+             </summary>
+            </member>
+        <member name="M:Syncfusion.SfPdfViewer.iOS.SfPdfViewer.GoToNextPage">
+             <summary>
+             Navigates to the next page of the document.
+             </summary>
+            </member>
+        <member name="M:Syncfusion.SfPdfViewer.iOS.SfPdfViewer.GoToPreviousPage">
+             <summary>
+             Navigates to the previous page of the document.
+             </summary>
+            </member>
+        <member name="M:Syncfusion.SfPdfViewer.iOS.SfPdfViewer.GoToPage(System.Int32)">
+             <summary>
+             Navigates to the specified page.
+             </summary>
+             <param name="pageNumber">The page number</param>
+            </member>
+        <member name="M:Syncfusion.SfPdfViewer.iOS.SfPdfViewer.LoadDocument(System.IO.Stream)">
+             <summary>
+             Loads a Pdf document in the Pdf viewer from the specified stream.
+             </summary>
+             <param name="documentStream">A stream that contains the data for the Pdf document</param>
+            </member>
+        <member name="M:Syncfusion.SfPdfViewer.iOS.SfPdfViewer.Unload">
+             <summary>
+             Unloads the PDF Viewer
+             </summary>
+            </member>
+        <member name="M:Syncfusion.SfPdfViewer.iOS.SfPdfViewer.Dispose(System.Boolean)">
+             <summary>
+             Disposes the PdfViewerControl
+             </summary>
+             <param name="disposing"></param>
+            </member>
+        <member name="M:Syncfusion.SfPdfViewer.iOS.SfPdfViewer.LayoutSubviews">
+             <summary>
+             Lays out subviews.
+             </summary>
+            </member>
+    </members>
+</doc>

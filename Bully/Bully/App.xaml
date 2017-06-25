@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bully.App">
+	<Application.Resources>
+
+        <ResourceDictionary>
+
+            <!-- Valores base -->
+
+            <!-- Valores predefinidos BASE COLORS AND UNITS VALUES -->
+            <Color x:Key="BaseTextColor">#583B2C</Color>
+            <Color x:Key="CoureTextColor">#003049</Color>
+
+            <x:Double x:Key="BaseFontSize">16</x:Double>
+            <x:Double x:Key="BaseButtonHeight">44</x:Double>
+            <x:Double x:Key="BaseButtonBorderRadius">22</x:Double>
+
+            <x:Double x:Key="MainMenuLabelFontsize">18</x:Double>
+            <x:Double x:Key="MainMenuIconFontsize">20</x:Double>
+            <x:Double x:Key="MainMenuHeaderFontsize">18</x:Double>
+            <x:Double x:Key="MainMenuLabelTranslationX">10</x:Double>
+            <x:Double x:Key="MainMenuChevronRightFontsize">24</x:Double>
+            <x:Double x:Key="MainMenuIconWidthRequest">22</x:Double>
+
+            <!--  colors  -->
+            <Color x:Key="HeaderTextColor">#585858</Color>
+            <Color x:Key="BodyTextColor">#DB940B</Color>
+            <Color x:Key="ButtonBackgroundColor">#585858</Color>
+
+            <!--  font sizes  -->
+            <x:Double x:Key="TitleFontSize">20</x:Double>
+            <x:Double x:Key="BodyFontSize">18</x:Double>
+            <x:Double x:Key="TagTextFontSize">18</x:Double>
+            <x:Double x:Key="StatsNumberFontSize">20</x:Double>
+            <x:Double x:Key="StatsCaptionFontSize">16</x:Double>
+            <x:Double x:Key="ButtonFontSize">14</x:Double>
+
+            <!-- fin de los valores base-->
+            
+            <!-- Imagen de menú hamburguesa -->
+            <FileImageSource x:Key="MenuIcon">menu.png</FileImageSource>
+            
+            <!-- Cores de la aplicación -->
+            <Color x:Key="Color-1">#6A1177</Color> <!-- Menu lateral-->
+            <Color x:Key="Color-2">#358F21</Color> <!-- Pagina en blanco -->
+            <Color x:Key="Color-3">#4A4C3C</Color> <!--  -->
+            <Color x:Key="Color-4">#F55F08</Color> <!-- H1 - titulo  -->
+            <Color x:Key="Color-5">#FFFFFF</Color>  <!-- fondo de pagina  -->
+            <Color x:Key="Color-6">#F4F4F4</Color> <!-- Menu lateral  -->
+
+
+            <!-- Tamaño de la fuente-->
+            <OnPlatform x:Key="Font-s-1" x:TypeArguments="x:Double">
+                <On Platform="iOS">10</On>
+                <On Platform="Android">10</On> 
+                <On Platform="Windows">10</On>
+            </OnPlatform>
+            <OnPlatform x:Key="Font-s-2" x:TypeArguments="x:Double">
+                <On Platform="iOS">14</On>
+                <On Platform="Android">14</On>
+                <On Platform="Windows">14</On>
+            </OnPlatform>
+            <OnPlatform x:Key="Font-s-3" x:TypeArguments="x:Double">
+                <On Platform="iOS">16</On>
+                <On Platform="Android">16</On>
+                <On Platform="Windows">16</On>
+            </OnPlatform>
+            <OnPlatform x:Key="Font-s-4" x:TypeArguments="x:Double">
+                <On Platform="iOS">18</On>
+                <On Platform="Android">18</On>
+                <On Platform="Windows">18</On>
+            </OnPlatform>
+            <OnPlatform x:Key="Font-s-5" x:TypeArguments="x:Double">
+                <On Platform="iOS">20</On>
+                <On Platform="Android">20</On>
+                <On Platform="Windows">20</On>
+            </OnPlatform>
+            <OnPlatform x:Key="Font-s-6" x:TypeArguments="x:Double">
+                <On Platform="iOS">22</On>
+                <On Platform="Android">22</On>
+                <On Platform="Windows">22</On>
+            </OnPlatform>
+            <OnPlatform x:Key="Font-s-7" x:TypeArguments="x:Double">
+                <On Platform="iOS">24</On>
+                <On Platform="Android">24</On>
+                <On Platform="Windows">24</On>
+            </OnPlatform>
+            <OnPlatform x:Key="Font-s-8" x:TypeArguments="x:Double">
+                <On Platform="iOS">44</On>
+                <On Platform="Android">44</On>
+                <On Platform="Windows">44</On>
+            </OnPlatform>
+
+            <!--  font normal  -->
+            <OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String">
+                <On Platform="iOS">HelveticaNeue</On>
+                <On Platform="Android">sans-serif</On>
+                <On Platform="Windows">sans-serif</On>
+            </OnPlatform>
+
+            <!--  font clara  -->
+            <OnPlatform x:Key="LightFontFamily" x:TypeArguments="x:String">
+                <On Platform="iOS">HelveticaNeue-Light</On>
+                <On Platform="Android">sans-serif-light</On>
+                <On Platform="Windows">sans-serif-light</On>
+            </OnPlatform>
+
+            <!--  font tirando a bold  -->
+            <OnPlatform x:Key="MediumFontFamily" x:TypeArguments="x:String">
+                <On Platform="iOS">HelveticaNeue-Medium</On>
+                <On Platform="Android">sans-serif-medium</On>
+                <On Platform="Windows">sans-serif-medium</On>
+            </OnPlatform>
+
+            <!-- Color de fondo del menú principal -->
+            <Style x:Key="MainPageMenuStyle" TargetType="ContentPage" >
+                <Setter Property="BackgroundColor" Value="{StaticResource Color-6}"/>
+            </Style>
+
+            <!-- Color de fondo de las paginas -->
+            <Style x:Key="MainPageStyle" TargetType="ContentPage" >
+                <Setter Property="BackgroundColor" Value="{StaticResource Color-5}"/>
+            </Style>
+
+
+            <Style x:Key="TextMenu" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource Color-2}" />
+                <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource Font-s-5}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="Margin" Value="0,10" />
+            </Style>
+
+            <Style x:Key="TextH1" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource Color-1}" />
+                <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource Font-s-7}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="TextH2" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource Color-2}" />
+                <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource Font-s-5}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="TextP" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource Color-3}" />
+                <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource Font-s-5}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="Margin" Value="4" />
+            </Style>
+
+            <Style x:Key="TextClassic" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource Color-3}" />
+                <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource Font-s-5}" />
+                <Setter Property="Margin" Value="10,5" />
+                <Setter Property="VerticalTextAlignment" Value="Start" />
+            </Style>
+            <Style x:Key="TextH3" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource Color-4}" />
+                <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource Font-s-3}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="TextP3" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource Color-3}" />
+                <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource Font-s-3}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="MainMenuListViewStyle" TargetType="ListView">
+                <Setter Property="SeparatorVisibility" Value="Default" />
+                <Setter Property="SeparatorColor" Value="{StaticResource Color-3}" />
+            </Style>
+
+            <Style x:Key="AppButtom" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource Color-1}" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="HeightRequest" Value="40" />
+                <Setter Property="BorderRadius" Value="30" />
+                <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource Font-s-3}" />
+            </Style>
+
+            <Style x:Key="AppButtomSocial" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource Color-1}" />
+                <Setter Property="TextColor" Value="{StaticResource Color-5}" />
+                <Setter Property="HeightRequest" Value="40" />
+                <Setter Property="BorderRadius" Value="3" />
+                <Setter Property="Margin" Value="0,10,0,5" />
+                <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource Font-s-3}" />
+            </Style>
+
+
+
+
+
+
+
+
+
+
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

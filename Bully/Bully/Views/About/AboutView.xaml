@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bully.Views.About.AboutView" Title="{Binding Title}"
+               Style="{ StaticResource MainPageStyle}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="5,20,5,5">
+                <Label Style="{StaticResource TextP}" Text="Está app fue creada por una persona que ha sufrido acoso escolar. Teniendo en cuenta la experiencia vivida, se ha intentado crear una aplicación amigable que anime a denunciar. El logotipo de la aplicación representa la ayuda con las que cuentan las víctimas del acoso escolar en España por parte de las administraciones públicas y ONGs." />
+                <Label Style="{StaticResource TextP}" Text="El acoso escolar es un tema serio, debe ser denunciado en seguida por quien sufre o conoce algún caso. Está app agiliza el proceso de denuncia y puede ser instalada en Windows 10 / Windows Mobile 10, Android, Iphone y Ipad. (¡Gracias Xamarin!)"/>
+                <Label Style="{StaticResource TextP}" Text="Está enfocada a España, pero lo ideal es que estuviera enfocado a todo el mundo, pero como cada país tiene sus normas, recomendamos las ONGs y usuarios que baje el código fuente y que rellene con los datos correspondientes de su país. (Caso no tenga cuenta en las tiendas o necesite ayuda, estaré encantado de ayudar)." />
+                <Label Style="{StaticResource TextP}" Text="El código fuente se puede descargar en esta página https://github.com/elbrinner/acoso-e . Lo único que debes respetar es mantener esta pantalla intacta con acceso desde la aplicación y usar otras imágenes, ya que las actuales cuenta con licencia para un solo usuario." />
+                <Label Style="{StaticResource TextP}" Text="Espero que sea útil está aplicación."></Label>
+                <Label Style="{StaticResource TextP}" Text="Elbrinner da Silva Fernandes - @elbrinner"></Label>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

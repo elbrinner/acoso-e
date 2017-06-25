@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfRadialMenu.Android</name>
+    </assembly>
+    <members>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.Image">
+            Gets / sets image name available in resources
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.Text">
+            Gets / sets Text that can be displayed below the icon
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.FontIconText">
+            Gets / sets  font icon Text that can be displayed as the icon
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.View">
+            Gets / sets custom View that can be displayed
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.TextColor">
+            Gets / sets color of the bottom text
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.FontIconColor">
+            Gets / sets color of the font icon
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.ItemHeight">
+            Gets / sets height of the item
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.ItemWidth">
+            Gets / sets width of the item
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.TextSize">
+            Gets / sets size of the bottom text
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.FontIconSize">
+            Gets / sets size of the font icon
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.IconFont">
+            Gets / sets typeface of the font icon
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.TextTypeFace">
+            Gets / sets type face of the bottom text
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenuItem.Items">
+            Gets / sets subitems for every radialmenu item
+        </member>
+        <member name="T:Syncfusion.SfRadialMenu.Android.SfRadialMenu">
+            RadialMenu Class
+        </member>
+        <member name="M:Syncfusion.SfRadialMenu.Android.SfRadialMenu.#ctor(Android.Content.Context)">
+            Contructor
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.CenterButtonView">
+            Gets / Sets CenterButton View
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.Items">
+            Gets / Sets list of Items
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.Point">
+            Gets / Sets Point for the menu to be placed
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.IsOpen">
+            Gets / Sets the menu to be opened
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.EnableRotation">
+            Enables / Disables rotation
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.IsDragEnabled">
+            Gets / Sets the menu to be opened
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.CenterButtonRadius">
+            Gets / Sets the center button radius
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.CenterButtonText">
+            Gets / Sets the font icon text for center button
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.CenterButtonBackText">
+            Gets / Sets the font icon text for center back button
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.CenterButtonBackTypeface">
+            Gets / Sets the font icon typeface for center back button
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.CenterButtonTypeface">
+            Gets / Sets the font icon typeface for center button
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.OuterRimThickness">
+            Gets / Sets the thickness of the outer rim
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.RimRadius">
+            Gets / Sets the radius of the rim
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.RimColor">
+            Gets / Sets the color of the rim
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.CenterButtonTextColor">
+            Gets / Sets the font icon color for center button
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.CenterButtonBorderColor">
+            Gets / Sets the border color for center icon
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.RimActiveColor">
+            Gets / Sets active rim color of outer rim
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.OuterRimColor">
+            Gets / Sets  rim color of outer rim
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.CenterButtonBackIcon">
+            Gets / Sets custom view of  rim color of outer rim
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.SeparatorColor">
+            Gets / Sets separator color of outer rim
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.CenterButtonBackground">
+            Gets / Sets background color of center button
+        </member>
+        <member name="P:Syncfusion.SfRadialMenu.Android.SfRadialMenu.SeparatorThickeness">
+            Gets / Sets thickness of the separator 
+        </member>
+        <member name="M:Syncfusion.SfRadialMenu.Android.SfRadialMenu.Show">
+            Opens the Menu programatically
+        </member>
+        <member name="M:Syncfusion.SfRadialMenu.Android.SfRadialMenu.Close">
+            Closes the Menu programatically
+        </member>
+    </members>
+</doc>

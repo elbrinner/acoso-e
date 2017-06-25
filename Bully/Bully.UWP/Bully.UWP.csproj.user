@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DeviceId>30F105C9-681E-420b-A277-7C086EAD8A4E</DeviceId>
+    <UseEmulator>true</UseEmulator>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AppIconSource>C:\Develop\06 - ejemplos propios\AppBully\Bully\Bully.UWP\Assets\400.png</AppIconSource>
+    <LargeTileSource>C:\Develop\06 - ejemplos propios\AppBully\Bully\Bully.UWP\Assets\400.png</LargeTileSource>
+    <WideTileSource>C:\Develop\06 - ejemplos propios\AppBully\Bully\Bully.UWP\Assets\400.png</WideTileSource>
+    <SmallTileSource>C:\Develop\06 - ejemplos propios\AppBully\Bully\Bully.UWP\Assets\400.png</SmallTileSource>
+    <MediumTileSource>C:\Develop\06 - ejemplos propios\AppBully\Bully\Bully.UWP\Assets\400.png</MediumTileSource>
+    <Source>C:\Develop\06 - ejemplos propios\AppBully\Bully\Bully.UWP\Assets\400.png</Source>
+    <SplashScreenSource>C:\Develop\06 - ejemplos propios\AppBully\Bully\Bully.UWP\Assets\400.png</SplashScreenSource>
+    <PackageLogoSource>C:\Develop\06 - ejemplos propios\AppBully\Bully\Bully.UWP\Assets\400.png</PackageLogoSource>
+    <BadgeLogoSource>C:\Develop\06 - ejemplos propios\AppBully\Bully\Bully.UWP\Assets\400.png</BadgeLogoSource>
+    <AppxShowAllApps>False</AppxShowAllApps>
+    <AppxPackageIsForStore>True</AppxPackageIsForStore>
+    <AppxBuildConfigurationSelection>x86|x64|arm</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DeviceId>30F105C9-681E-420b-A277-7C086EAD8A4E</DeviceId>
+    <UseEmulator>false</UseEmulator>
+    <UseSimulator>false</UseSimulator>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <DeviceId>30F105C9-681E-420b-A277-7C086EAD8A4E</DeviceId>
+    <UseEmulator>true</UseEmulator>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <UseSimulator>false</UseSimulator>
+    <DeviceId>30F105C9-681E-420b-A277-7C086EAD8A4E</DeviceId>
+    <UseEmulator>false</UseEmulator>
+  </PropertyGroup>
+</Project>

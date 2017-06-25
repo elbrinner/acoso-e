@@ -1,0 +1,671 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfSparkline.XForms.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.UI.Xaml.Charts.FastReflectionCaches">
+            <summary>
+            Contains members to hold PropertyInfo.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Charts.ColumnBase">
+            <summary>
+            Represents a control that indicates a base of column sparkline. 
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Charts.SparklineBase" />
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.ColumnBase.HighlightSegment">
+            <summary>
+            Gets or sets value whether to highlight segment on mouse move.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.ColumnBase.HighlightSegmentProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.ColumnBase.HighlightSegment"/> property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Charts.MarkerBase.Reset">
+            <summary>
+            Reset the marker.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Charts.MarkerBase.AddMarker(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Add the marker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.MarkerBase.XBindingPath">
+            <summary>
+            Gets or sets the property path of the x data in ItemsSource.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.MarkerBase.XBindingPathProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.MarkerBase.XBindingPath"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.MarkerBase.AxisStyle">
+            <summary>
+            Gets or sets the axis line style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.MarkerBase.AxisStyleProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.MarkerBase.AxisStyle"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.MarkerBase.ShowAxis">
+            <summary>
+            Gets or sets a value whether to show/hide axis
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.MarkerBase.ShowAxisProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.MarkerBase.ShowAxis"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.MarkerBase.AxisOrigin">
+            <summary>
+            Gets or sets axis origin
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.MarkerBase.AxisOriginProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.MarkerBase.AxisOrigin"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.MarkerBase.TrackBallStyle">
+            <summary>
+            Gets or sets the track ball style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.MarkerBase.TrackBallStyleProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.MarkerBase.TrackBallStyle"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.MarkerBase.LineStyle">
+            <summary>
+            Gets or sets line style for track ball.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.MarkerBase.LineStyleProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.MarkerBase.LineStyle"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.MarkerBase.ShowTrackBall">
+            <summary>
+            Gets or sets a value for show track ball.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.MarkerBase.ShowTrackBallProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.MarkerBase.ShowTrackBall"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.MarkerBase.MarkerVisibility">
+            <summary>
+            Gets or sets the marker visibility.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.MarkerBase.MarkerVisibilityProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.MarkerBase.MarkerVisibility"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.MarkerBase.MarkerTemplateSelector">
+            <summary>
+            Gets or sets marker template selector to customize the each markers
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.MarkerBase.MarkerTemplateSeletorProperty">
+            <summary>
+            The DependencyProperty for <see cref="!:MarkerTemplateSeletor"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SfColumnSparkline.XBindingPath">
+            <summary>
+            Gets or sets the property path of the x data in ItemsSource.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SfColumnSparkline.XBindingPathProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SfColumnSparkline.XBindingPath"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SfColumnSparkline.AxisStyle">
+            <summary>
+            Gets or sets the axis line style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SfColumnSparkline.AxisStyleProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SfColumnSparkline.AxisStyle"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SfColumnSparkline.ShowAxis">
+            <summary>
+            Gets or sets show axis
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SfColumnSparkline.ShowAxisProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SfColumnSparkline.ShowAxis"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SfColumnSparkline.AxisOrigin">
+            <summary>
+            Gets or sets axis origin
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SfColumnSparkline.AxisOriginProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SfColumnSparkline.AxisOrigin"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SfColumnSparkline.SegmentTemplateSelector">
+            <summary>
+            Gets or sets the segment template selector to customize the each segments.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SfColumnSparkline.SegmentTemplateSelectorProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SfColumnSparkline.SegmentTemplateSelector"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SfWinLossSparkline.NegativePointBrush">
+            <summary>
+            Gets or sets the brush to paint the interior of the negative segment(s).
+            </summary>
+            <value>
+            The <see cref="!:System.Windows.Media.Brush"/> value.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SfWinLossSparkline.NegativePointBrushProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SfWinLossSparkline.NegativePointBrush"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SfWinLossSparkline.NeutralBrush">
+            <summary>
+            Gets or sets the brush to paint the interior of the neutral segment(s).
+            </summary>
+            <value>
+            The <see cref="!:System.Windows.Media.Brush"/> value.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SfWinLossSparkline.NeutralBrushProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SfWinLossSparkline.NeutralBrush"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklineBase.EnableAnimation">
+            <summary>
+            Gets or sets a value to animate the sparkline on loading and whenever ItemsSource change.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SparklineBase.EnableAnimationProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SparklineBase.EnableAnimation"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklineBase.Interior">
+            <summary>
+            Gets or sets the brush to paint the interior of the sparkline.
+            </summary>
+            <value>
+            The <see cref="!:System.Windows.Media.Brush"/> value.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SparklineBase.InteriorProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SparklineBase.Interior"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklineBase.RangeBandBrush">
+            <summary>
+            Gets or sets the range band brush.
+            </summary>
+            <value>
+            The <see cref="!:System.Windows.Media.Brush"/> value.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SparklineBase.RangeBandBrushProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SparklineBase.RangeBandBrush"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklineBase.BandRangeEnd">
+            <summary>
+            Gets or sets the maximum range band value in Y axis.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SparklineBase.BandRangeEndProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SparklineBase.BandRangeEnd"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklineBase.BandRangeStart">
+            <summary>
+            Gets or sets the minimum range band value in Y axis.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SparklineBase.BandRangeStartProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SparklineBase.BandRangeStart"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklineBase.MinimumYValue">
+            <summary>
+            Gets or sets the minimum value for Y axis.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SparklineBase.MinimumYValueProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SparklineBase.MinimumYValue"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklineBase.MaximumYValue">
+            <summary>
+            Gets or sets the maximum value for Y axis.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SparklineBase.MaximumYValueProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SparklineBase.MaximumYValue"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklineBase.StrokeThickness">
+            <summary>
+            Gets or sets stroke thickness for segments
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SparklineBase.StrokeThicknessProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SparklineBase.StrokeThickness"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklineBase.Stroke">
+            <summary>
+            Gets or sets the brush to paint outline of the sparkline.
+            </summary>
+            <value>
+            The <see cref="!:System.Windows.Media.Brush"/> value.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SparklineBase.StrokeProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SparklineBase.Stroke"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklineBase.ItemsSource">
+            <summary>
+            Gets or sets an IEnumerable source used to generate sparkline.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SparklineBase.ItemsSourceProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SparklineBase.ItemsSource"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklineBase.YBindingPath">
+            <summary>
+            Gets or sets the property path to retrieve y data from ItemsSource.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SparklineBase.YBindingPathProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SparklineBase.YBindingPath"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklineBase.EmptyPointValue">
+            <summary>
+            Gets or sets a value that determines how to calculate value for empty point.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SparklineBase.EmptyPointValueProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SparklineBase.EmptyPointValue"/> property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Charts.SparklineBase.TransformToVisible(System.Double,System.Double)">
+            <summary>
+            Creates the screen point from data point.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Charts.SparklineBase.GeneratePoints(System.String)">
+            <summary>
+            Generate the points from the items source
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Charts.SparklineBase.SetIndividualPoints(System.Int32,System.Object,System.Boolean,System.String)">
+            <summary>
+            set the individual points to the existing collection
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Charts.SparklineBase.UpdateArea">
+            <summary>
+            To update the sparkline
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Charts.SparklineBase.SetBinding(Windows.UI.Xaml.Shapes.Shape)">
+            <summary>
+            To set the visual binding for the element
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Charts.SparklineBase.RenderSegments">
+            <summary>
+            To render the visual segments
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklineMouseMoveEventArgs.Value">
+            <summary>
+            Gets or sets the point.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklineMouseMoveEventArgs.Coordinate">
+            <summary>
+            Gets or sets the co-ordinate points.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklineMouseMoveEventArgs.OriginalSource">
+            <summary>
+            Gets or sets the elements.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklineMouseMoveEventArgs.RootPanel">
+            <summary>
+            Gets or sets the panel
+            .
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.MarkerBrush">
+            <summary>
+            Gets or sets the brush to paint the markers of the sparkline.
+            </summary>
+            <value>
+            The <see cref="!:System.Windows.Media.Brush"/> value.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.MarkerBrushProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.MarkerBrush"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.MarkerTemplate">
+            <summary>
+            Gets or sets the marker template.
+            </summary>
+            <value>
+            <see cref="!:System.Windows.DataTemplate"/>
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.MarkerTemplateProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.MarkerTemplate"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.MarkerHeight">
+            <summary>
+            Gets or sets height of the marker.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.MarkerHeightProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.MarkerHeight"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.MarkerWidth">
+            <summary>
+            Gets or sets width of the marker.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.MarkerWidthProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.MarkerWidth"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SegmentTemplateSelector.FirstPointBrush">
+            <summary>
+            Gets or sets the brush to paint the first point of the sparkline.
+            </summary>
+            <value>
+            The <see cref="!:System.Windows.Media.Brush"/> value.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SegmentTemplateSelector.FirstPointBrushProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SegmentTemplateSelector.FirstPointBrush"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SegmentTemplateSelector.LastPointBrush">
+            <summary>
+            Gets or sets the brush to paint the last point of the sparkline.
+            </summary>
+            <value>
+            The <see cref="!:System.Windows.Media.Brush"/> value.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SegmentTemplateSelector.LastPointBrushProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SegmentTemplateSelector.LastPointBrush"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SegmentTemplateSelector.NegativePointBrush">
+            <summary>
+            Gets or sets the brush to paint the negative points of the sparkline.
+            </summary>
+            <value>
+            The <see cref="!:System.Windows.Media.Brush"/> value.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SegmentTemplateSelector.NegativePointBrushProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SegmentTemplateSelector.NegativePointBrush"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SegmentTemplateSelector.HighPointBrush">
+            <summary>
+            Gets or sets the brush to paint the high points of the sparkline.
+            </summary>
+            <value>
+            The <see cref="!:System.Windows.Media.Brush"/> value.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SegmentTemplateSelector.HighPointBrushProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SegmentTemplateSelector.HighPointBrush"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SegmentTemplateSelector.LowPointBrush">
+            <summary>
+            Gets or sets the brush to paint the low point(s) of the sparkline.
+            </summary>
+            <value>
+            The <see cref="!:System.Windows.Media.Brush"/> value.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.SegmentTemplateSelector.LowPointBrushProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.SegmentTemplateSelector.LowPointBrush"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklinePointsInfo.Coordinate">
+            <summary>
+            Gets or sets the co-ordinates points. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.SparklinePointsInfo.Value">
+            <summary>
+            Gets or sets the points. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.TemplateSelector.MaximumY">
+            <summary>
+            Gets the maximum Y axis value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.TemplateSelector.MinimumY">
+            <summary>
+            Gets the minimum Y axis value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.TemplateSelector.Sparkline">
+            <summary>
+            Gets the sparkline.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.TemplateSelector.DataCount">
+            <summary>
+            Gets the data count.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.TemplateSelector.MinimumX">
+            <summary>
+            Gets the minimum X axis value.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Charts.ChartDataUtils">
+            <summary>
+            Contains utility methods to manipulate data.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Charts.ChartDataUtils.GetObjectByPath(System.Object,System.String)">
+            <summary>
+             Gets the object by path.
+             </summary>
+             <param name="obj">The obj value.</param>
+             <param name="path">The path value.</param>
+             <returns>Returns the object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Charts.ChartDataUtils.ConvertPathObjectToPositionValue(System.Object)">
+            <summary>
+            Converts to double.
+            </summary>
+            <param name="obj">The obj value.</param>
+            <returns>The double value</returns>
+            <seealso cref="T:Syncfusion.UI.Xaml.Charts.ChartDataUtils"/>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Charts.ChartDataUtils.GetPositionalPathValue(System.Object,System.String)">
+            <summary>
+            Gets the double by path.
+            </summary>
+            <param name="obj">The obj value.</param>
+            <param name="path">The path value.</param>
+            <returns>The double value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Charts.ChartDataUtils.GetPropertyInfo(System.Object,System.String)">
+            <summary>
+            Gets the property from the specified object.
+            </summary>
+            <param name="obj">Object to retrieve a property.</param>
+            <param name="path">Property name</param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Charts.PointsSortByXComparer">
+            <summary>
+            Custom comaprer to compare the chart points by x-value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.PointsSortByXComparer.diff">
+            <summary>
+            Initializes diff
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Charts.PointsSortByXComparer.Compare(Windows.Foundation.Point,Windows.Foundation.Point)">
+            <summary>
+            Compares the specified p1 with the specified p2.
+            </summary>
+            <param name="point1">The point1.</param>
+            <param name="point2">The point2.</param>
+            <returns>
+            negative value if point1 &lt; point2
+            <para>
+            zero if point1 = point2.
+            </para>
+            <para>
+            positive value if point1 &gt; point2
+            </para>
+            </returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Charts.ChartColorModifier">
+            <summary>
+            ChartColorModifed To modify a given color.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Charts.ChartColorModifier.GetDarkenedColor(Windows.UI.Xaml.Media.Brush,System.Double)" -->
+        <member name="P:Syncfusion.UI.Xaml.Charts.RectAnimation.BeginTime">
+            <summary>
+            Gets or sets the animation begining time.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.RectAnimation.BeginTimeProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.RectAnimation.BeginTime"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.RectAnimation.From">
+            <summary>
+            Gets or sets the starting time
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.RectAnimation.FromProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.RectAnimation.From"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.RectAnimation.To">
+            <summary>
+            Gets or sets the ending time
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.RectAnimation.ToProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.RectAnimation.To"/> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Charts.RectAnimation.Duration">
+            <summary>
+            Gets or sets the time duration.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Charts.RectAnimation.DurationProperty">
+            <summary>
+            The DependencyProperty for <see cref="P:Syncfusion.UI.Xaml.Charts.RectAnimation.Duration"/> property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Charts.RectAnimation.SetTarget(Windows.UI.Xaml.UIElement)">
+            <summary>
+            Set the animation target.
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Charts.RectAnimation.Stop">
+            <summary>
+            Stop the animation.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Charts.RectAnimation.Begin">
+            <summary>
+            Start the animation.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSparkline.XForms.UWP.Syncfusion_SfSparkline_XForms_UWP_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSparkline.XForms.UWP.Syncfusion_SfSparkline_XForms_UWP_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSparkline.XForms.UWP.Syncfusion_SfSparkline_XForms_UWP_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+    </members>
+</doc>

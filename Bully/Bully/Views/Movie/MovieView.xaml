@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bully.Views.Movie.MovieView"
+             xmlns:templates="clr-namespace:Bully.Views.Main.Templates;assembly=Bully"
+             Title="{Binding Title}"
+     Style="{ StaticResource MainPageStyle}">
+    <ListView
+			ItemsSource="{Binding ListMovie}"
+            SelectedItem="{Binding SelectedMovie, Mode=TwoWay}"
+			SeparatorVisibility="Default"
+			VerticalOptions="FillAndExpand"
+			Style="{DynamicResource MainMenuListViewStyle}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ImageCell
+          ImageSource="{Binding Image}"  
+          Text="{Binding Title}"
+          TextColor="{StaticResource Color-4}"
+          Detail="{Binding Description}"
+          DetailColor="{StaticResource Color-3}"/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

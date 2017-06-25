@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+  xmlns="http://xamarin.com/schemas/2014/forms" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  x:Class="Bully.Views.Main.MainMenu"
+  xmlns:templates="clr-namespace:Bully.Views.Main.Templates;assembly=Bully"
+  Title="Menú" 
+  Icon="{StaticResource MenuIcon}" 
+  Style="{ StaticResource MainPageMenuStyle}">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <Image Source="logo.png" WidthRequest="120" x:Name="logo"  Margin="0,20,0,0" HorizontalOptions="Center" ></Image>
+            <ListView
+			ItemsSource="{Binding Menu}"
+            SelectedItem="{Binding SelectedMenu, Mode=TwoWay}"
+			SeparatorVisibility="None"
+			VerticalOptions="FillAndExpand"
+			Style="{DynamicResource MainMenuListViewStyle}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <templates:MainMenuItemTemplate />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

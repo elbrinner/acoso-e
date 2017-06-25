@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfNavigationDrawer.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfNavigationDrawer.XForms.Transition">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNavigationDrawer.XForms.Position">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.Transition">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.TransitionProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.Position">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.PositionProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.ContentView">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.ContentViewProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerContentView">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerContentViewProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerHeaderView">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerHeaderViewProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerFooterView">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerFooterViewProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.TouchThreshold">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.TouchThresholdProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerHeight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerHeightProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerWidth">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerWidthProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.Duration">
+            <summary>
+            Gets or sets the Duration
+            </summary>
+            <value>The Duration of the Animation.</value>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DurationProperty">
+            <summary>
+            The duration property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerHeaderHeight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerHeaderHeightProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerFooterHeight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.DrawerFooterHeightProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.IsOpen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.IsOpenProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.EnableSwipeGesture">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.EnableSwipeGestureProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.OnSizeRequest(System.Double,System.Double)">
+            <summary>
+            Raises the size request event.
+            </summary>
+            <param name="widthConstraint">Width constraint.</param>
+            <param name="heightConstraint">Height constraint.</param>
+        </member>
+    </members>
+</doc>

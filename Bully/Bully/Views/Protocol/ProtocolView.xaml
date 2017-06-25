@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bully.Views.Protocol.ProtocolView"
+              xmlns:templates="clr-namespace:Bully.Views.Main.Templates;assembly=Bully"
+             Title="Protocolos de actuación"
+     Style="{ StaticResource MainPageStyle}">
+    <StackLayout Padding="10">
+        <!--
+        <Label  Text="Desde esta sección se puede acceder a los protocolos de actuación e intervención ante situaciones de acoso escolar, maltrato infantil, de violencia de género en el ámbito educativo, de algunas Comunidades Autónomas, así como de otras entidades y organismos internacionales." />
+-->
+        <ListView
+			ItemsSource="{Binding ListLink}"
+            SelectedItem="{Binding SelectedLink, Mode=TwoWay}"
+			SeparatorVisibility="Default"
+			VerticalOptions="FillAndExpand"
+			Style="{DynamicResource MainMenuListViewStyle}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <!--
+                    <ViewCell>
+                        <templates:MenuItemTemplate />
+                    </ViewCell>
+                    -->
+                        <ImageCell
+          ImageSource="logo.png"  
+          Text="{Binding Title}"
+          TextColor="{StaticResource Color-4}"
+          Detail="{Binding Description}"
+          DetailColor="{StaticResource Color-3}"/>
+                    </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+
+
+
+
+    </StackLayout>
+</ContentPage>

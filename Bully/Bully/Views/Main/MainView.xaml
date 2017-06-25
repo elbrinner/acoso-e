@@ -1,0 +1,15 @@
+﻿<MasterDetailPage
+  xmlns="http://xamarin.com/schemas/2014/forms"
+   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bully.Views.Main.MainView" 
+    xmlns:main="clr-namespace:Bully.Views.Main;assembly=Bully" 
+  Title="Inicio"
+  Style="{ StaticResource MainPageMenuStyle}"
+  IsPresented="False">
+    <MasterDetailPage.Master>
+        <main:MainMenu BindingContext="{Binding MenuViewModel}" />
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <ContentPage BackgroundColor="Transparent" />
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

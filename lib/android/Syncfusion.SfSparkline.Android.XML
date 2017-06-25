@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfSparkline.Android</name>
+    </assembly>
+    <members>
+        <member name="P:Syncfusion.SfSparkline.Android.SparklineAxis.Visibility">
+            <summary>
+            Gets or sets visibility of the axis.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SparklineAxis.Color">
+            <summary>
+            Gets or sets a stroke color of the axis line.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SparklineAxis.StrokeWidth">
+            <summary>
+            Gets or sets the stroke width of the axis line.
+            </summary>
+            <value>The width of the stroke.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SparklineAxis.Origin">
+            <summary>
+            Gets or sets origin of the sparkline axis.
+            </summary>
+            <value>The origin.</value>
+        </member>
+        <member name="T:Syncfusion.SfSparkline.Android.FastReflectionCaches">
+            <summary>
+            Contains members to hold PropertyInfo.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfAreaSparkline.Color">
+            <summary>
+            Gets or sets color to fill the interior of the area sparkline.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfAreaSparkline.Marker">
+            <summary>
+            Gets or sets marker to the sparkline.
+            </summary>
+            <value>The marker.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfColumnSparkline.Color">
+            <summary>
+            Gets or sets color to fill the interior of the column sparkline.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfLineSparkline.Marker">
+            <summary>
+            Gets or sets marker to the sparkline.
+            </summary>
+            <value>The marker.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfSparklineBase.RangeBandColor">
+            <summary>
+            Gets or sets color of range band.
+            </summary>
+            <value>The color of the range band.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfSparklineBase.FirstPointColor">
+            <summary>
+            Gets or sets color to highlight the first point.
+            </summary>
+            <value>The first color of the point.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfSparklineBase.LastPointColor">
+            <summary>
+            Gets or sets color to highlight the last point.
+            </summary>
+            <value>The last color of the point.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfSparklineBase.HighPointColor">
+            <summary>
+            Gets or sets color to highlight the highest point.
+            </summary>
+            <value>The color of the high point.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfSparklineBase.LowPointColor">
+            <summary>
+            Gets or sets color to highlight the lowest point.
+            </summary>
+            <value>The color of the low point.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfSparklineBase.NegativePointsColor">
+            <summary>
+            Gets or sets color to highlight the negative points.
+            </summary>
+            <value>The color of the negative points.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfSparklineBase.RangeBandEnd">
+            <summary>
+            Gets or sets end value of range band in Y axis.
+            </summary>
+            <value>The range band end.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfSparklineBase.RangeBandStart">
+            <summary>
+            Gets or sets start value of range band in Y axis.
+            </summary>
+            <value>The range band start.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfSparklineBase.StrokeColor">
+            <summary>
+            Gets or sets stroke color of the sparkline.
+            </summary>
+            <value>The color of the stroke.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfSparklineBase.StrokeWidth">
+            <summary>
+            Gets or sets stroke width of the sparkline.
+            </summary>
+            <value>The width of the stroke.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfSparklineBase.Axis">
+            <summary>
+            Gets or sets axis to the sparklines. It is used to enable/disable the axis and customize its appearance.
+            </summary>
+            <value>The axis.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfSparklineBase.YBindingPath">
+            <summary>
+            Gets or sets the property path to retrieve Y data from ItemsSource.
+            </summary>
+            <value>The YB inding path.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfSparklineBase.EmptyPointValue">
+            <summary>
+            Gets or sets empty point value. It can be average, zero or none.
+            </summary>
+            <value>The empty point value.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfSparklineBase.MinimumYValue">
+            <summary>
+            Gets or sets minimum Y-axis value
+            </summary>
+            <value>The minimum YValue.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfSparklineBase.MaximumYValue">
+            <summary>
+            Gets or sets maximum Y-Axis value
+            </summary>
+            <value>The maximum YValue.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfSparklineBase.ItemsSource">
+            <summary>
+            Gets or sets the data source for sparkline.
+            </summary>
+            <value>The items source.</value>
+        </member>
+        <member name="M:Syncfusion.SfSparkline.Android.SfSparklineBase.TransformToVisible(System.Double,System.Double)">
+            <summary>
+            Creates the screen point from data point.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSparkline.Android.SfSparklineBase.RenderSegments(Syncfusion.SfSparkline.Android.DrawingContext)">
+            <summary>
+            To render the visual segments
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSparkline.Android.SfSparklineBase.GeneratePoints(System.String)">
+            <summary>
+            Generate the points from the items source
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSparkline.Android.SfSparklineBase.ValidateEmptyPoints(System.Collections.Generic.List{System.Double})">
+            <summary>
+            Validate empty points
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSparkline.Android.SfSparklineBase.FindEmptyPoints">
+            <summary>
+            Find empty points.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSparkline.Android.SfSparklineBase.UpdateMinMaxValues">
+            <summary>
+            Update min/max values from user data.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfSparkline.Android.SfSparklineBase.SetIndividualPoints(System.Int32,System.Object,System.Boolean,System.String)">
+            <summary>
+            set the individual points to the existing collection
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfWinLossSparkline.NeutralPointsColor">
+            <summary>
+            Gets or sets color to fill the interior of neutral columns.
+            </summary>
+            <value>The color of the neutral points.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SfWinLossSparkline.Color">
+            <summary>
+            Gets or sets color to fill the interior of positive columns.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SparklineMarker.Height">
+            <summary>
+            Gets or sets height of the marker.
+            </summary>
+            <value>The height.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SparklineMarker.Width">
+            <summary>
+            Gets or sets width of the marker.
+            </summary>
+            <value>The width.</value>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SparklineMarker.Visibility">
+            <summary>
+            Gets or sets visibility of the marker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfSparkline.Android.SparklineMarker.Color">
+            <summary>
+            Gets or sets color of the marker.
+            </summary>
+            <value>The color.</value>
+        </member>
+    </members>
+</doc>

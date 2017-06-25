@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfSchedule.iOS</name>
+    </assembly>
+    <members>
+        <member name="F:Syncfusion.SfSchedule.iOS.SFScheduleView.SFScheduleViewDay">
+            
+            
+                 Day View.
+                 </member>
+        <member name="F:Syncfusion.SfSchedule.iOS.SFScheduleView.SFScheduleViewWeek">
+            
+            
+                 Week View.
+                 </member>
+        <member name="F:Syncfusion.SfSchedule.iOS.SFScheduleView.SFScheduleViewWorkWeek">
+            
+            
+                 Work Week View.
+                 </member>
+        <member name="F:Syncfusion.SfSchedule.iOS.SFScheduleView.SFScheduleViewMonth">
+            
+            
+                 Month View.
+                 </member>
+        <member name="F:Syncfusion.SfSchedule.iOS.RecurrenceType.SFRecurrenceTypeDaily">
+            
+            
+                 Daily.
+                </member>
+        <member name="F:Syncfusion.SfSchedule.iOS.RecurrenceType.SFRecurrenceTypeWeekly">
+            
+            
+                 Weekly</member>
+        <member name="F:Syncfusion.SfSchedule.iOS.RecurrenceType.SFRecurrenceTypeMonthly">
+            
+            
+                 Monthly.
+                 </member>
+        <member name="F:Syncfusion.SfSchedule.iOS.RecurrenceType.SFRecurrenceTypeYearly">
+            
+            
+                 Yearly.
+                 </member>
+        <member name="F:Syncfusion.SfSchedule.iOS.SFMonthNavigationDirections.Vertical">
+            
+            
+                 Vertical.
+                 </member>
+        <member name="F:Syncfusion.SfSchedule.iOS.SFMonthNavigationDirections.Horizontal">
+            
+            
+                 Horizontal.
+                 </member>
+        <member name="F:Syncfusion.SfSchedule.iOS.SFViewLayoutOptions.Default">
+            
+            
+                 Default.
+                 </member>
+        <member name="F:Syncfusion.SfSchedule.iOS.SFViewLayoutOptions.Overlay">
+            
+            
+                 Overlay.
+                 </member>
+    </members>
+</doc>

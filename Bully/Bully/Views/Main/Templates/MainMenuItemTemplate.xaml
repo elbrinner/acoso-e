@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bully.Views.Main.Templates.MainMenuItemTemplate">
+    <AbsoluteLayout
+       AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+       AbsoluteLayout.LayoutFlags="All"
+       VerticalOptions="CenterAndExpand"
+       HorizontalOptions="StartAndExpand">
+        <Label
+			Text="{Binding Name}" 
+			Style="{DynamicResource TextMenu}"
+			VerticalTextAlignment="Center"
+			AbsoluteLayout.LayoutBounds="12, 0, 1, 1"
+			AbsoluteLayout.LayoutFlags="WidthProportional, HeightProportional"/>
+    </AbsoluteLayout>
+    </ContentView>

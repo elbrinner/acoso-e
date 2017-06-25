@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfCalendar.iOS</name>
+    </assembly>
+    <members>
+        <member name="F:Syncfusion.SfCalendar.iOS.SFCalendarViewMode.SFCalendarViewModeMonth">
+            
+            
+                 Month View.
+                 </member>
+        <member name="F:Syncfusion.SfCalendar.iOS.SFCalendarViewMode.SFCalendarViewModeYear">
+            
+            
+                 Year View.
+                 </member>
+    </members>
+</doc>

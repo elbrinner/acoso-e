@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bully.Views.Contact.ContactView"
+             Title="Contacto"
+     Style="{ StaticResource MainPageStyle}">
+    <ScrollView>
+        <StackLayout>
+            <Image x:Name="header" Source="formasContacto.jpg" Aspect="AspectFill"/>
+
+
+            <Label Style="{StaticResource TextP}" Text="El Ministerio de Educación de España cuenta con un servicio gratuito 24h por día, 365 días por año para poner fin al acoso escolar y el ciberbulling." />
+
+            <Label Style="{StaticResource TextH1}" Text="Formas de contactar " />
+            
+            <Label Style="{StaticResource TextP}" Text="La forma más rápida y eficaz de contactar es clicando sobre el icono del teléfono en la página principal de la aplicación."></Label>
+       
+            <Label Style="{StaticResource TextH2}" Text="Teléfono: 900 018 018" />
+
+            <Label Style="{StaticResource TextH2}" Text="Email: convivencia.escolar@mecd.es" />
+
+            <Label Style="{StaticResource TextH2}" Text="Skype: 600909073" Margin="0,0,0,30" />
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

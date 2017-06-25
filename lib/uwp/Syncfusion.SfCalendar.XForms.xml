@@ -1,0 +1,1477 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfCalendar.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfCalendar.XForms.SfCalendar">
+            <summary>
+            Sf calendar.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.SfCalendar.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfCalendar.XForms.SfCalendar"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.SfCalendar.ExpandInlineView(System.DateTime)">
+            <summary>
+            Expands the inline view.
+            </summary>
+            <param name="date">Date.</param>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.SfCalendar.CollapseInlineView(System.DateTime)">
+            <summary>
+            Collapses the inline view.
+            </summary>
+            <param name="date">Date.</param>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.SfCalendar.CalendarEventHandler">
+            <summary>
+            Represents the method that will handle the SfCalendar.Calendar event of a SfCalendar.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="args">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfCalendar.XForms.SfCalendar.OnCalendarTapped">
+            <summary>
+            Occurs when on calendar tapped.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.SfCalendar.CalendarTapped(Syncfusion.SfCalendar.XForms.CalendarTappedEventArgs)">
+            <summary>
+            Calendars the tapped.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.SfCalendar.DrawInlineEventHandler">
+            <summary>
+            Draw inline event handler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfCalendar.XForms.SfCalendar.OnInlineLoaded">
+            <summary>
+            Occurs when on inline loaded.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.SfCalendar.DrawInline(Syncfusion.SfCalendar.XForms.InlineEventArgs)">
+            <summary>
+            Draws the inline.
+            </summary>
+            <returns>The inline.</returns>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.SfCalendar.DrawHeaderEventHandler">
+            <summary>
+            Draw header event handler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfCalendar.XForms.SfCalendar.OnHeaderLoaded">
+            <summary>
+            Occurs when on header loaded.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.SfCalendar.DrawHeader(Syncfusion.SfCalendar.XForms.CalendarHeaderEventArgs)">
+            <summary>
+            Draws the header.
+            </summary>
+            <returns>The header.</returns>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.SfCalendar.ViewModeChangedEventHandler">
+            <summary>
+            View mode changed event handler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfCalendar.XForms.SfCalendar.OnViewModeChanged">
+            <summary>
+            Occurs when on view mode changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.SfCalendar.ViewModeChanged(Syncfusion.SfCalendar.XForms.ViewModeChangedEventArgs)">
+            <summary>
+            Views the mode changed.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.SfCalendar.MonthCellEventHandler">
+            <summary>
+            Represents the method that will handle the SfCalendar.MonthCell event of a SfCalendar.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="args">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfCalendar.XForms.SfCalendar.OnMonthCellLoaded">
+            <summary>
+            Occurs when on draw month cell.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.SfCalendar.DrawMonthCell(Syncfusion.SfCalendar.XForms.MonthCell)">
+            <summary>
+            Draws the month cell.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.SfCalendar.YearCellEventHandler">
+            <summary>
+            Represents the method that will handle the SfCalendar.YearCell event of a SfCalendar.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="args">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfCalendar.XForms.SfCalendar.OnYearCellLoaded">
+            <summary>
+            Occurs when on draw year cell.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.SfCalendar.DrawYearCell(Syncfusion.SfCalendar.XForms.YearCell)">
+            <summary>
+            Draws the year cell.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.SfCalendar.SelectionEventHandler">
+            <summary>
+            Represents the method that will handle the SfCalendar.Selection event of a SfCalendar.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="args">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfCalendar.XForms.SfCalendar.SelectionChanged">
+            <summary>
+            Occurs when on calendar tapped.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.SfCalendar.OnSelectionChanged(Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs)">
+            <summary>
+            Calendars the tapped.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.SfCalendar.MonthChangedEventHandler">
+            <summary>
+            Represents the method that will handle the SfCalendar.MonthChanged event of a SfCalendar.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="args">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfCalendar.XForms.SfCalendar.MonthChanged">
+            <summary>
+            Occurs when on calendar tapped.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.SfCalendar.OnMonthChanged(Syncfusion.SfCalendar.XForms.MonthChangedEventArgs)">
+            <summary>
+            Calendars the tapped.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.SfCalendar.InlineToggledEventHandler">
+            <summary>
+            Represents the method that will handle the SfCalendar.InlineToggled event of a SfCalendar.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="args">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfCalendar.XForms.SfCalendar.InlineToggled">
+            <summary>
+            Occurs when on calendar tapped.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.SfCalendar.OnInlineToggled(Syncfusion.SfCalendar.XForms.InlineToggledEventArgs)">
+            <summary>
+            Calendars the tapped.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.SfCalendar.OnSizeRequest(System.Double,System.Double)">
+            <param name="widthConstraint">The available width for the element to use.</param>
+            <param name="heightConstraint">The available height for the element to use.</param>
+            <summary>
+            This method is called during the measure pass of a layout cycle to get the desired size of an element.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.MoveToDate">
+            <summary>
+            Gets or sets the move to date.
+            </summary>
+            <value>The move to date.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.MoveToDateProperty">
+            <summary>
+            Gets or sets the <c>MoveToDate</c> property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.ViewMode">
+            <summary>
+            Gets or sets the view mode.
+            </summary>
+            <value>The view mode.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.ViewModeProperty">
+            <summary>
+            The view mode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.DataSource">
+            <summary>
+            Gets or sets the data source.
+            </summary>
+            <value>The data source.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.DataSourceProperty">
+            <summary>
+            The data source property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.SelectionMode">
+            <summary>
+            Gets or sets the selection mode.
+            </summary>
+            <value>The selection mode.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.SelectionModeProperty">
+            <summary>
+            The selection mode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.TransitionMode">
+            <summary>
+            Gets or sets the transition mode.
+            </summary>
+            <value>The transition mode.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.TransitionModeProperty">
+            <summary>
+            The transition mode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.MonthViewSettings">
+            <summary>
+            Gets or sets the month view settings.
+            </summary>
+            <value>The month view settings.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.MonthViewSettingsProperty">
+            <summary>
+            The month view settings property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.MinDate">
+            <summary>
+            Gets or sets the minimum date.
+            </summary>
+            <value>The minimum date.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.MinDateProperty">
+            <summary>
+            The minimum date property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.DisplayDate">
+            <summary>
+            Gets or sets the display date.
+            </summary>
+            <value>The display date.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.DisplayDateProperty">
+            <summary>
+            The display date property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.MaxDate">
+            <summary>
+            Gets or sets the max date.
+            </summary>
+            <value>The max date.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.MaxDateProperty">
+            <summary>
+            The max date property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.SelectedDate">
+            <summary>
+            Gets or sets the selected date.
+            </summary>
+            <value>The selected date.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.SelectedDateProperty">
+            <summary>
+            The selected date property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.SelectedDates">
+            <summary>
+            Gets or sets the selected date.
+            </summary>
+            <value>The selected date.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.SelectedDatesProperty">
+            <summary>
+            The selected date property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.Locale">
+            <summary>
+            Gets or sets the locale.
+            </summary>
+            <value>The locale.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.LocaleProperty">
+            <summary>
+            The locale property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.ShowInlineEvents">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfCalendar.XForms.SfCalendar"/> show inline events.
+            </summary>
+            <value><c>true</c> if show inline events; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.ShowInlineEventsProperty">
+            <summary>
+            The show inline events property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.NavigateToMonthOnInActiveDatesSelection">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfCalendar.XForms.SfCalendar"/> navigate to
+            month on in active dates selection.
+            </summary>
+            <value><c>true</c> if navigate to month on in active dates selection; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.NavigateToMonthOnInActiveDatesSelectionProperty">
+            <summary>
+            The navigate to month on in active dates selection property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.ShowNavigationButtons">
+            <summary>
+            Gets or sets the show navigation buttons.
+            </summary>
+            <value>The show navigation buttons.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.ShowNavigationButtonsProperty">
+            <summary>
+            The show navigation buttons property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.ToggleDaySelection">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.SfCalendar.XForms.SfCalendar"/> toggle day selection.
+            </summary>
+            <value><c>true</c> if toggle day selection; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.ToggleDaySelectionProperty">
+            <summary>
+            The toggle day selection property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.FirstDayofWeek">
+            <summary>
+            Gets or sets the first dayof week.
+            </summary>
+            <value>The first dayof week.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.FirstDayofWeekProperty">
+            <summary>
+            The first dayof week property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.HeaderHeight">
+            <summary>
+            Gets or sets the height of the header.
+            </summary>
+            <value>The height of the header.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.HeaderHeightProperty">
+            <summary>
+            The header height property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.ShowHeader">
+            <summary>
+            Gets or sets the show header.
+            </summary>
+            <value>The show header.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.ShowHeaderProperty">
+            <summary>
+            The show header property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.BlackoutDates">
+            <summary>
+            Gets or sets the blackout dates.
+            </summary>
+            <value>The blackout dates.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.BlackoutDatesProperty">
+            <summary>
+            The blackout dates property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.CustomDayLabels">
+            <summary>
+            Gets or sets the custom day labels
+            </summary>
+            <value>The custom day labels</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.CustomDayLabelsProperty">
+            <summary>
+            The custom day labels property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.NavigationButtonHeight">
+            <summary>
+            Gets or sets the height of the navigation button.
+            </summary>
+            <value>The height of the navigation button.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.NavigationButtonHeightProperty">
+            <summary>
+            The navigation button height property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.NavigationButtonWidth">
+            <summary>
+            Gets or sets the width of the navigation button.
+            </summary>
+            <value>The width of the navigation button.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.NavigationButtonWidthProperty">
+            <summary>
+            The navigation button width property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SfCalendar.NavigationArrowThickness">
+            <summary>
+            Gets or sets the navigation arrow thickness.
+            </summary>
+            <value>The navigation arrow thickness.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SfCalendar.NavigationArrowThicknessProperty">
+            <summary>
+            The navigation arrow thickness property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.CalendarTappedEventArgs">
+            <summary>
+            Calendar tapped event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.CalendarTappedEventArgs.Calendar">
+            <summary>
+            Gets or sets the calendar.
+            </summary>
+            <value>The calendar.</value>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.CalendarTappedEventArgs.datetime">
+            <summary>
+            Gets or sets the datetime.
+            </summary>
+            <value>The datetime.</value>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.CalendarTappedEventArgs.selectedAppointment">
+            <summary>
+            Gets or sets the selected appointment.
+            </summary>
+            <value>The selected appointment.</value>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.ViewModeChangedEventArgs">
+            <summary>
+            Calendar tapped event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.ViewModeChangedEventArgs.Calendar">
+            <summary>
+            Gets or sets the calendar.
+            </summary>
+            <value>The calendar.</value>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.ViewModeChangedEventArgs.datetime">
+            <summary>
+            Gets or sets the datetime.
+            </summary>
+            <value>The datetime.</value>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs">
+            <summary>
+            Selection changed event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs.Calendar">
+            <summary>
+            Gets or sets the calendar.
+            </summary>
+            <value>The calendar.</value>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs.DateRemoved">
+            <summary>
+            Gets or sets the date removed.
+            </summary>
+            <value>The date removed.</value>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs.DateAdded">
+            <summary>
+            Gets or sets the date added.
+            </summary>
+            <value>The date added.</value>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.MonthChangedEventArgs">
+            <summary>
+            Month changed event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthChangedEventArgs.Calendar">
+            <summary>
+            Gets or sets the calendar.
+            </summary>
+            <value>The calendar.</value>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthChangedEventArgs.args">
+            <summary>
+            Gets or sets the date selection range.
+            </summary>
+            <value>The datetime.</value>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.InlineToggledEventArgs">
+            <summary>
+            Inline toggled event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.InlineToggledEventArgs.Calendar">
+            <summary>
+            Gets or sets the calendar.
+            </summary>
+            <value>The calendar.</value>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.InlineToggledEventArgs.selectedAppointment">
+            <summary>
+            Gets or sets the selected appointment.
+            </summary>
+            <value>The datetime.</value>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.InlineEventArgs">
+            <summary>
+            Inline event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.InlineEventArgs.Calendar">
+            <summary>
+            Gets or sets the calendar.
+            </summary>
+            <value>The calendar.</value>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.InlineEventArgs.appointments">
+            <summary>
+            Gets or sets the appointment.
+            </summary>
+            <value>The appointment.</value>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.InlineEventArgs.appointment">
+            <summary>
+            Gets or sets the appointment.
+            </summary>
+            <value>The appointment.</value>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.InlineEventArgs.View">
+            <summary>
+            Gets or sets the view.
+            </summary>
+            <value>The view.</value>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.CalendarHeaderEventArgs">
+            <summary>
+            Calendar header event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.CalendarHeaderEventArgs.Calendar">
+            <summary>
+            Gets or sets the calendar.
+            </summary>
+            <value>The calendar.</value>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.CalendarHeaderEventArgs.View">
+            <summary>
+            Gets or sets the view.
+            </summary>
+            <value>The view.</value>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.CalendarEventCollection">
+            <summary>
+            Calendar event collection.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.CalendarInlineEvent">
+            <summary>
+            Calendar inline event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.CalendarInlineEvent.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfCalendar.XForms.CalendarInlineEvent"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.CalendarInlineEvent.StartTime">
+            <summary>
+            Gets or sets the start time.
+            </summary>
+            <value>The start time.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.CalendarInlineEvent.StartTimeProperty">
+            <summary>
+            The start time property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.CalendarInlineEvent.OnStartTimePropertyChanged(Xamarin.Forms.BindableObject,System.DateTime,System.DateTime)">
+            <summary>
+            Raises the start time property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.CalendarInlineEvent.EndTime">
+            <summary>
+            Gets or sets the end time.
+            </summary>
+            <value>The end time.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.CalendarInlineEvent.EndTimeProperty">
+            <summary>
+            The end time property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.CalendarInlineEvent.OnEndTimePropertyChanged(Xamarin.Forms.BindableObject,System.DateTime,System.DateTime)">
+            <summary>
+            Raises the end time property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.CalendarInlineEvent.Subject">
+            <summary>
+            Gets or sets the subject.
+            </summary>
+            <value>The subject.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.CalendarInlineEvent.SubjectProperty">
+            <summary>
+            The subject property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.CalendarInlineEvent.OnSubjectPropertyChanged(Xamarin.Forms.BindableObject,System.String,System.String)">
+            <summary>
+            Raises the subject property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.CalendarInlineEvent.Color">
+            <summary>
+            Gets or sets the color.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.CalendarInlineEvent.ColorProperty">
+            <summary>
+            The color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.CalendarInlineEvent.OnColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.CalendarInlineEvent.IsAllDay">
+            <summary>
+            Gets or sets a value indicating whether this instance is all day.
+            </summary>
+            <value><c>true</c> if this instance is all day; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.CalendarInlineEvent.IsAllDayProperty">
+            <summary>
+            The is all day property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.CalendarInlineEvent.OnIsAllDayPropertyChanged(Xamarin.Forms.BindableObject,System.Boolean,System.Boolean)">
+            <summary>
+            Raises the is all day property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">If set to <c>true</c> old value.</param>
+            <param name="newValue">If set to <c>true</c> new value.</param>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.MonthLabelSettings">
+            <summary>
+            Month label settings.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthLabelSettings.DateFormat">
+            <summary>
+            Gets or sets the date format.
+            </summary>
+            <value>The date format.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthLabelSettings.DateFormatProperty">
+            <summary>
+            The date format property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthLabelSettings.OnDateFormatPropertyChanged(Xamarin.Forms.BindableObject,System.String,System.String)">
+            <summary>
+            Raises the date format property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthLabelSettings.DayFormat">
+            <summary>
+            Gets or sets the day format.
+            </summary>
+            <value>The day format.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthLabelSettings.DayFormatProperty">
+            <summary>
+            The day format property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthLabelSettings.OnDayFormatPropertyChanged(Xamarin.Forms.BindableObject,System.String,System.String)">
+            <summary>
+            Raises the day format property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthLabelSettings.DayLabelSize">
+            <summary>
+            Gets or sets the size of the day label.
+            </summary>
+            <value>The size of the day label.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthLabelSettings.DayLabelSizeProperty">
+            <summary>
+            The day label size property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthLabelSettings.OnDayLabelSizePropertyChanged(Xamarin.Forms.BindableObject,System.Double,System.Double)">
+            <summary>
+            Raises the day label size property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthLabelSettings.DateLabelSize">
+            <summary>
+            Gets or sets the size of the date label.
+            </summary>
+            <value>The size of the date label.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthLabelSettings.DateLabelSizeProperty">
+            <summary>
+            The date label size property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthLabelSettings.OnDateLabelSizePropertyChanged(Xamarin.Forms.BindableObject,System.Double,System.Double)">
+            <summary>
+            Raises the date label size property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.MonthViewSettings">
+            <summary>
+            Month view settings.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfCalendar.XForms.MonthViewSettings"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.DayHeight">
+            <summary>
+            Gets or sets the height of the day.
+            </summary>
+            <value>The height of the day.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.DayHeightProperty">
+            <summary>
+            The day height property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnDayHeightPropertyChanged(Xamarin.Forms.BindableObject,System.Int32,System.Int32)">
+            <summary>
+            Raises the day height property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.InlineTextColor">
+            <summary>
+            Gets or sets the color of the inline text.
+            </summary>
+            <value>The color of the inline text.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.InlineTextColorProperty">
+            <summary>
+            The inline text color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnInlineTextColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the inline text color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.BlackoutColor">
+            <summary>
+            Gets or sets the color of the blackout.
+            </summary>
+            <value>The color of the blackout.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.BlackoutColorProperty">
+            <summary>
+            The blackout color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnBlackoutColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the blackout color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.InlineBackgroundColor">
+            <summary>
+            Gets or sets the color of the inline background.
+            </summary>
+            <value>The color of the inline background.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.InlineBackgroundColorProperty">
+            <summary>
+            The inline background color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnInlineBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the inline background color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.DateSelectionColor">
+            <summary>
+            Gets or sets the color of the date selection.
+            </summary>
+            <value>The color of the date selection.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.DateSelectionColorProperty">
+            <summary>
+            The date selection color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnDateSelectionColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the date selection color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.SelectedDayTextColor">
+            <summary>
+            Gets or sets the color of the selected date text.
+            </summary>
+            <value>The color of the selected date text.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.SelectedDayTextColorProperty">
+            <summary>
+            The selected date text color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnDateSelectionTextColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the date selection text color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.BorderColor">
+            <summary>
+            Gets or sets the color of the border.
+            </summary>
+            <value>The color of the border.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.BorderColorProperty">
+            <summary>
+            The border color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnBorderColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the border color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.WeekDayBackgroundColor">
+            <summary>
+            Gets or sets the color of the week day background.
+            </summary>
+            <value>The color of the week day background.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.WeekDayBackgroundColorProperty">
+            <summary>
+            The week day background color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnWeekDayBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the week day background color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.WeekDayTextColor">
+            <summary>
+            Gets or sets the color of the week day text.
+            </summary>
+            <value>The color of the week day text.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.WeekDayTextColorProperty">
+            <summary>
+            The week day text color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnWeekDayTextColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the week day text color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.DisabledBackgroundColor">
+            <summary>
+            Gets or sets the color of the disabled background.
+            </summary>
+            <value>The color of the disabled background.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.DisabledBackgroundColorProperty">
+            <summary>
+            The disabled background color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnDisabledBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the disabled background color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.DisabledTextColor">
+            <summary>
+            Gets or sets the color of the disabled text.
+            </summary>
+            <value>The color of the disabled text.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.DisabledTextColorProperty">
+            <summary>
+            The disabled text color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnDisabledTextColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the disabled text color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.PreviousMonthBackgroundColor">
+            <summary>
+            Gets or sets the color of the previous month background.
+            </summary>
+            <value>The color of the previous month background.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.PreviousMonthBackgroundColorProperty">
+            <summary>
+            The previous month background color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnPreviousMonthBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the previous month background color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.PreviousMonthTextColor">
+            <summary>
+            Gets or sets the color of the previous month text.
+            </summary>
+            <value>The color of the previous month text.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.PreviousMonthTextColorProperty">
+            <summary>
+            The previous month text color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnPreviousMonthTextColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the previous month text color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.TodayTextColor">
+            <summary>
+            Gets or sets the color of the today text.
+            </summary>
+            <value>The color of the today text.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.TodayTextColorProperty">
+            <summary>
+            The today text color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnTodayTextColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the today text color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.CurrentMonthBackgroundColor">
+            <summary>
+            Gets or sets the color of the current month background.
+            </summary>
+            <value>The color of the current month background.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.CurrentMonthBackgroundColorProperty">
+            <summary>
+            The current month background color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnCurrentMonthBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the current month background color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.CurrentMonthTextColor">
+            <summary>
+            Gets or sets the color of the current month text.
+            </summary>
+            <value>The color of the current month text.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.CurrentMonthTextColorProperty">
+            <summary>
+            The current month text color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnCurrentMonthTextColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the current month text color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.MonthLabelSettings">
+            <summary>
+            Gets or sets the month label settings.
+            </summary>
+            <value>The month label settings.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.MonthViewLabelSettingsProperty">
+            <summary>
+            The month view label settings property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnMonthViewLabelSettingPropertyChanged(Xamarin.Forms.BindableObject,Syncfusion.SfCalendar.XForms.MonthLabelSettings,Syncfusion.SfCalendar.XForms.MonthLabelSettings)">
+            <summary>
+            Raises the month view label setting property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.WeekEndTextColor">
+            <summary>
+            Gets or sets the color of the week end text.
+            </summary>
+            <value>The color of the week end text.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.WeekEndTextColorProperty">
+            <summary>
+            The week end text color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnWeekEndTextColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the week end text color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.DayHeaderTextColor">
+            <summary>
+            Gets or sets the color of the day header text.
+            </summary>
+            <value>The color of the day header text.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.DayHeaderTextColorProperty">
+            <summary>
+            The day header text color property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.DayHeaderBackgroundColor">
+            <summary>
+            Gets or sets the color of the day header background.
+            </summary>
+            <value>The color of the day header background.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.DayHeaderBackgroundColorProperty">
+            <summary>
+            The day header background color property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.WeekEndBackgroundColor">
+            <summary>
+            Gets or sets the color of the week end background.
+            </summary>
+            <value>The color of the week end background.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.WeekEndBackgroundColorProperty">
+            <summary>
+            The week end text color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnWeekEndBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the week end background color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.HeaderBackgroundColor">
+            <summary>
+            Gets or sets the color of the header background.
+            </summary>
+            <value>The color of the header background.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.HeaderBackgroundColorProperty">
+            <summary>
+            The header background color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnHeaderBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the header background color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.MonthViewSettings.HeaderTextColor">
+            <summary>
+            Gets or sets the color of the header text.
+            </summary>
+            <value>The color of the header text.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.MonthViewSettings.HeaderTextColorProperty">
+            <summary>
+            The header text color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthViewSettings.OnHeaderTextColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the header text color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.YearViewSettings">
+            <summary>
+            Year view settings.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.YearViewSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfCalendar.XForms.YearViewSettings"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.YearViewSettings.LayoutBackground">
+            <summary>
+            Gets or sets the layout background.
+            </summary>
+            <value>The layout background.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.YearViewSettings.LayoutBackgroundProperty">
+            <summary>
+            The layout background property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.YearViewSettings.OnLayoutBackgroundPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the layout background property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.YearViewSettings.HeaderBackground">
+            <summary>
+            Gets or sets the header background.
+            </summary>
+            <value>The header background.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.YearViewSettings.HeaderBackgroundProperty">
+            <summary>
+            The header background property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.YearViewSettings.OnHeaderBackgroundPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the header background property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.YearViewSettings.MonthLayoutBackground">
+            <summary>
+            Gets or sets the month layout background.
+            </summary>
+            <value>The month layout background.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.YearViewSettings.MonthLayoutBackgroundProperty">
+            <summary>
+            The month layout background property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.YearViewSettings.OnMonthLayoutBackgroundPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the month layout background property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.YearViewSettings.MonthHeaderBackground">
+            <summary>
+            Gets or sets the month header background.
+            </summary>
+            <value>The month header background.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.YearViewSettings.MonthHeaderBackgroundProperty">
+            <summary>
+            The month header background property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.YearViewSettings.OnMonthHeaderBackgroundPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the month header background property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.YearViewSettings.DateTextColor">
+            <summary>
+            Gets or sets the color of the date text.
+            </summary>
+            <value>The color of the date text.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.YearViewSettings.DateTextColorProperty">
+            <summary>
+            The date text color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.YearViewSettings.OnDateTextColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the date text color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.YearViewSettings.MonthHeaderTextColor">
+            <summary>
+            Gets or sets the color of the month header text.
+            </summary>
+            <value>The color of the month header text.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.YearViewSettings.MonthHeaderTextColorProperty">
+            <summary>
+            The month header text color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.YearViewSettings.OnMonthHeaderTextColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the month header text color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.YearViewSettings.YearHeaderTextColor">
+            <summary>
+            Gets or sets the color of the year header text.
+            </summary>
+            <value>The color of the year header text.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.YearViewSettings.YearHeaderTextColorProperty">
+            <summary>
+            The year header text color property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.YearViewSettings.OnYearHeaderTextColorPropertyChanged(Xamarin.Forms.BindableObject,Xamarin.Forms.Color,Xamarin.Forms.Color)">
+            <summary>
+            Raises the year header text color property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="P:Syncfusion.SfCalendar.XForms.YearViewSettings.LabelAlignment">
+            <summary>
+            Gets or sets the label alignment.
+            </summary>
+            <value>The label alignment.</value>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.YearViewSettings.LabelAlignmentProperty">
+            <summary>
+            The label alignment property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.YearViewSettings.OnLabelAlignmentPropertyChanged(Xamarin.Forms.BindableObject,Syncfusion.SfCalendar.XForms.LabelAlignment,Syncfusion.SfCalendar.XForms.LabelAlignment)">
+            <summary>
+            Raises the label alignment property changed event.
+            </summary>
+            <param name="bindable">Bindable.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.SelectionMode">
+            <summary>
+            Dates can be selected by making a touch on month view cells. The default Selection mode is Single which allows user to select one date at a time. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SelectionMode.SingleSelection">
+            <summary>
+            A single date can be selected in a month view which can be equipped when user needs to select one date at a time.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SelectionMode.MultiSelection">
+            <summary>
+            More than one date can be selected in a random manner. Clicking again on selected dates can do deselection.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.SelectionMode.RangeSelection">
+            <summary>
+            A Range of Dates can be selected continuously by clicking and dragging.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.ViewMode">
+            <summary>
+            Calendar control provides two types of views to display dates such as month view and year view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.ViewMode.MonthView">
+            <summary>
+            This displays entire dates of a particular month, by default current month will be displayed on loading.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.ViewMode.YearView">
+            <summary>
+            This displays entire dates/month of a particular year, by default current year will be displayed on loading.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.TransitionMode">
+            <summary>
+            Displays the Transition mode for Calendar in following ways.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.TransitionMode.Card">
+            <summary>
+            The card.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.TransitionMode.Float">
+            <summary>
+            The float.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.TransitionMode.Reveal">
+            <summary>
+            The reveal.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.TransitionMode.Scroll">
+            <summary>
+            The scroll.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.LabelAlignment">
+            <summary>
+            Aligns the label in the Calendar control in either of the directions.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.LabelAlignment.Left">
+            <summary>
+            Aligns the label towards the left.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.LabelAlignment.Right">
+            <summary>
+            Aligns the label towards the riight.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfCalendar.XForms.LabelAlignment.Center">
+            <summary>
+            Aligns the label towards the center.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfCalendar.XForms.MonthCell">
+            <summary>
+            Calendar inline event.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfCalendar.XForms.MonthCell.#ctor(System.DateTime)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfCalendar.XForms.CalendarInlineEvent"/> class.
+            </summary>
+        </member>
+    </members>
+</doc>

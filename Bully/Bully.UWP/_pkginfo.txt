@@ -1,0 +1,1 @@
+C:\Develop\06 - ejemplos propios\AppBully\Bully\Bully.UWP\bin\ARM\Release\Upload\Bully.UWP_1.1.9.0\Bully.UWP_1.1.9.0_x86_x64_arm.appxbundle

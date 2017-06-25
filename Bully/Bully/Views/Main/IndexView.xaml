@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bully.Views.Main.IndexView"
+             Title="Acceso directo" 
+              
+  Style="{ StaticResource MainPageStyle}">
+    <ScrollView   x:Name="outerScrollView">
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- imagen de fondo -->
+            <Image x:Name="header" Source="header.jpg" Aspect="AspectFill"/>
+            <Image Source="curvedMask.png" Aspect="Fill"
+                   VerticalOptions="End" Margin="0,0,0,-2"/>
+            <!-- info telefono -->
+            <StackLayout Grid.Row="1" Padding="0,50,0,0">
+                              
+                 <Label Style="{StaticResource TextH1}" Text="Ministerio de Educación" />
+                 <Label Style="{StaticResource TextP}" Text="Servicio gratuito 24h, los 7 días de la semana formado por profesionales especializados en acoso escolar y ciberbulling." />
+            </StackLayout>
+
+            <!-- sobre el servicio -->
+            
+            <Grid Grid.Row="2" Margin="0,5" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Column="0">
+                    <Label Text="24h" Style="{StaticResource TextH3}"/>
+                    <Label Text="Por día" Style="{StaticResource TextP3}"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="1">
+                    <Label Text="7 días" Style="{StaticResource TextH3}"/>
+                    <Label Text="Por semana" Style="{StaticResource TextP3}"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="2">
+                    <Label Text="365 días" Style="{StaticResource TextH3}"/>
+                    <Label Text="Por año" Style="{StaticResource TextP3}"/>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Row="3" Margin="0,10" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout>
+                    <Label Text="Destinado" Style="{StaticResource TextH1}"/>
+                    <Image Source="groupPerson.jpg" Aspect="AspectFit"></Image>
+                    <Label Style="{StaticResource TextP}" Text="Está destinado a alumnos, familiares, personal de los equipos docentes y, en definitiva, todos aquellos que sufran o conozcan algún caso de acoso escolar."/>
+                </StackLayout>
+            </Grid>
+
+            
+              <Grid Grid.Row="4" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <Button Text="Contactar por email" Style="{StaticResource AppButtomSocial}" Command="{Binding EmailCommand}"></Button>
+                </StackLayout>
+
+                
+            </Grid>
+          
+          
+        
+           
+
+
+            <Image Source="phone.png" VerticalOptions="End" HorizontalOptions="Center"
+                  WidthRequest="100"
+                   TranslationY="50">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                                  Command="{Binding CallCommand}"/>
+                </Image.GestureRecognizers>
+            </Image>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

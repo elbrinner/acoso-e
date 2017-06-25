@@ -1,0 +1,494 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfKanban.Android</name>
+    </assembly>
+    <members>
+        <member name="M:Syncfusion.SfKanban.Android.KanbanAdapter.GetItemView">
+            <summary>
+            Returns the customized item view.
+            </summary>
+            <returns>The item view cell.</returns>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.SfKanban.ItemsSource">
+            <summary>
+            Gets or sets the items source for Kanban.
+            </summary>
+            <value>The items source.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.SfKanban.PlaceholderStyle">
+            <summary>
+            Gets or sets the placeholder style.
+            </summary>
+            <value>The placeholder style.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.SfKanban.ActualColumns">
+            <summary>
+            Gets the visible columns.
+            </summary>
+            <value>The actual columns.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.SfKanban.Columns">
+            <summary>
+            Gets or sets the columns of Kanban.
+            </summary>
+            <value>The columns.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.SfKanban.IndicatorColorPalette">
+            <summary>
+             Gets or sets the color palette for the item indicators based on ColorKey property of KanbanModel.
+            </summary>
+            <value>The indicator color palette.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.SfKanban.Workflows">
+            <summary>
+            Gets or sets the workflow of kanban.
+            </summary>
+            <value>The workflow config.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.SfKanban.ColumnMappingPath">
+            <summary>
+            Gets or sets the key which is used to generate the columns.
+            </summary>
+            <value>The column mapping path.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.SfKanban.AutoGenerateColumns">
+            <summary>
+            Gets or sets whether the column can auto generated based on the category value.
+            </summary>
+            <value>The auto generate columns.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.SfKanban.MinColumnWidth">
+            <summary>
+             Gets or sets the minimum width of the column.
+            </summary>
+            <value>The minimum width of the column.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.SfKanban.MaxColumnWidth">
+            <summary>
+            Gets or sets the maximum width of the column.
+            </summary>
+            <value>The width of the max column.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.SfKanban.ColumnWidth">
+            <summary>
+            Gets or sets the width of the column.
+            </summary>
+            <value>The width of the column.</value>
+        </member>
+        <member name="E:Syncfusion.SfKanban.Android.SfKanban.ItemTapped">
+            <summary>
+             This event will be fired when we tap on the item.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfKanban.Android.SfKanban.DragStart">
+            <summary>
+            This event will be fired when we start to drag a item.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfKanban.Android.SfKanban.DragEnd">
+             <summary>
+             This event should be fired whenever dragging is cancelled in following cases,
+            Event can be cancelled.When this event is cancelled, item will not be dropped on to the target column.
+             </summary>
+        </member>
+        <member name="E:Syncfusion.SfKanban.Android.SfKanban.DragEnter">
+            <summary>
+            This event should be fired when a item enters a column. Event can be cancelled. 
+            When it is cancelled, DragOver events will not be fired for that target column at all and placeholder should not appear on further move over the same column.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfKanban.Android.SfKanban.DragLeave">
+            <summary>
+            This event should be fired when the item leaves the column. 
+            So it means, this event should be preceded by DragStart or DragEnter events.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfKanban.Android.SfKanban.DragOver">
+            <summary>
+            This event will be fired when placeholder appears in new position or whenever placeholder position changes on further move within same column. 
+            Usually this event will be called after DragStart or DragEnter events.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfKanban.Android.SfKanban.ColumnsGenerated">
+            <summary>
+            This event will be fired when after the columns are auto-generated. 
+            In this event, user can change the header text of the column.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanColumn.ErrorBarSettings">
+            <summary>
+            Gets or sets customization of kanban error bar setting. 
+            </summary>
+            <value>The error bar settings.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanColumn.MinimumLimit">
+            <summary>
+             Gets or sets the minimum items limit for the column.
+            </summary>
+            <value>The minimum limit.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanColumn.MaximumLimit">
+            <summary>
+             Gets or sets the maximum items limit of the column.
+            </summary>
+            <value>The maximum limit.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanColumn.Title">
+            <summary>
+             Gets or sets the title of this column.
+            </summary>
+            <value>The title.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanColumn.ItemsCount">
+            <summary>
+            Gets the items count.
+            </summary>
+            <value>The items count.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanColumn.Categories">
+            <summary>
+            Gets or sets the categories for this column.
+            </summary>
+            <value>The categories.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanColumn.IsExpanded">
+            <summary>
+             Gets or sets to expand/collapse the column.
+            </summary>
+            <value>The is expanded.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanColumn.AllowDrag">
+            <summary>
+             Gets or sets to allow drag from this column.
+            </summary>
+            <value>The allow drag.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanColumn.AllowDrop">
+            <summary>
+             Gets or sets to allow drop to this column.
+            </summary>
+            <value>The allow drop.</value>
+        </member>
+        <member name="M:Syncfusion.SfKanban.Android.KanbanColumn.InsertItem(System.Object,System.Int32)">
+            <summary>
+            Dynamically add item to column.
+            </summary>
+            <returns>The item.</returns>
+            <param name="data">Data.</param>
+            <param name="position">Position.</param>
+        </member>
+        <member name="M:Syncfusion.SfKanban.Android.KanbanColumn.RemoveItem(System.Object)">
+            <summary>
+            Dynamically remove item from column
+            </summary>
+            <returns>The item.</returns>
+            <param name="data">Data.</param>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanModel.ColorKey">
+            <summary>
+            Gets or sets the indicator color key of Kanban item
+            </summary>
+            <value>The color key.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanModel.ID">
+            <summary>
+            Gets or sets the ID of Kanban item.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanModel.Title">
+            <summary>
+            Gets or sets the title of Kanban item.
+            </summary>
+            <value>The title.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanModel.ImageURL">
+            <summary>
+            Gets or sets the image URL of Kanban item.
+            </summary>
+            <value>The image URL.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanModel.Category">
+            <summary>
+             Gets or sets the category of Kanban item.
+            </summary>
+            <value>The category.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanModel.Description">
+            <summary>
+            Gets or sets the description of Kanban item.
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanModel.Tags">
+            <summary>
+            Gets or sets the tags of Kanban item
+            </summary>
+            <value>The tags.</value>
+        </member>
+        <member name="M:Syncfusion.SfKanban.Android.IKanbanDataManager.CreateRecords">
+            <summary>
+            To create the kanban records.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanWorkflow.Category">
+            <summary>
+            Gets or sets the category of the kanban.
+            </summary>
+            <value>The category.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanWorkflow.AllowedTransitions">
+            <summary>
+            Gets or sets the allowed transition for the associated category.
+            </summary>
+            <value>The allowed transitions.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanColorMapping.Key">
+            <summary>
+            Gets or sets color key for the kanban item.
+            </summary>
+            <value>The key.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanColorMapping.Color">
+            <summary>
+            Gets or sets color for the kanban item associated to color key.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragEndEventArgs.TargetColumn">
+            <summary>
+             Gets the target column upon which the iteam is dropped.
+            </summary>
+            <value>The target column.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragEndEventArgs.TargetIndex">
+            <summary>
+             Gets the index in the target column where the item is going to be inserted.
+            </summary>
+            <value>The index of the target.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragEndEventArgs.Cancel">
+            <summary>
+             Gets or sets a value that determines whether to insert the item in the target column.
+            </summary>
+            <value>Cancel the drag.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragEndEventArgs.TargetCategory">
+            <summary>
+             Get the dropped category value.
+            </summary>
+            <value>The target category.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragEventArgs.SourceColumn">
+            <summary>
+            Gets the column, where the drag event occurs
+            </summary>
+            <value>The source column.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragEventArgs.Data">
+            <summary>
+            Gets the model data of the captures item.
+            </summary>
+            <value>The data.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragEventArgs.SourceIndex">
+            <summary>
+             Gets the index of the captured item.
+            </summary>
+            <value>The index of the source.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanTappedEventArgs.Column">
+            <summary>
+            Gets the column, where the tapped event occurs.
+            </summary>
+            <value>The column.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanTappedEventArgs.ViewCell">
+            <summary>
+            Gets the tapped item's view.
+            </summary>
+            <value>The view cell.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanTappedEventArgs.Index">
+            <summary>
+            Gets the index of the tapped item.
+            </summary>
+            <value>The index.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanTappedEventArgs.Data">
+            <summary>
+            Gets the model data of the tapped item.
+            </summary>
+            <value>The data.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragEnterEventArgs.TargetColumn">
+            <summary>
+             Get the target column
+            </summary>
+            <value>The target column.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragEnterEventArgs.TargetIndex">
+            <summary>
+             Get the target index of item.
+            </summary>
+            <value>The index of the target.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragEnterEventArgs.Cancel">
+            <summary>
+            Determines whether to end the dragging.
+            </summary>
+            <value>Returns bool value.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragEnterEventArgs.IsAboveMaximumLimit">
+            <summary>
+             Gets or sets a value that indicates whether the number of items in the column exceeds the maximum allowed limit.
+            </summary>
+            <value>The is above maximum limit.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragStartEventArgs.Cancel">
+            <summary>
+             Gets or sets whether to continue the drag event.
+            </summary>
+            <value>The cancel.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragStartEventArgs.KeepItem">
+            <summary>
+            Gets or sets whether to keep the orginal item in the source column. The item will be removed from the source column only after the drag ended on other column.
+            </summary>
+            <value>The keep item.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragLeaveEventArgs.TargetColumn">
+            <summary>
+            Gets the target column out of which the user drags the item.
+            </summary>
+            <value>The target column.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragLeaveEventArgs.IsBelowMinimumLimit">
+            <summary>
+             Gets or sets a value that indicates whether the number of items in the column is less than the minimum allowed limit.
+            </summary>
+            <value>The is below minimum limit.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragOverEventArgs.TargetColumn">
+            <summary>
+             Gets the target column upon which the item is being dragged.
+            </summary>
+            <value>The target column.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragOverEventArgs.TargetIndex">
+            <summary>
+            Gets the target index of the item.
+            </summary>
+            <value>The index of the target.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanDragOverEventArgs.Cancel">
+            <summary>
+             Gets or sets a value that determines whether to show the item placeholder for the current target index.
+            </summary>
+            <value>The cancel.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanPlaceholderStyle.BackgroundColor">
+            <summary>
+            Gets or sets backgroud color of the placeholder.
+            </summary>
+            <value>The color of the background.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanPlaceholderStyle.StrokeColor">
+            <summary>
+            Gets or sets stroke color of the placeholder.
+            </summary>
+            <value>The color of the stroke.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanPlaceholderStyle.StrokeWidth">
+            <summary>
+            Gets or sets stroke width of the placeholder.
+            </summary>
+            <value>The width of the stroke.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanPlaceholderStyle.TextColor">
+            <summary>
+            Gets or sets text color of the placeholder.
+            </summary>
+            <value>The color of the text.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanPlaceholderStyle.TextSize">
+            <summary>
+            Gets or sets text size of the placeholder.
+            </summary>
+            <value>The text size.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanPlaceholderStyle.DashWidth">
+            <summary>
+            Gets or sets dash width of the placeholder.
+            </summary>
+            <value>The dash width.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanPlaceholderStyle.DashGap">
+            <summary>
+            Gets or sets dash gap of the placeholder.
+            </summary>
+            <value>The dash gap.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanPlaceholderStyle.SelectedBackgroundColor">
+            <summary>
+            Gets or sets selected backgroud color of the placeholder.
+            </summary>
+            <value>The color of the selected background.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanPlaceholderStyle.SelectedStrokeColor">
+            <summary>
+            Gets or sets selected stroke color of the placeholder.
+            </summary>
+            <value>The color of the selected stroke.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanPlaceholderStyle.SelectedStrokeWidth">
+            <summary>
+             Gets or sets selected stroke width of the placeholder.
+            </summary>
+            <value>The width of the selected stroke.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanPlaceholderStyle.SelectedTextColor">
+            <summary>
+            Gets or sets selected text color of the placeholder.
+            </summary>
+            <value>The color of the selected text.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanPlaceholderStyle.SelectedDashWidth">
+            <summary>
+            Gets or sets selected dash width of the placeholder.
+            </summary>
+            <value>The selected stroke dashes.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanPlaceholderStyle.SelectedDashGap">
+            <summary>
+            Gets or sets selected dash gap of the placeholder.
+            </summary>
+            <value>The selected dashe gap.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanErrorBarSettings.Color">
+            <summary>
+             Gets or sets default color for the error bar.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanErrorBarSettings.MinValidationColor">
+            <summary>
+            Gets or sets minimum validation color for the error bar.
+            </summary>
+            <value>The minimum color of the validation.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanErrorBarSettings.MaxValidationColor">
+            <summary>
+            Gets or sets maximum validation color for the error bar
+            </summary>.
+            <value>The color of the max validation.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.Android.KanbanErrorBarSettings.Height">
+            <summary>
+            Gets or sets the height of the error bar
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfPdfViewer.Android</name>
+    </assembly>
+    <members>
+        <member name="P:Syncfusion.SfPdfViewer.Android.PageChangedEventArgs.PageNumber">
+            <summary>
+            Gets the current page number
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.Android.PageChangedEventHandler">
+            <summary>
+            Represents the method that will handle the PageChanged/> event. 
+            </summary>
+            <param name="sender">The sender the contains SfPdfViewer.</param>
+            <param name="args">The <see cref="T:Syncfusion.SfPdfViewer.Android.PageChangedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.SfPdfViewer.Android.DocumentLoadedEventHandler">
+            <summary>
+            Represents the method that will handle the DocumentLoaded/> event. 
+            </summary>
+            <param name="sender">The sender the contains SfPdfViewer.</param>
+            <param name="args">The <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.Android.SfPdfViewer.PageChanged">
+            <summary>
+            Occurs when current page is changed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.Android.SfPdfViewer.DocumentLoaded">
+            <summary>
+            Occurs when document is loaded.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.Android.SfPdfViewer.PageNumber">
+            <summary>
+            Gets or Sets the page number
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.Android.SfPdfViewer.Unload">
+            <summary>
+            Unloads the PDF Viewer
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.Android.SfPdfViewer.GoToNextPage">
+            <summary>
+            Navigates to the next page of the document.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.Android.SfPdfViewer.GoToPreviousPage">
+            <summary>
+            Navigates to the previous page of the document.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.Android.SfPdfViewer.PageCount">
+            <summary>
+            Gets the page count of PDF document
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.Android.SfPdfViewer.LoadDocument(System.IO.Stream)">
+            <summary>
+            Loads a Pdf document  in the Pdf viewer from the specified stream.
+            </summary>
+            <param name="stream">A stream that contains the data for the Pdf document</param>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.Android.SfPdfViewer.GoToPage(System.Int32)">
+            <summary>
+            Navigates to the specified page.
+            </summary>
+            <param name="pageNumber">The page number</param>
+        </member>
+    </members>
+</doc>

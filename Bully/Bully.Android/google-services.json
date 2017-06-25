@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "149764975129",
+    "firebase_url": "https://acceso-directo-86ede.firebaseio.com",
+    "project_id": "acceso-directo-86ede",
+    "storage_bucket": "acceso-directo-86ede.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149764975129:android:7bcdc2d1b8033fa6",
+        "android_client_info": {
+          "package_name": "com.accesoDirecto.droid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149764975129-k6sqtdfvlpv62u73qeuk5l01orga2rna.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4DSvmW5IGxZujS5uMiAofZN5v9MkxdOQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

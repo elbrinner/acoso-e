@@ -1,0 +1,586 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfKanban.iOS</name>
+    </assembly>
+    <members>
+        <member name="P:Syncfusion.SfKanban.iOS.SfKanban.ItemsSource">
+             <summary>
+             Gets or sets the items source for Kanban.
+             </summary>
+             <value>The items source.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.SfKanban.PlaceholderStyle">
+             <summary>
+             Gets or sets the placeholder style.
+             </summary>
+             <value>The placeholder style.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.SfKanban.ActualColumns">
+             <summary>
+             Gets the visible columns.
+             </summary>
+             <value>The actual columns.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.SfKanban.Columns">
+             <summary>
+             Gets or sets the columns of Kanban.
+             </summary>
+             <value>The columns.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.SfKanban.IndicatorColorPalette">
+             <summary>
+              Gets or sets the color palette for the item indicators based on ColorKey property of KanbanModel.
+             </summary>
+             <value>The indicator color palette.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.SfKanban.Workflows">
+             <summary>
+             Gets or sets the workflow of kanban.
+             </summary>
+             <value>The workflow config.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.SfKanban.ColumnMappingPath">
+             <summary>
+             Gets or sets the key which is used to generate the columns.
+             </summary>
+             <value>The column mapping path.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.SfKanban.AutoGenerateColumns">
+             <summary>
+             Gets or sets whether the column can auto generated based on the category value.
+             </summary>
+             <value>The auto generate columns.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.SfKanban.MinColumnWidth">
+             <summary>
+              Gets or sets the minimum width of the column.
+             </summary>
+             <value>The minimum width of the column.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.SfKanban.MaxColumnWidth">
+             <summary>
+             Gets or sets the maximum width of the column.
+             </summary>
+             <value>The width of the max column.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.SfKanban.ColumnWidth">
+             <summary>
+             Gets or sets the width of the column.
+             </summary>
+             <value>The width of the column.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.SfKanban.Delegate">
+             <summary>
+              Gets or sets customization of kanban. (like item customization, column header).
+             </summary>
+             <value>The delegate.</value>
+            </member>
+        <member name="E:Syncfusion.SfKanban.iOS.SfKanban.ItemTapped">
+             <summary>
+              This event will be fired when we tap on the item.
+             </summary>
+            </member>
+        <member name="E:Syncfusion.SfKanban.iOS.SfKanban.DragStart">
+             <summary>
+             This event will be fired when we start to drag a item.
+             </summary>
+            </member>
+        <member name="E:Syncfusion.SfKanban.iOS.SfKanban.DragEnd">
+             <summary>
+             This event should be fired whenever dragging is cancelled in following cases,
+            Event can be cancelled.When this event is cancelled, item will not be dropped on to the target column.
+             </summary>
+            </member>
+        <member name="E:Syncfusion.SfKanban.iOS.SfKanban.DragEnter">
+             <summary>
+             This event should be fired when a item enters a column. Event can be cancelled. 
+             When it is cancelled, DragOver events will not be fired for that target column at all and placeholder should not appear on further move over the same column.
+             </summary>
+            </member>
+        <member name="E:Syncfusion.SfKanban.iOS.SfKanban.DragLeave">
+             <summary>
+             This event should be fired when the item leaves the column. 
+             So it means, this event should be preceded by DragStart or DragEnter events.
+             </summary>
+            </member>
+        <member name="E:Syncfusion.SfKanban.iOS.SfKanban.DragOver">
+             <summary>
+             This event will be fired when placeholder appears in new position or whenever placeholder position changes on further move within same column. 
+             Usually this event will be called after DragStart or DragEnter events.
+             </summary>
+            </member>
+        <member name="E:Syncfusion.SfKanban.iOS.SfKanban.ColumnsGenerated">
+             <summary>
+             This event will be fired when after the columns are auto-generated. 
+             In this event, user can change the header text of the column.
+             </summary>
+            </member>
+        <member name="M:Syncfusion.SfKanban.iOS.SfKanban.ReloadKanban">
+             <summary>
+             Reloads the kanban.
+             </summary>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragEventArgs.SourceColumn">
+             <summary>
+             Gets the column, where the drag event occurs
+             </summary>
+             <value>The source column.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragEventArgs.Data">
+             <summary>
+             Gets the model data of the captures item.
+             </summary>
+             <value>The data.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragEventArgs.SourceIndex">
+             <summary>
+              Gets the index of the captured item.
+             </summary>
+             <value>The index of the source.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanTappedEventArgs.Column">
+             <summary>
+             Gets the column, where the tapped event occurs.
+             </summary>
+             <value>The column.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanTappedEventArgs.ViewCell">
+             <summary>
+             Gets the tapped item's view.
+             </summary>
+             <value>The view cell.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanTappedEventArgs.Index">
+             <summary>
+             Gets the index of the tapped item.
+             </summary>
+             <value>The index.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanTappedEventArgs.Data">
+             <summary>
+             Gets the model data of the tapped item.
+             </summary>
+             <value>The data.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragEndEventArgs.TargetColumn">
+             <summary>
+              Gets the target column upon which the iteam is dropped.
+             </summary>
+             <value>The target column.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragEndEventArgs.TargetIndex">
+             <summary>
+              Gets the index in the target column where the item is going to be inserted.
+             </summary>
+             <value>The index of the target.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragEndEventArgs.Cancel">
+             <summary>
+              Gets or sets a value that determines whether to insert the item in the target column.
+             </summary>
+             <value>Cancel the drag.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragEndEventArgs.TargetCategory">
+             <summary>
+              Get the dropped category value.
+             </summary>
+             <value>The target category.</value>
+            </member>
+        <member name="M:Syncfusion.SfKanban.iOS.IKanbanDataManager.CreateRecords">
+             <summary>
+             To create the kanban records.
+             </summary>
+             <returns></returns>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragStartEventArgs.Cancel">
+             <summary>
+              Gets or sets whether to continue the drag event.
+             </summary>
+             <value>The cancel.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragStartEventArgs.KeepItem">
+             <summary>
+             Gets or sets whether to keep the orginal item in the source column. The item will be removed from the source column only after the drag ended on other column.
+             </summary>
+             <value>The keep item.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragEnterEventArgs.TargetColumn">
+             <summary>
+              Get the target column
+             </summary>
+             <value>The target column.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragEnterEventArgs.TargetIndex">
+             <summary>
+              Get the target index of item.
+             </summary>
+             <value>The index of the target.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragEnterEventArgs.Cancel">
+             <summary>
+             Determines whether to end the dragging.
+             </summary>
+             <value>Returns bool value.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragEnterEventArgs.IsAboveMaximumLimit">
+             <summary>
+              Gets or sets a value that indicates whether the number of items in the column exceeds the maximum allowed limit.
+             </summary>
+             <value>The is above maximum limit.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragOverEventArgs.TargetColumn">
+             <summary>
+              Gets the target column upon which the item is being dragged.
+             </summary>
+             <value>The target column.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragOverEventArgs.TargetIndex">
+             <summary>
+             Gets the target index of the item.
+             </summary>
+             <value>The index of the target.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragOverEventArgs.Cancel">
+             <summary>
+              Gets or sets a value that determines whether to show the item placeholder for the current target index.
+             </summary>
+             <value>The cancel.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragLeaveEventArgs.TargetColumn">
+             <summary>
+             Gets the target column out of which the user drags the item.
+             </summary>
+             <value>The target column.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanDragLeaveEventArgs.IsBelowMinimumLimit">
+             <summary>
+              Gets or sets a value that indicates whether the number of items in the column is less than the minimum allowed limit.
+             </summary>
+             <value>The is below minimum limit.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanColorMapping.Key">
+             <summary>
+             Gets or sets color key for the kanban item.
+             </summary>
+             <value>The key.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanColorMapping.Color">
+             <summary>
+             Gets or sets color for the kanban item associated to color key.
+             </summary>
+             <value>The color.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanWorkflow.Category">
+             <summary>
+             Gets or sets the category of the kanban.
+             </summary>
+             <value>The category.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanWorkflow.AllowedTransitions">
+             <summary>
+             Gets or sets the allowed transition for the associated category.
+             </summary>
+             <value>The allowed transitions.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanErrorBarSettings.Color">
+             <summary>
+              Gets or sets default color for the error bar.
+             </summary>
+             <value>The color.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanErrorBarSettings.MinValidationColor">
+             <summary>
+             Gets or sets minimum validation color for the error bar.
+             </summary>
+             <value>The minimum color of the validation.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanErrorBarSettings.MaxValidationColor">
+             <summary>
+             Gets or sets maximum validation color for the error bar
+             </summary>.
+             <value>The color of the max validation.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanErrorBarSettings.Height">
+             <summary>
+             Gets or sets the height of the error bar
+             </summary>
+            </member>
+        <member name="M:Syncfusion.SfKanban.iOS.KanbanDelegate.GetItemViewCell">
+             <summary>
+             Returns the customized item view.
+             </summary>
+             <returns>The item view cell.</returns>
+            </member>
+        <member name="M:Syncfusion.SfKanban.iOS.KanbanDelegate.GetItemViewCell(Syncfusion.SfKanban.iOS.KanbanColumn,System.Object,System.Int32)">
+             <summary>
+             Returns the customized item view.
+             </summary>
+             <returns>The item view cell.</returns>
+            </member>
+        <member name="M:Syncfusion.SfKanban.iOS.KanbanDelegate.BindItemViewCell(Syncfusion.SfKanban.iOS.KanbanColumn,UIKit.UIView,System.Object,System.Int32)">
+             <summary>
+             This method help to customize the item view.
+             </summary>
+             <returns>The item view cell.</returns>
+             <param name="column">Column.</param>
+             <param name="view">View.</param>
+             <param name="data">Data.</param>
+             <param name="position">Position.</param>
+            </member>
+        <member name="M:Syncfusion.SfKanban.iOS.KanbanDelegate.GetHeaderView(Syncfusion.SfKanban.iOS.KanbanColumn,System.Int32)">
+             <summary>
+             Returns the header view.
+             </summary>
+             <returns>The header view.</returns>
+             <param name="column">Column.</param>
+             <param name="columnPosition">Column position.</param>
+            </member>
+        <member name="M:Syncfusion.SfKanban.iOS.KanbanDelegate.GetHeightForItemViewCell(Syncfusion.SfKanban.iOS.KanbanColumn,System.Object,System.Int32)">
+             <summary>
+             Returns the height of item view.
+             </summary>
+             <returns>The height for item view cell.</returns>
+             <param name="column">Column.</param>
+             <param name="data">Data.</param>
+             <param name="position">Position.</param>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanCircleImage.BorderWidth">
+             <summary>
+             Gets or sets the border width for the image view.
+             </summary>
+             <value>The width of the border.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanCircleImage.BorderColor">
+             <summary>
+             Gets or sets the border color for the image view.
+             </summary>
+             <value>The color of the border.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanCircleImage.FillColor">
+             <summary>
+             Gets or sets the fill color for the image view.
+             </summary>
+             <value>The color of the fill.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanModel.ColorKey">
+             <summary>
+             Gets or sets the indicator color key of Kanban item
+             </summary>
+             <value>The color key.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanModel.ID">
+             <summary>
+             Gets or sets the ID of Kanban item.
+             </summary>
+             <value>The identifier.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanModel.Title">
+             <summary>
+             Gets or sets the title of Kanban item.
+             </summary>
+             <value>The title.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanModel.ImageURL">
+             <summary>
+             Gets or sets the image URL of Kanban item.
+             </summary>
+             <value>The image URL.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanModel.Category">
+             <summary>
+              Gets or sets the category of Kanban item.
+             </summary>
+             <value>The category.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanModel.Description">
+             <summary>
+             Gets or sets the description of Kanban item.
+             </summary>
+             <value>The description.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanModel.Tags">
+             <summary>
+             Gets or sets the tags of Kanban item
+             </summary>
+             <value>The tags.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanPlaceholderStyle.BackgroundColor">
+             <summary>
+             Gets or sets backgroud color of the placeholder.
+             </summary>
+             <value>The color of the background.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanPlaceholderStyle.StrokeColor">
+             <summary>
+             Gets or sets stroke color of the placeholder.
+             </summary>
+             <value>The color of the stroke.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanPlaceholderStyle.StrokeWidth">
+             <summary>
+             Gets or sets stroke width of the placeholder.
+             </summary>
+             <value>The width of the stroke.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanPlaceholderStyle.TextColor">
+             <summary>
+             Gets or sets text color of the placeholder.
+             </summary>
+             <value>The color of the text.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanPlaceholderStyle.TextFont">
+             <summary>
+             Gets or sets text font of the placeholder.
+             </summary>
+             <value>The text font.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanPlaceholderStyle.StrokeDashes">
+             <summary>
+             Gets or sets stroke dashes of the placeholder.
+             </summary>
+             <value>The stroke dashes.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanPlaceholderStyle.SelectedBackgroundColor">
+             <summary>
+             Gets or sets selected backgroud color of the placeholder.
+             </summary>
+             <value>The color of the selected background.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanPlaceholderStyle.SelectedStrokeColor">
+             <summary>
+             Gets or sets selected stroke color of the placeholder.
+             </summary>
+             <value>The color of the selected stroke.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanPlaceholderStyle.SelectedStrokeWidth">
+             <summary>
+              Gets or sets selected stroke width of the placeholder.
+             </summary>
+             <value>The width of the selected stroke.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanPlaceholderStyle.SelectedTextColor">
+             <summary>
+             Gets or sets selected text color of the placeholder.
+             </summary>
+             <value>The color of the selected text.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanPlaceholderStyle.SelectedTextFont">
+             <summary>
+             Gets or sets selected text font of the placeholder.
+             </summary>
+             <value>The selected text font.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanPlaceholderStyle.SelectedStrokeDashes">
+             <summary>
+             Gets or sets selected stroke dashes of the placeholder.
+             </summary>
+             <value>The selected stroke dashes.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanColumn.ErrorBarSettings">
+             <summary>
+             Gets or sets customization of kanban error bar setting. 
+             </summary>
+             <value>The error bar settings.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanColumn.MinimumLimit">
+             <summary>
+              Gets or sets the minimum items limit for the column.
+             </summary>
+             <value>The minimum limit.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanColumn.MaximumLimit">
+             <summary>
+              Gets or sets the maximum items limit of the column.
+             </summary>
+             <value>The maximum limit.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanColumn.Title">
+             <summary>
+              Gets or sets the title of this column.
+             </summary>
+             <value>The title.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanColumn.ItemsCount">
+             <summary>
+             Gets the items count.
+             </summary>
+             <value>The items count.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanColumn.Categories">
+             <summary>
+             Gets or sets the categories for this column.
+             </summary>
+             <value>The categories.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanColumn.IsExpanded">
+             <summary>
+              Gets or sets to expand/collapse the column.
+             </summary>
+             <value>The is expanded.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanColumn.AllowDrag">
+             <summary>
+              Gets or sets to allow drag from this column.
+             </summary>
+             <value>The allow drag.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanColumn.AllowDrop">
+             <summary>
+              Gets or sets to allow drop to this column.
+             </summary>
+             <value>The allow drop.</value>
+            </member>
+        <member name="M:Syncfusion.SfKanban.iOS.KanbanColumn.InsertItem(System.Object,System.Int32)">
+             <summary>
+             Dynamically add item to column.
+             </summary>
+             <returns>The item.</returns>
+             <param name="data">Data.</param>
+             <param name="position">Position.</param>
+            </member>
+        <member name="M:Syncfusion.SfKanban.iOS.KanbanColumn.RemoveItem(System.Object)">
+             <summary>
+             Dynamically remove item from column
+             </summary>
+             <returns>The item.</returns>
+             <param name="data">Data.</param>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanItemViewCell.IndicatorColor">
+             <summary>
+              Gets or sets the indicator color of the item.
+             </summary>
+             <value>The color of the indicator.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanItemViewCell.Tags">
+             <summary>
+             Gets or sets the list of tags associated to the item.
+             </summary>
+             <value>The tags.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanItemViewCell.Indicator">
+             <summary>
+              Gets the indicator view of the item.
+             </summary>
+             <value>The indicator.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanItemViewCell.ItemDescription">
+             <summary>
+             Gets the description label of the item.
+             </summary>
+             <value>The item description.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanItemViewCell.ImageView">
+             <summary>
+             Gets the image view of the item.
+             </summary>
+             <value>The image view.</value>
+            </member>
+        <member name="P:Syncfusion.SfKanban.iOS.KanbanItemViewCell.Title">
+             <summary>
+              Gets the title label of the item.
+             </summary>
+             <value>The title.</value>
+            </member>
+    </members>
+</doc>

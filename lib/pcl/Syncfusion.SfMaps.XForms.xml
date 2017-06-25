@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfMaps.XForms</name>
+    </assembly>
+    <members>
+        <member name="P:Syncfusion.SfMaps.XForms.SfMaps.Layers">
+            <summary>
+            to get and set ShapeFileLayer value from maps
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.SfMaps.EnableZooming">
+            <summary>
+            to get and set whether to enable zooming or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.SfMaps.EnablePanning">
+            <summary>
+            to get and set whether to enable Panning or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.IconSize">
+            <summary>
+            to get and set the size of the MarkerIcon
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.LabelSize">
+            <summary>
+            to get and set the fontstyle of the label
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.MarkerIcon">
+            <summary>
+            to get and set the MarkerIcon value
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.IconColor">
+            <summary>
+            to get and set the color of the marker icon
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarkerSetting.LabelColor">
+            <summary>
+            to get and set the color for the label
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.ValuePath">
+            <summary>
+            to get and set the field value that is to be fetched from data for each bubble.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.ColorValuePath">
+            <summary>
+            to get and set the field value that is to be fetched from data for each bubble used for determining the bubble color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.MinSize">
+            <summary>
+            to get and set the minimum size of the bubble
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.MaxSize">
+            <summary>
+            to get and set the maximum size of the bubble
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.Fill">
+            <summary>
+            to get and set the fill color for bubbles.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.Opacity">
+            <summary>
+            to get and set the opacity for bubbles.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.ColorMappings">
+            <summary>
+            to get and set the ColorMappings of the Maps
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.BubbleMarkerSetting.ShowBubbles">
+            <summary>
+            to get and set whether to show bubbles or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ColorMapping.Color">
+            <summary>
+            to get and set the color for mapping
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ColorMapping.LegendLabel">
+            <summary>
+            to get and set the name of legendLabel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.EqualColorMapping.Value">
+            <summary>
+            to get and set the ColorMapping value to maps
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarker.Latitude">
+            <summary>
+            to get and set the latitude point which determine the Y-axis position of marker
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarker.Longitude">
+            <summary>
+            to get and set the longitude point which determine the X-axis position of marker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapMarker.Label">
+            <summary>
+            to get and set the text that displays some information about the annotation in text format
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.EnableSelection">
+            <summary>
+            to get and set whether to enable selection or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.Uri">
+            <summary>
+            to get and set Uri for the shapefile
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeIDPath">
+            <summary>
+            to get and set the ID of a shape from the ItemsSource.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeIDTableField">
+            <summary>
+            to get and set the string type property that refers to the column name in the dbf file to identify the shape
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.ItemsSource">
+            <summary>
+            to get and set itemsSource value for maps
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.MapPointTemplate">
+            <summary>
+            to get and set mappoint template
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.MapPointIcon">
+            <summary>
+            to get and set the MarkerIcon value
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.Markers">
+            <summary>
+            to get and set the markers to map
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.MarkerSettings">
+            <summary>
+            to get and set the marker setting to map
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeSettings">
+            <summary>
+            to get and set the shapeSettings value to maps
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.LegendSettings">
+            <summary>
+            to get and set the LegendSettings Value to the maps
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.BubbleMarkerSettings">
+            <summary>
+            to get and set the bubbleMarkerSetting value to maps
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.MarkerTemplate">
+            <summary>
+            to get and set whether to show map items or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShowMapItems">
+            <summary>
+            to get and set whether to show map items or not
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeSelectionEventHandler">
+            <summary>
+            Maps event handler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfMaps.XForms.ShapeFileLayer.ShapeSelected">
+            <summary>
+            Occurs when on Shape is tapped.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.OnMapShapeSelected(System.Object)">
+            <summary>
+            Calendars the tapped.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfMaps.XForms.ShapeFileLayer.MarkerSelectionEventHandler">
+            <summary>
+            Maps event handler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfMaps.XForms.ShapeFileLayer.MarkerSelected">
+            <summary>
+            Occurs when on Shape is tapped.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfMaps.XForms.ShapeFileLayer.OnMapMarkerSelected(Syncfusion.SfMaps.XForms.MapMarker)">
+            <summary>
+            Calendars the tapped.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapPointIcon.Rectangle">
+            <summary>
+            Sets Rectangle Shape
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapPointIcon.Circle">
+            <summary>
+            Sets Circle Shape
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapPointIcon.Square">
+            <summary>
+            Sets Square Shape
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapPointIcon.Diamond">
+            <summary>
+            Sets Diamond Shape
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfMaps.XForms.MapPointIcon.Star">
+            <summary>
+            Sets Star Shape
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.ShapeValuePath">
+            <summary>
+            to get and set the field value that is to be fetched from data for each shape.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.ShapeColorValuePath">
+            <summary>
+            to get and set the field value that is to be fetched from data for each shape used for determining the shape color
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.ColorMappings">
+            <summary>
+            to get and set the colorMappings value from the map.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.ShapeFill">
+            <summary>
+            to get and set the fill color of the shapes in the map.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.ShapeStroke">
+            <summary>
+            to get and set the border color of the shape in the map
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.ShapeStrokeThickness">
+            <summary>
+            to get and set the border thickness of the shape in the map
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.SelectedShapeColor">
+            <summary>
+            to get and set the selection color for shapes in the map
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.SelectedShapeStroke">
+            <summary>
+            to get and set the border color of the selected shape in the map
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.ShapeSetting.SelectedShapeStrokeThickness">
+            <summary>
+            to get and set the border thickness of the selected shape in the map
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.IconSize">
+            <summary>
+            to get and set iconSize value of the legend
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.LegendPosition">
+            <summary>
+            to get and set the position of the legend
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfMaps.XForms.MapLegendSetting.ShowLegend">
+            <summary>
+            to get and set whether to show legend or not
+            </summary>
+        </member>
+    </members>
+</doc>

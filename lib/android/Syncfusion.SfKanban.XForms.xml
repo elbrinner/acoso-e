@@ -1,0 +1,663 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfKanban.XForms</name>
+    </assembly>
+    <members>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEndEventArgs.TargetColumn">
+            <summary>
+             Gets the target column upon which the item is dropped.
+            </summary>
+            <value>The target column.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEndEventArgs.TargetIndex">
+            <summary>
+             Gets the index in the target column where the item is going to be inserted.
+            </summary>
+            <value>The index of the target.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEndEventArgs.Cancel">
+            <summary>
+             Gets or sets a value that determines whether to insert the item in the target column.
+            </summary>
+            <value>Cancel the drag.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEndEventArgs.TargetCategory">
+            <summary>
+             Get the dropped category value.
+            </summary>
+            <value>The target category.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEnterEventArgs.TargetColumn">
+            <summary>
+             Get the target column
+            </summary>
+            <value>The target column.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEnterEventArgs.TargetIndex">
+            <summary>
+             Get the target index of item.
+            </summary>
+            <value>The index of the target.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEnterEventArgs.Cancel">
+            <summary>
+            Determines whether to end the dragging.
+            </summary>
+            <value>Returns bool value.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEnterEventArgs.IsAboveMaximumLimit">
+            <summary>
+             Gets or sets a value that indicates whether the number of items in the column exceeds the maximum allowed limit.
+            </summary>
+            <value>The is above maximum limit.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEventArgs.SourceColumn">
+            <summary>
+            Gets the column, where the drag event occurs
+            </summary>
+            <value>The source column.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEventArgs.Data">
+            <summary>
+            Gets the model data of the captures item.
+            </summary>
+            <value>The data.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragEventArgs.SourceIndex">
+            <summary>
+             Gets the index of the captured item.
+            </summary>
+            <value>The index of the source.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragLeaveEventArgs.TargetColumn">
+            <summary>
+            Gets the target column out of which the user drags the item.
+            </summary>
+            <value>The target column.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragLeaveEventArgs.IsBelowMinimumLimit">
+            <summary>
+             Gets or sets a value that indicates whether the number of items in the column is less than the minimum allowed limit.
+            </summary>
+            <value>The is below minimum limit.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragOverEventArgs.TargetColumn">
+            <summary>
+             Gets the target column upon which the item is being dragged.
+            </summary>
+            <value>The target column.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragOverEventArgs.TargetIndex">
+            <summary>
+            Gets the target index of the item.
+            </summary>
+            <value>The index of the target.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragOverEventArgs.Cancel">
+            <summary>
+             Gets or sets a value that determines whether to show the item placeholder for the current target index.
+            </summary>
+            <value>The cancel.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragStartEventArgs.Cancel">
+            <summary>
+             Gets or sets whether to continue the drag event.
+            </summary>
+            <value>The cancel.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanDragStartEventArgs.KeepItem">
+            <summary>
+            Gets or sets whether to keep the orginal item in the source column. The item will be removed from the source column only after the drag ended on other column.
+            </summary>
+            <value>The keep item.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanTappedEventArgs.Column">
+            <summary>
+            Gets the column, where the tapped event occurs.
+            </summary>
+            <value>The column.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanTappedEventArgs.Index">
+            <summary>
+            Gets the index of the tapped item.
+            </summary>
+            <value>The index.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanTappedEventArgs.Data">
+            <summary>
+            Gets the model data of the tapped item.
+            </summary>
+            <value>The data.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.MinimumLimitProperty">
+            <summary>
+            Gets or sets the minimum items limit for the column. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.MinimumLimit">
+            <summary>
+            Gets or sets the minimum items limit for the column. This is a bindable property.
+            </summary>
+            <value>This property take the integer value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.MaximumLimitProperty">
+            <summary>
+            Gets or sets the maximum items limit of the column. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.MaximumLimit">
+            <summary>
+            Gets or sets the maximum items limit of the column. This is a bindable property.
+            </summary>
+            <value>This property take the integer value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.ItemsCountProperty">
+            <summary>
+            Gets the items count. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.ItemsCount">
+            <summary>
+            Gets the items count. This is a bindable property.
+            </summary>
+            <value>This property take the integer value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.CategoriesProperty">
+            <summary>
+            Gets or sets the categories for this column. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.Categories">
+            <summary>
+            Gets or sets the categories for this column. This is a bindable property.
+            </summary>
+            <value>This property take the objests.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.TitleProperty">
+            <summary>
+            Gets or sets the title of this column.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.Title">
+            <summary>
+            Gets or sets the title of this column. This is a bindable property.
+            </summary>
+            <value>This property takes the string value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.IsExpandedProperty">
+            <summary>
+            Gets or sets the value that indicates whether to expanded. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.IsExpanded">
+            <summary>
+            Gets or sets the value that indicates whether to expanded. This is a bindable property.
+            </summary>
+            <value>This property take the boool value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.AllowDragProperty">
+            <summary>
+            Gets or sets the value that indicates whether to allow the drag support. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.AllowDrag">
+            <summary>
+            Gets or sets the value that indicates whether to allow the drag support. This is a bindable property.
+            </summary>
+            <value>This property take the boool value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.AllowDropProperty">
+            <summary>
+            Gets or sets the value that indicates whether to allow the drop support. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.AllowDrop">
+            <summary>
+            Gets or sets the value that indicates whether to allow the drop support. This is a bindable property.
+            </summary>
+            <value>This property take the boool value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColumn.ErrorbarSettingsProperty">
+            <summary>
+            Gets or sets customization of kanban error bar setting. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanColumn.ErrorbarSettings">
+            <summary>
+            Gets or sets customization of kanban error bar setting. This is a bindable property.
+            </summary>
+            <value>This property take the KanbanErrorBarSettings value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColorMapping.key">
+            <summary>
+            Gets or sets color key for the kanban item.
+            </summary>
+            <value>The key.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanColorMapping.color">
+            <summary>
+            Gets or sets color for the kanban item associated to color key.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanModel.colorKey">
+            <summary>
+            Gets or sets the indicator color key of Kanban item
+            </summary>
+            <value>The color key.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanModel.iD">
+            <summary>
+            Gets or sets the ID of Kanban item.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanModel.title">
+            <summary>
+            Gets or sets the title of Kanban item.
+            </summary>
+            <value>The title.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanModel.imageURL">
+            <summary>
+            Gets or sets the image URL of Kanban item.
+            </summary>
+            <value>The image URL.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanModel.category">
+            <summary>
+             Gets or sets the category of Kanban item.
+            </summary>
+            <value>The category.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanModel.description">
+            <summary>
+            Gets or sets the description of Kanban item.
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanModel.tags">
+            <summary>
+            Gets or sets the tags of Kanban item
+            </summary>
+            <value>The tags.</value>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.SfKanban.ItemTapped">
+            <summary>
+            This event will be fired when we tap on the item.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.SfKanban.DragStart">
+            <summary>
+            This event will be fired when we start to drag a item.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.SfKanban.DragEnd">
+             <summary>
+             This event should be fired whenever dragging is cancelled in following cases,
+            Event can be cancelled. When this event is cancelled, item will not be dropped on to the target column.
+             </summary>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.SfKanban.DragEnter">
+            <summary>
+            This event should be fired when a item enters a column. Event can be cancelled. 
+            When it is cancelled, DragOver events will not be fired for that target column at all and placeholder should not appear on further move over the same column.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.SfKanban.DragLeave">
+            <summary>
+            This event should be fired when the item leaves the column. 
+            So it means, this event should be preceded by DragStart or DragEnter events.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.SfKanban.DragOver">
+            <summary>
+            This event will be fired when placeholder appears in new position or whenever placeholder position changes on further move within same column. 
+            Usually this event will be called after DragStart or DragEnter events.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfKanban.XForms.SfKanban.ColumnsGenerated">
+            <summary>
+            This event will be fired when after the columns are auto-generated. 
+            In this event, user can change the header text of the column.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.ColumnMappingPathProperty">
+            <summary>
+            Gets or sets the key which is used to generate the columns.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.ColumnMappingPath">
+            <summary>
+            Gets or sets the key which is used to generate the columns. This is a bindable property.
+            </summary>
+            <value>This property takes the string value.</value>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.AutoGenerateColumns">
+            <summary>
+            Gets or sets whether the column can auto generated based on the category value.
+            </summary>
+            <value>This property take the boolean value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.AutoGenerateColumnsProperty">
+            <summary>
+            Gets or sets whether the column can auto generated based on the category value. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.ColumnWidth">
+            <summary>
+            Gets or sets the value that defines the column width. This is a bindable property.
+            </summary>
+            <value>This property take the double value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.ColumnWidthProperty">
+            <summary>
+            Gets or sets the value that defines the column width. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.MinimumColumnWidthProperty">
+            <summary>
+            Gets or sets the minimum width of the column. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.MinimumColumnWidth">
+            <summary>
+            Gets or sets the minimum width of the column. This is a bindable property.
+            </summary>
+            <value>This property take the double value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.MaximumColumnWidthProperty">
+            <summary>
+            Gets or sets the maximum column width. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.MaximumColumnWidth">
+            <summary>
+            Gets or sets the maximum column width. This is a bindable property.
+            </summary>
+            <value>This property take the double value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.ItemsSourceProperty">
+            <summary>
+            Gets or sets the items source for Kanban. This is a bindable property.
+            </summary> 
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.ItemsSource">
+            <summary>
+            Gets or sets the items source for Kanban. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.ColumnsProperty">
+            <summary>
+            Gets or sets the columns of Kanban.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.Columns">
+            <summary>
+            Gets or sets the columns of Kanban.
+            </summary>
+            <value>kanbanColumnCollection</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.ActualColumnsProperty">
+            <summary>
+            Gets the visible columns.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.ActualColumns">
+            <summary>
+            Gets the visible columns.
+            </summary>
+            <value>kanbanColumnCollection</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.WorkflowsProperty">
+            <summary>
+            Gets or sets the workflows of kanban.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.Workflows">
+            <summary>
+            Gets or sets the Workflows of kanban. This is a bindable property.
+            </summary>
+            <value>This property take the Workflows value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.ColorModelProperty">
+            <summary>
+            Gets or sets the color palette for the item indicators based on ColorKey property of KanbanModel. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.ColorModel">
+            <summary>
+            Gets or sets the color palette for the item indicators based on ColorKey property of KanbanModel. This is a bindable property.
+            </summary>
+            <value>This property take the color value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.PlaceholderStyleProperty">
+            <summary>
+            Gets or sets the placeholder style. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.PlaceholderStyle">
+            <summary>
+            Gets or sets the placeholder style. This is a bindable property.
+            </summary>
+            <value>This property takes the <see cref="T:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle"/> as its value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.HeaderTemplateProperty">
+            <summary>
+            Gets or sets template for kanban Header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.HeaderTemplate">
+            <summary>
+            The <c>HeaderTemplate</c> property sets the template for Kanban header. This is a bindable property.
+            </summary>
+            <value>This property takes the DataTemplate value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.SfKanban.CardTemplateProperty">
+            <summary>
+            Gets or sets template for kanban item view cell.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.SfKanban.CardTemplate">
+            <summary>
+            The <c>CardTemplate</c> property sets the template for kanban item view cell. This is a bindable property.
+            </summary>
+            <value>This property takes the DataTemplate value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.BackgroundColorProperty">
+            <summary>
+            Gets or sets backgroud color of the placeholder. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.BackgroundColor">
+            <summary>
+            Gets or sets backgroud color of the placeholder. This is a bindable property.
+            </summary>
+            <value>This property take color.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.BorderColorProperty">
+            <summary>
+            Gets or sets stroke color of the placeholder. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.BorderColor">
+            <summary>
+            Gets or sets stroke color of the placeholder. This is a bindable property.
+            </summary>
+            <value>This property take color.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.TextColorProperty">
+            <summary>
+            Gets or sets text color of the placeholder. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.TextColor">
+            <summary>
+            Gets or sets text color of the placeholder. This is a bindable property.
+            </summary>
+            <value>This property take color.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBackgroundColorProperty">
+            <summary>
+            Gets or sets the selected placeholder background color. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBackgroundColor">
+            <summary>
+            Gets or sets the selected placeholder background color. This is a bindable property.
+            </summary>
+            <value>This property take color.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBorderColorProperty">
+            <summary>
+            Gets or sets the selected placeholder border color. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBorderColor">
+            <summary>
+            Gets or sets the selected placeholder border color. This is a bindable property.
+            </summary>
+            <value>This property take color.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedTextColorProperty">
+            <summary>
+            Gets or sets the selected placeholder text color. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedTextColor">
+            <summary>
+            Gets or sets the selected placeholder text color. This is a bindable property.
+            </summary>
+            <value>This property take color.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.StrokeDashArrayProperty">
+            <summary>
+            Gets or sets the dash array for the line. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.StrokeDashArray">
+            <summary>
+            Gets or sets the dash array for the line. This is a bindable property.
+            </summary>
+            <value>This property takes the double array as its value.</value>
+            <example>
+            <code>kanbanPlaceholderStyle.StrokeDashArray= new double[]{ 1, 3 };</code>
+            </example>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedStrokeDashArrayProperty">
+            <summary>
+            Gets or sets the selected placeholder dash array for the line. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedStrokeDashArray">
+            <summary>
+            Gets or sets the selected placeholder dash array for the line. This is a bindable property.
+            </summary>
+            <value>This property takes the double array as its value.</value>
+            <example>
+            <code>kanbanPlaceholderStyle.SelectedStrokeDashArray= new double[]{ 1, 3 };</code>
+            </example>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.BorderThicknessProperty">
+            <summary>
+            Gets or sets the border thickness of the placeholder. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.BorderThickness">
+            <summary>
+            Gets or sets the border thickness of the placeholder. This is a bindable property.
+            </summary>
+            <value>This property takes the<see cref="T:System.Double"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBorderThicknessProperty">
+            <summary>
+            Gets or sets the selected placeholder border thickness. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedBorderThickness">
+            <summary>
+            Gets or sets the selected placeholder border thickness. This is a bindable property.
+            </summary>
+            <value>This property takes the<see cref="T:System.Double"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedFontSizeProperty">
+            <summary>
+            Gets or sets the selected placeholder font size. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.SelectedFontSize">
+            <summary>
+            Gets or sets the selected placeholder font size. This is a bindable property.
+            </summary>
+            <value>This property takes the<see cref="T:System.Double"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.FontSizeProperty">
+            <summary>
+            Gets or sets the font size of the placeholder text. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.FontSize">
+            <summary>
+            Gets or sets the font size of the placeholder text. This is a bindable property.
+            </summary>
+            <value>This property takes the<see cref="T:System.Double"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.ColorProperty">
+            <summary>
+            Gets or sets the color. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.Color">
+            <summary>
+            Gets or sets the color. This is a bindable property.
+            </summary>
+            <value>This property take color.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.MinValidationColorProperty">
+            <summary>
+            Gets or sets the min validation color. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.MinValidationColor">
+            <summary>
+            Gets or sets the Min Validation color. This is a bindable property.
+            </summary>
+            <value>This property take color.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.MaxValidationColorProperty">
+            <summary>
+            Gets or sets the max validation color. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.MaxValidationColor">
+            <summary>
+            Gets or sets the Max Validation color. This is a bindable property.
+            </summary>
+            <value>This property take color.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.HeightProperty">
+            <summary>
+            Gets or sets the height of the error bar. This is a bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfKanban.XForms.KanbanErrorBarSettings.Height">
+            <summary>
+            Gets or sets the Height of error bar. This is a bindable property.
+            </summary>
+            <value>This property takes the<see cref="T:System.Double"/> value.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanWorkflow.category">
+            <summary>
+            Gets or sets Category for the kanban item.
+            </summary>
+            <value>The Category.</value>
+        </member>
+        <member name="F:Syncfusion.SfKanban.XForms.KanbanWorkflow.allowedTransitions">
+            <summary>
+            Gets or sets color for the kanban item associated to color key.
+            </summary>
+            <value>The color.</value>
+        </member>
+    </members>
+</doc>

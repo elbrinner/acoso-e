@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfRating.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfRating.XForms.SfRating">
+            <summary>
+            Sf rating.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRating.XForms.SfRating.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfRating.XForms.SfRating"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRating.XForms.SfRating.ValueEventHandler">
+            <summary>
+            Represents the method that will handle the SfRating.Value event of a SfRating.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfRating.XForms.SfRating.ValueChanged">
+            <summary>
+            Occurs when value changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRating.XForms.SfRating.RaiseValueChanging(Syncfusion.SfRating.XForms.ValueEventArgs)">
+            <summary>
+            Raises the value changing.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.ItemSize">
+            <summary>
+            Gets or sets the layout size.
+            </summary>
+            <value>The layout size.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.ItemSizeProperty">
+            <summary>
+            The layout size property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.ItemSpacing">
+            <summary>
+            Gets or sets the item spacing.
+            </summary>
+            <value>The item spacing.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.ItemSpacingProperty">
+            <summary>
+            The item spacing property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.ItemCount">
+            <summary>
+            Gets or sets the items count
+            </summary>
+            <value>The items count.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.ItemCountProperty">
+            <summary>
+            The items count property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.Value">
+            <summary>
+            Gets or sets the Value property.
+            </summary>
+            <value>The Value property.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.ValueProperty">
+            <summary>
+            The value property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.ReadOnly">
+            <summary>
+            Gets or sets the read only.
+            </summary>
+            <value>The read only.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.ReadOnlyProperty">
+            <summary>
+            The read only property.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Syncfusion.SfRating.XForms.SfRating.Precision" -->
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.PrecisionProperty">
+            <summary>
+            The precision mode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.TooltipPlacement">
+            <summary>
+            Gets or sets the tool tip.
+            </summary>
+            <value>The tool tip.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.TooltipPlacementProperty">
+            <summary>
+            The tool tip orientation property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.TooltipPrecision">
+            <summary>
+            Gets or sets a precision indicating whether this <see cref="T:Syncfusion.SfRating.XForms.SfRating"/>
+            Number of decimal in ToolTip.
+            </summary>
+            <value><c>true</c> if show value label; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.TooltipPrecisionProperty">
+            <summary>
+            The tool tip precision value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.TooltipBackgroundColor">
+            <summary>
+            Gets or sets the color of the ToolTipBackground Color.
+            </summary>
+            <value>The color of the track selection.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.TooltipBackgroundColorProperty">
+            <summary>
+            The tool tip background color property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.TooltipTextColor">
+            <summary>
+            Gets or sets the color of the ToolTip Text Color.
+            </summary>
+            <value>The color of the track selection.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.TooltipTextColorProperty">
+            <summary>
+            The tool tip text color property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRating.RatingSettings">
+            <summary>
+            Gets or sets the SfratingSettings properties.
+            </summary>
+            <value>The sfratingSettings properties.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRating.RatingSettingsProperty">
+            <summary>
+            The sfratingSettings properties.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRating.XForms.SfRating.OnSizeRequest(System.Double,System.Double)">
+            <summary>
+            Raises the size request event.
+            </summary>
+            <param name="widthConstraint">Width constraint.</param>
+            <param name="heightConstraint">Height constraint.</param>
+        </member>
+        <member name="T:Syncfusion.SfRating.XForms.ValueEventArgs">
+            <summary>
+            Value event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.ValueEventArgs.Rating">
+            <summary>
+            Gets or sets the rating.
+            </summary>
+            <value>The rating.</value>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.ValueEventArgs.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:Syncfusion.SfRating.XForms.SfRatingSettings">
+            <summary>
+            Sf rating settings.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRating.XForms.SfRatingSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfRating.XForms.SfRatingSettings"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRatingSettings.RatedFill">
+            <summary>
+            Gets or sets rated fill. 
+            </summary>
+            <value>The color of the rated fill of the star.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRatingSettings.RatedFillProperty">
+            <summary>
+            The rated fill property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRatingSettings.RatedStroke">
+            <summary>
+            Gets or sets the rated stroke.
+            </summary>
+            <value>The color of the rated stroke of the star.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRatingSettings.RatedStrokeProperty">
+            <summary>
+            The rated stroke color property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRatingSettings.RatedStrokeWidth">
+            <summary>
+            Gets or sets the rated stroke Width
+            </summary>
+            <value>The rated stroke Width of the star.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRatingSettings.RatedStrokeWidthProperty">
+            <summary>
+            The rated stroke Width property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRatingSettings.UnRatedFill">
+            <summary>
+            Gets or sets unrated fill. 
+            </summary>
+            <value>The color of the unrated fill of the star.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRatingSettings.UnRatedFillProperty">
+            <summary>
+            The unrated fill property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRatingSettings.UnRatedStroke">
+            <summary>
+            Gets or sets the unrated stroke.
+            </summary>
+            <value>The color of the unrated stroke of the star.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRatingSettings.UnRatedStrokeProperty">
+            <summary>
+            The rated stroke color property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRating.XForms.SfRatingSettings.UnRatedStrokeWidth">
+            <summary>
+            Gets or sets the unrated stroke Width
+            </summary>
+            <value>The unrated stroke Width of the star.</value>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.SfRatingSettings.UnRatedStrokeWidthProperty">
+            <summary>
+            The unrated stroke Width property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRating.XForms.Precision">
+            <summary>
+            Precision Mode defines the accuracy level of the rating control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.Precision.Standard">
+            <summary>
+            The rating item will be filled completely based on the rating value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.Precision.Half">
+            <summary>
+            The rating item will be filled partially based on the rating value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.Precision.Exact">
+             <summary>
+             The rating item will be filled exactly based on the rating value.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRating.XForms.TooltipPlacement">
+            <summary>
+            Rating control provides tooltip support with rating values.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.TooltipPlacement.TopLeft">
+            <summary>
+            The Tooltip will display on top of the SfRating control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.TooltipPlacement.BottomRight">
+            <summary>
+            The Tooltip will display on bottom of the SfRating control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRating.XForms.TooltipPlacement.None">
+            <summary>
+            It is used to invisible the tool tip in the SfRating control.
+            </summary>
+        </member>
+    </members>
+</doc>

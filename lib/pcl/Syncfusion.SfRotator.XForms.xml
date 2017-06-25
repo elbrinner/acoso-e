@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfRotator.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfRotator.XForms.NavigationDirection">
+            <summary>
+            Navigation direction specifies the direction in which items should be navigated in Rotator control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.NavigationDirection.Horizontal">
+            <summary>
+            Items can be navigated in horizontal direction.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.NavigationDirection.Vertical">
+            <summary>
+            Items can be navigated in vertical direction.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRotator.XForms.NavigationStripPosition">
+            <summary>
+            Navigation strip position specifies the placement position of the navigation bar items such as thumbnail or dots relative to the slider area.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.NavigationStripPosition.Left">
+            <summary>
+             Displays the position of the navigation bar items to left.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.NavigationStripPosition.Top">
+            <summary>
+            Displays the position of the navigation bar items to top.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.NavigationStripPosition.Right">
+            <summary>
+            Displays the position of the navigation bar items to right.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.NavigationStripPosition.Bottom">
+            <summary>
+            Displays the position of the navigation bar items to bottom.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRotator.XForms.NavigationStripMode">
+            <summary>
+            Navigation strip mode specifies the appearance of navigation bar items. .
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.NavigationStripMode.Dots">
+            <summary>
+            When a dots item is clicked, the slider will switch to the corresponding image data.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.NavigationStripMode.Thumbnail">
+            <summary>
+            When a thumbnail item is clicked, the slider will switch to the corresponding image data.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRotator.XForms.SfRotator">
+            <summary>
+            SfRotator.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRotator.XForms.SfRotator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfRotator.XForms.SfRotator"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfRotator.XForms.SfRotator.SelectedIndexChangedEventHandler">
+            <summary>
+            Represents the method that will handle the SfRotator.SelectedIndexChanged event of a SfRotator.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.SfRotator.XForms.SfRotator.SelectedIndexChanged">
+            <summary>
+            Occurs when selected index changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRotator.XForms.SfRotator.RaiseSelectedIndexChanged(Syncfusion.SfRotator.XForms.SelectedIndexChangedEventArgs)">
+            <summary>
+            Raises the selected index changed.
+            </summary>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="P:Syncfusion.SfRotator.XForms.SfRotator.NavigationStripMode">
+            <summary>
+            Gets or sets the navigation strip mode.
+            </summary>
+            <value>The navigation strip mode.</value>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.SfRotator.NavigationStripModeProperty">
+            <summary>
+            The navigation strip mode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRotator.XForms.SfRotator.NavigationDirection">
+            <summary>
+            Gets or sets the navigation direction.
+            </summary>
+            <value>The navigation direction.</value>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.SfRotator.NavigationDirectionProperty">
+            <summary>
+            The navigation direction property sets the navigation direction in Rotator.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRotator.XForms.SfRotator.NavigationStripPosition">
+            <summary>
+            Gets or sets the navigation strip position.
+            </summary>
+            <value>The navigation strip position.</value>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.SfRotator.NavigationStripPositionProperty">
+            <summary>
+            The navigation strip position property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRotator.XForms.SfRotator.EnableAutoPlay">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="!:Syncfusion.SfImageSlider.XForms.SfImageSlider"/>
+            enable auto play.
+            </summary>
+            <value><c>true</c> if enable auto play; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.SfRotator.EnableAutoPlayProperty">
+            <summary>
+            The enable auto play property sets the image to slide automatically.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRotator.XForms.SfRotator.EnableSwiping">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="!:Syncfusion.SfImageSlider.XForms.SfImageSlider"/>
+            enable auto play.
+            </summary>
+            <value><c>true</c> if enable auto play; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.SfRotator.EnableSwipingProperty">
+            <summary>
+            The enable auto play property sets the image to slide automatically.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRotator.XForms.SfRotator.EnableLooping">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="!:Syncfusion.SfImageSlider.XForms.SfImageSlider"/> enable looping.
+            </summary>
+            <value><c>true</c> if enable looping; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.SfRotator.EnableLoopingProperty">
+            <summary>
+            The enable looping property sets the image in a loop when it is enabled.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRotator.XForms.SfRotator.IsTextVisible">
+            <summary>
+            Gets or sets a value indicating whether this instance is text visible.
+            </summary>
+            <value><c>true</c> if this instance is text visible; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.SfRotator.IsTextVisibleProperty">
+            <summary>
+            The text visible property sets the visibility of text in Rotator.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRotator.XForms.SfRotator.DataSource">
+            <summary>
+            Gets or sets the data source.
+            </summary>
+            <value>The data source.</value>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.SfRotator.DataSourceProperty">
+            <summary>
+            The data source property sets the items that can be populated with a collection of business objects.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRotator.XForms.SfRotator.ItemTemplate">
+            <summary>
+            Gets or sets the item template.
+            </summary>
+            <value>The item template.</value>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.SfRotator.ItemTemplateProperty">
+            <summary>
+            The item template property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRotator.XForms.SfRotator.ItemsSource">
+            <summary>
+            Gets or sets the items source.
+            </summary>
+            <value>The items source.</value>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.SfRotator.ItemsSourceProperty">
+            <summary>
+            The items source property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRotator.XForms.SfRotator.SelectedIndex">
+            <summary>
+            Gets or sets the index of the selected.
+            </summary>
+            <value>The index of the selected.</value>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.SfRotator.SelectedIndexProperty">
+            <summary>
+            The selected index property sets the selected index in Rotator.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRotator.XForms.SfRotator.NavigationDelay">
+            <summary>
+            Gets or sets the navigation delay.
+            </summary>
+            <value>The navigation delay.</value>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.SfRotator.NavigationDelayProperty">
+            <summary>
+            The navigation delay property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfRotator.XForms.SfRotator.OnSizeRequest(System.Double,System.Double)">
+            <summary>
+            Raises the size request event.
+            </summary>
+            <param name="widthConstraint">Width constraint.</param>
+            <param name="heightConstraint">Height constraint.</param>
+        </member>
+        <member name="T:Syncfusion.SfRotator.XForms.SelectedIndexChangedEventArgs">
+            <summary>
+            Selected index changed event arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRotator.XForms.SelectedIndexChangedEventArgs.Rotator">
+            <summary>
+            Gets or sets the rotator.
+            </summary>
+            <value>The rotator.</value>
+        </member>
+        <member name="P:Syncfusion.SfRotator.XForms.SelectedIndexChangedEventArgs.Index">
+            <summary>
+            Gets or sets the index.
+            </summary>
+            <value>The index.</value>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.SfRotatorItem.ItemContentProperty">
+            <summary>
+            The navigation mode property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.SfRotatorItem.ImageProperty">
+            <summary>
+            The navigation mode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfRotator.XForms.SfRotatorItem.ItemText">
+            <summary>
+            Gets or sets the navigation direction.
+            </summary>
+            <value>The navigation direction.</value>
+        </member>
+        <member name="F:Syncfusion.SfRotator.XForms.SfRotatorItem.ItemTextProperty">
+            <summary>
+            The navigation direction property.
+            </summary>
+        </member>
+    </members>
+</doc>

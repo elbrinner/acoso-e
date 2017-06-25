@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bully.Views.Ciberacoso.CiberacosoView"
+             Title="Denunciar el ciberacoso"
+             Style="{ StaticResource MainPageStyle}">
+    <ScrollView x:Name="outerScrollView">
+        <StackLayout Padding="10">
+
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="1" Padding="0,50,0,0">
+
+                    <Label  Style="{StaticResource TextH1}" Text="Ciberacoso"></Label>
+                    
+	
+                    <Label  Style="{StaticResource TextClassic}" Text="Los mensajes de Internet pueden ser efímeros, por lo que una recomendación común es que guardemos capturas o las URLs de los mensajes que queramos denunciar para asegurarnos de conservar las pruebas. De hecho veremos que prácticamente todas las grandes redes sociales incluyen un espacio en el que describir la agresión, lugar en el que es recomendable meter todos los datos posibles, direcciones y capturas incluidas."></Label>
+                   <Label  Style="{StaticResource TextH1}" Text="Denunciar"></Label>
+                   
+                    <StackLayout  Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50">
+                    <Button Style="{StaticResource AppButtomSocial}" Command="{Binding CallFacebookCommand}" Text="Facebook"></Button>
+
+                    <Button Style="{StaticResource AppButtomSocial}" Command="{Binding CallTwitterCommand}"  Text="Twitter"></Button>
+
+                    <Button Style="{StaticResource AppButtomSocial}" Command="{Binding CallInstagramCommand}"  Text="Instagram"></Button>
+                </StackLayout>
+                </StackLayout>
+
+
+
+
+                <Image x:Name="header" Source="socialmedia.jpg" Aspect="AspectFill"/> 
+            </Grid>
+
+           
+
+           
+          
+        
+        
+        </StackLayout>
+  </ScrollView>
+</ContentPage>

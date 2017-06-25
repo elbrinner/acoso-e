@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfBusyIndicator.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfBusyIndicator.XForms.AnimationTypes">
+            <summary>
+            Animation type allows you to choose one of the animation from the built-in animations supported.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.AnimationTypes.Ball">
+            <summary>
+            Displays this animation if its animation type is set as Ball.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.AnimationTypes.Battery">
+            <summary>
+            Displays this animation if its animation type is set as Battery.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.AnimationTypes.Box">
+            <summary>
+            Displays this animation if its animation type is set as Box.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.AnimationTypes.DoubleCircle">
+            <summary>
+            Displays this animation if its animation type is set as DoubleCircle.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.AnimationTypes.ECG">
+            <summary>
+            Displays this animation if its animation type is set as ECG.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.AnimationTypes.Globe">
+            <summary>
+            Displays this animation if its animation type is set as Globe.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.AnimationTypes.Gear">
+            <summary>
+            Displays this animation if its animation type is set as Gear.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.AnimationTypes.HorizontalPulsingBox">
+            <summary>
+            Displays this animation if its animation type is set as HorizontalPulsingBox.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.AnimationTypes.MovieTimer">
+            <summary>
+            Displays this animation if its animation type is set as MovieTimer.
+            </summary>	
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.AnimationTypes.None">
+            <summary>
+            Displays this animation if its animation type is set as None.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.AnimationTypes.Print">
+            <summary>
+            Displays this animation if its animation type is set as Print.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.AnimationTypes.Rectangle">
+            <summary>
+            Displays this animation if its animation type is set as Rectangle.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.AnimationTypes.RollingBall">
+            <summary>
+            Displays this animation if its animation type is set as RollingBall.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.AnimationTypes.SingleCircle">
+            <summary>
+            Displays this animation if its animation type is set as SingleCircle.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.AnimationTypes.SlicedCircle">
+            <summary>
+            Displays this animation if its animation type is set as SlicedCircle.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.AnimationTypes.ZoomingTarget">
+            <summary>
+            Displays this animation if its animation type is set as ZoomingTarget.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator">
+            <summary>
+            Sf busy indicator.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.AnimationType">
+            <summary>
+            Gets or sets the type of the animation.
+            </summary>
+            <value>The type of the animation.</value>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.AnimationTypeProperty">
+            <summary>
+            The animation type property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.TextColor">
+            <summary>
+            Gets or sets the color of the text.
+            </summary>
+            <value>The color of the text.</value>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.TextColorProperty">
+            <summary>
+            The text color property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.TextSize">
+            <summary>
+            Gets or sets the size of the text.
+            </summary>
+            <value>The size of the text.</value>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.TextSizeProperty">
+            <summary>
+            The text size property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.ViewBoxWidth">
+            <summary>
+            Gets or sets the width of the view box.
+            </summary>
+            <value>The width of the view box.</value>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.ViewBoxWidthProperty">
+            <summary>
+            The view box width property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.ViewBoxHeight">
+            <summary>
+            Gets or sets the height of the view box.
+            </summary>
+            <value>The height of the view box.</value>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.ViewBoxHeightProperty">
+            <summary>
+            The view box height property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.Duration">
+            <summary>
+            Gets or sets the Duration
+            </summary>
+            <value>The Duration of the Animation.</value>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.DurationProperty">
+            <summary>
+            The duration property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.Title">
+            <summary>
+            Gets or sets the title.
+            </summary>
+            <value>The title.</value>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.TitleProperty">
+            <summary>
+            The title property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.IsBusy">
+            <summary>
+            Gets or sets a value indicating whether this instance is busy.
+            </summary>
+            <value><c>true</c> if this instance is busy; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.IsBusyProperty">
+            <summary>
+            The is busy property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.OnSizeRequest(System.Double,System.Double)">
+            <summary>
+            Raises the size request event.
+            </summary>
+            <param name="widthConstraint">Width constraint.</param>
+            <param name="heightConstraint">Height constraint.</param>
+        </member>
+    </members>
+</doc>

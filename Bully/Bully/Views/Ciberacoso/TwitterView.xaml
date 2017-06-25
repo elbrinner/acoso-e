@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bully.Views.Ciberacoso.TwitterView"
+             Title="Denunciar en Twitter"
+     Style="{ StaticResource MainPageStyle}">
+    <ScrollView  x:Name="outerScrollView">
+
+
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="1">
+
+                    <Label  Style="{StaticResource TextH1}" Margin="0,10" Text="Cómo denunciar el ciberacoso en Twitter"></Label>
+
+                <Label Style="{StaticResource TextClassic}" Text="Twitter también tiene una mecánica sumamente sencilla para denunciar los abusos, y la aplica tanto para que podamos reportar un tuit en concreto o toda una cuenta. Lo único que tendremos que hacer es darle al icono de opciones de la cuenta o perfil y elegir la opción 'Reportar'. A partir de ahí sólo tendremos que concretar nuestro caso eligiendo las opciones que se lo presenten."></Label>
+
+                <Label Style="{StaticResource TextClassic}" Text="En el caso de un perfil completo,, tras darle la opción de Reportar tendremos que elegir las opciones Está siendo abusivo o perjudicial y Participa en acoso o violencia. Entonces tendremos la opción de decir si nos acosan a nosotros o a otra persona. Después especificaremos si son mensajes son Irrespetuosos u ofensivos, si simplemente Nos están acosando o Amenazando con violencia o daño físico. Por último tendremoss la opción de escribir un texto explicando qué está pasando."></Label>
+
+                <Label Style="{StaticResource TextClassic}" Text="Por último, Twitter también cuenta con un formulario en su web en el que podemos elegir las opciones que más se acerquen al tipo de acoso que estemos sufriendo, meter nuestros datos y los de el acosador, y explicar el problema en un cuadro de texto. Cuando enviemos la denuncia recibiremos una copia que le podremos proporcionar a las autoridades."></Label>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Grid.Row="2"  HorizontalOptions="Center" VerticalOptions="End">
+                <Button Style="{StaticResource AppButtomSocial}"  Command="{Binding CallCommand}"  Margin="0,100" VerticalOptions="Center" WidthRequest="250"  Text="Denunciar por la web"></Button>
+                </StackLayout>
+                <Image x:Name="header" Source="twitter_capa.jpg" Aspect="AspectFill"/>
+
+            </Grid>
+
+        </ScrollView>
+</ContentPage>

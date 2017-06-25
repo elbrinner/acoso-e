@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfPdfViewer.XForms</name>
+    </assembly>
+    <members>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.PageChangedEventArgs.PageNumber">
+            <summary>
+            Gets the current page number
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageChanged">
+            <summary>
+            Occurs when current page is changed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.DocumentLoaded">
+            <summary>
+            Occurs when document is loaded.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageNumber">
+            <summary>
+            Gets or Sets the page number
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageCount">
+            <summary>
+            Gets the page count
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InputFileStream">
+            <summary>
+            Gets and Sets the input file stream
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageCountProperty">
+            <summary>
+            Identifies the PageCount bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.ItemSourceProperty">
+            <summary>
+            Identifies the ItemsSource bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.PageNumberProperty">
+            <summary>
+            Identifies the PageNumber bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.InputFileStreamProperty">
+            <summary>
+            Identifies the InputFileStream bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.Unload">
+            <summary>
+            Unloads the PDF Viewer
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.LoadDocument(System.IO.Stream)">
+            <summary>
+            Loads a Pdf document  in the Pdf viewer from the specified stream.
+            </summary>
+            <param name="stream">A stream that contains the data for the Pdf document</param>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.GoToPage(System.Int32)">
+            <summary>
+            Navigates to the specified page.
+            </summary>
+            <param name="pageNumber">The page number</param>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.GoToNextPage">
+            <summary>
+            Navigates to the next page of the document.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfPdfViewer.XForms.SfPdfViewer.GoToPreviousPage">
+            <summary>
+            Navigates to the previous page of the document.
+            </summary>
+        </member>
+    </members>
+</doc>

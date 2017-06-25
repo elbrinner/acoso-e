@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bully.Views.Violencia.ViolenciaGeneroView" 
+    Title="Violencia de género"  
+    Style="{ StaticResource MainPageStyle}">
+    <ScrollView>
+
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+               
+            </Grid.RowDefinitions>
+
+            <!-- imagen de fondo -->
+            <Image x:Name="header" Source="violenciaGenero.jpg" Aspect="AspectFill"/>
+            <Image Source="curvedMask.png" Aspect="Fill"
+                   VerticalOptions="End" Margin="0,0,0,-2"/>
+
+            <StackLayout Grid.Row="1" Margin="0,50,0,0">
+
+
+                <Label Style="{StaticResource TextP}" Text="El Ministerio de Sanidad, Servicios Sociales e Igualdad, por medio de la Delegación del Gobierno para la Violencia de Género, presta el Servicio telefónico de información y de asesoramiento jurídico en materia de violencia de género." />
+                <Label Style="{StaticResource TextH1}" Text="Formas de contactar " />
+                <Label Style="{StaticResource TextH2}" Text="Teléfono: 016" />
+                <Label Style="{StaticResource TextH2}" Text="Email: 016-online@msssi.es" />
+
+            </StackLayout>
+
+            <Image Source="phone.png" VerticalOptions="End" HorizontalOptions="Center"
+                  WidthRequest="100"
+                   TranslationY="50">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                                  Command="{Binding CallCommand}"/>
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+
+
+       
+    </ScrollView>
+</ContentPage>
