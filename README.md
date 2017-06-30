@@ -1,6 +1,8 @@
 # Xamarin Forms
 Aplicación Acceso directo
 
+Aplicación para IOS, Android y UWP 
+
 Está aplicación contiene las siguientes funcionalidades/características.
 
 =>	Push 
