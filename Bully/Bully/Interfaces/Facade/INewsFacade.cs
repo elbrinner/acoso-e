@@ -10,5 +10,7 @@ namespace Bully.Interfaces.Facade
     public interface INewsFacade
     {
         Task<List<RssItem>> NewsAsync();
+
+        Task<List<RssItem>> RSSAsync();
     }
 }

@@ -45,6 +45,7 @@
     <Compile Include="DataXML\ItemXML.cs" />
     <Compile Include="DataXML\MundoResponseXml.cs" />
     <Compile Include="DataXML\RssXML.cs" />
+    <Compile Include="Helpers\RssHelper.cs" />
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Helpers\DeviceInfo.cs" />
     <Compile Include="Interfaces\Facade\INewsFacade.cs" />

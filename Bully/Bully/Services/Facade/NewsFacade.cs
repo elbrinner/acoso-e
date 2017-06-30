@@ -1,6 +1,4 @@
 ﻿using Bully.Constants;
-using Bully.DataXML;
-using Bully.Mapper;
 using Bully.Models.Rss;
 using Newtonsoft.Json;
 using System;
@@ -13,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
+using Bully.Helper;
 
 namespace Bully.Services.Facade
 {
@@ -42,9 +41,24 @@ namespace Bully.Services.Facade
 
         }
 
+        public async Task<List<RssItem>> RSSAsync()
+        {
+            var url = new Uri(string.Format(CultureInfo.InvariantCulture, "http://elpais.com/tag/rss/bullying/a"));
 
+
+            var content = await client.GetStringAsync(url);
+
+            XDocument doc = XDocument.Parse(content, LoadOptions.None);
+            var data =  (from i in doc.Descendants("channel").Elements("item")
+                    select Bully.Helpers.RssHelper.GetItemFromXmlElement(i)).ToList();
+            return data.Take(20).ToList();
+
+        }
 
 
 
     }
+
+
 }
+

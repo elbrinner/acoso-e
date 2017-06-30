@@ -64,7 +64,8 @@ namespace Bully.ViewModels.News
             }
             
             this.IsBusy = true;
-            var response = await this.newsFacade.NewsAsync();
+            var response = await this.newsFacade.RSSAsync(); //Recupera un xml
+            //var response = await this.newsFacade.NewsAsync(); // Recupera un json
             this.IsBusy = false;
             if (response == null)
             {

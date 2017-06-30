@@ -49,6 +49,8 @@ Está aplicación contiene las siguientes funcionalidades/características.
 
 =>  IsBusy (ActivityIndicator, indicador de carga para webview y servicios)
 
+=>  Lector de RSS
+
 Está aplicación esta creada con datos de España, puedes clonar y publicar con información de otros países. Solo hay que respectar 2 cosas:
 
 =>	Mantener la página “Acerca de” visible.
