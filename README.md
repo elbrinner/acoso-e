@@ -47,7 +47,7 @@ Está aplicación contiene las siguientes funcionalidades/características.
 
 =>  Converter de visibilidad
 
-=>  IsBusy (ActivityIndicator, indicador de carga por webview y servicios)
+=>  IsBusy (ActivityIndicator, indicador de carga para webview y servicios)
 
 Está aplicación esta creada con datos de España, puedes clonar y publicar con información de otros países. Solo hay que respectar 2 cosas:
 
