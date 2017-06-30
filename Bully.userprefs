@@ -1,6 +1,14 @@
 ﻿<Properties StartupConfiguration="{93799C75-6FE0-4A01-AA5D-151721330DFD}|Default">
   <MonoDevelop.Ide.ItemProperties.Bully.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.0EEC9CD5-DB6A-4CDE-BC9F-403934E5F1B1" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Bully" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

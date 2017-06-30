@@ -28491,16 +28491,16 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Develop\\06 - ejemplos propios\\AppBully\\Bully\\Bully.UWP\\Bully.UWP.csproj",
+      "projectUniqueName": "C:\\Develop\\06 - ejemplos propios\\AcosoEscolarOpenSource\\Bully\\Bully.UWP\\Bully.UWP.csproj",
       "projectName": "Bully.UWP",
-      "projectPath": "C:\\Develop\\06 - ejemplos propios\\AppBully\\Bully\\Bully.UWP\\Bully.UWP.csproj",
-      "projectJsonPath": "C:\\Develop\\06 - ejemplos propios\\AppBully\\Bully\\Bully.UWP\\project.json",
+      "projectPath": "C:\\Develop\\06 - ejemplos propios\\AcosoEscolarOpenSource\\Bully\\Bully.UWP\\Bully.UWP.csproj",
+      "projectJsonPath": "C:\\Develop\\06 - ejemplos propios\\AcosoEscolarOpenSource\\Bully\\Bully.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "C:\\Develop\\06 - ejemplos propios\\AppBully\\Bully\\Bully\\Bully.csproj": {
-              "projectPath": "C:\\Develop\\06 - ejemplos propios\\AppBully\\Bully\\Bully\\Bully.csproj"
+            "C:\\Develop\\06 - ejemplos propios\\AcosoEscolarOpenSource\\Bully\\Bully\\Bully.csproj": {
+              "projectPath": "C:\\Develop\\06 - ejemplos propios\\AcosoEscolarOpenSource\\Bully\\Bully\\Bully.csproj"
             }
           }
         }
@@ -28509,7 +28509,7 @@
     "dependencies": {
       "Microsoft.Azure.Mobile.Analytics": "0.12.0",
       "Microsoft.Azure.Mobile.Client": "3.1.0",
-      "Microsoft.Azure.Mobile.Crashes": "[0.12.0, )",
+      "Microsoft.Azure.Mobile.Crashes": "0.12.0",
       "Microsoft.Bcl.Build": "1.0.21",
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.3.3",
       "NotificationsExtensions.Win10": "14332.0.2",

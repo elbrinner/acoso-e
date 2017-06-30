@@ -4,60 +4,66 @@
              x:Class="Bully.Views.News.NewsView"
              Title="{Binding Title}"
      Style="{ StaticResource MainPageStyle}">
-    <ListView
+    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <ListView
 			ItemsSource="{Binding ListLink}"
             SelectedItem="{Binding SelectedLink, Mode=TwoWay}"
 			SeparatorVisibility="Default"
 			VerticalOptions="FillAndExpand"
 			Style="{DynamicResource MainMenuListViewStyle}">
-        <ListView.RowHeight>
-            <OnPlatform x:TypeArguments="x:Int32">
-                <OnPlatform.iOS>380</OnPlatform.iOS>
-                <OnPlatform.Android>380</OnPlatform.Android>
-            </OnPlatform>
-        </ListView.RowHeight>
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <Grid BackgroundColor="{StaticResource Color-1}">
-                        <Image
+            <ListView.RowHeight>
+                <OnPlatform x:TypeArguments="x:Int32">
+                    <OnPlatform.iOS>380</OnPlatform.iOS>
+                    <OnPlatform.Android>380</OnPlatform.Android>
+                </OnPlatform>
+            </ListView.RowHeight>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid BackgroundColor="{StaticResource Color-1}">
+                            <Image
       Source="{Binding Image}"
       Aspect="AspectFill"
       Opacity=".7"/>
-                        <Grid
+                            <Grid
 			ColumnSpacing="0"
 			RowSpacing="0"
 			Padding="20">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="*" />
-                                <RowDefinition Height="40" />
-                            </Grid.RowDefinitions>
-                            <StackLayout Grid.Row="0"
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="40" />
+                                </Grid.RowDefinitions>
+                                <StackLayout Grid.Row="0"
                    VerticalOptions="End"
                    HorizontalOptions="Start">
-                                <Label
+                                    <Label
 					FontSize="30"
 					FontAttributes="Bold"
 					Text="{Binding Title}"
 					LineBreakMode="WordWrap"
 					TextColor="White"/>
-                            </StackLayout>
-                            <StackLayout
+                                </StackLayout>
+                                <StackLayout
 				Orientation="Horizontal"
 				HorizontalOptions="Fill"
 				VerticalOptions="FillAndExpand"
 				Grid.Row="1">
-                                <Label Text="{Binding Description}"
+                                    <Label Text="{Binding Description}"
           TextColor="White"
           FontAttributes="Bold"
           HorizontalOptions="StartAndExpand"
           VerticalOptions="End" />
-                            </StackLayout>
+                                </StackLayout>
+                            </Grid>
                         </Grid>
-                    </Grid>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <ActivityIndicator VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" 
+                            AbsoluteLayout.LayoutFlags="PositionProportional"
+                           IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"  />
+    </Grid>
 
 </ContentPage>

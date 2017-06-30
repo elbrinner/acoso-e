@@ -19,6 +19,14 @@ namespace Bully.Views.Generic
         public WebView()
         {
             InitializeComponent();
+
+            webview.Navigating += (sender, e) => {
+                loadIndicator.IsRunning = true;
+            };
+
+            webview.Navigated += (sender, e) => {
+                loadIndicator.IsRunning = false;
+            };
         }
     }
 

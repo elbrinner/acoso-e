@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converter="clr-namespace:Bully.Converters;assembly=Bully"
              x:Class="Bully.App">
 	<Application.Resources>
 
@@ -205,10 +206,8 @@
 
 
 
-
-
-
-
+            <!--Converte global de inverter un bool-->
+            <converter:InvertBoolenConverter x:Key="cnvInvert"></converter:InvertBoolenConverter>
         </ResourceDictionary>
 
     </Application.Resources>

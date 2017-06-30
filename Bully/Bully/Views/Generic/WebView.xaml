@@ -5,11 +5,14 @@
              Title="{Binding Title}"
      Style="{ StaticResource MainPageStyle}">
 
-    <AbsoluteLayout>
-        <WebView Source="{Binding Enlace.Url}"
+    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <AbsoluteLayout>
+            <WebView x:Name="webview" Source="{Binding Enlace.Url}"
 WidthRequest="200" HeightRequest="200" AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
                  AbsoluteLayout.LayoutFlags="All" />
-    </AbsoluteLayout>
-
-
+        </AbsoluteLayout>
+        <ActivityIndicator x:Name="loadIndicator" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" 
+                            AbsoluteLayout.LayoutFlags="PositionProportional"
+                            />
+    </Grid>
 </ContentPage>

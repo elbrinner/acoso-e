@@ -45,6 +45,10 @@ Está aplicación contiene las siguientes funcionalidades/características.
 
 =>  Comprobar si hay conexión
 
+=>  Converter de visibilidad
+
+=>  IsBusy (ActivityIndicator, indicador de carga por webview y servicios)
+
 Está aplicación esta creada con datos de España, puedes clonar y publicar con información de otros países. Solo hay que respectar 2 cosas:
 
 =>	Mantener la página “Acerca de” visible.

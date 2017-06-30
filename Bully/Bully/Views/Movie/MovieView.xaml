@@ -5,21 +5,31 @@
              xmlns:templates="clr-namespace:Bully.Views.Main.Templates;assembly=Bully"
              Title="{Binding Title}"
      Style="{ StaticResource MainPageStyle}">
-    <ListView
+
+
+    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <ListView 
 			ItemsSource="{Binding ListMovie}"
             SelectedItem="{Binding SelectedMovie, Mode=TwoWay}"
 			SeparatorVisibility="Default"
 			VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"
 			Style="{DynamicResource MainMenuListViewStyle}">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ImageCell
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell
           ImageSource="{Binding Image}"  
           Text="{Binding Title}"
           TextColor="{StaticResource Color-4}"
           Detail="{Binding Description}"
           DetailColor="{StaticResource Color-3}"/>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <ActivityIndicator VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" 
+                            AbsoluteLayout.LayoutFlags="PositionProportional"
+                           IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"  />
+
+    </Grid>
 </ContentPage>
