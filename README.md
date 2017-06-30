@@ -1,7 +1,7 @@
 # Xamarin Forms
 Aplicación Acceso directo
 
-Aplicación para IOS, Android y UWP 
+<strong>Aplicación para IOS, Android y UWP </strong>
 
 Está aplicación contiene las siguientes funcionalidades/características.
 
