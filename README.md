@@ -68,6 +68,9 @@ Formato móvil:
 Está app está publicada para UWP en este enlace: 
 https://www.microsoft.com/store/apps/9n81723wjkxx
 
+Para android:
+https://play.google.com/store/apps/details?id=com.accesoDirecto.droid&hl=es
+
 Los valores de configuración tiene que se introducido en el archivo: GlobalSettings
 
 
