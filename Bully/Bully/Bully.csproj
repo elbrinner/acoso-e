@@ -41,10 +41,6 @@
     <Compile Include="Behavior\ContentPageBehavior.cs" />
     <Compile Include="Constants\GlobalSettings.cs" />
     <Compile Include="Converters\InvertBoolenConverter.cs" />
-    <Compile Include="DataXML\ChannelXml.cs" />
-    <Compile Include="DataXML\ItemXML.cs" />
-    <Compile Include="DataXML\MundoResponseXml.cs" />
-    <Compile Include="DataXML\RssXML.cs" />
     <Compile Include="Helpers\RssHelper.cs" />
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Helpers\DeviceInfo.cs" />
@@ -52,7 +48,6 @@
     <Compile Include="Interfaces\Menu\IMenuService.cs" />
     <Compile Include="Interfaces\Navigation\INavigationService.cs" />
     <Compile Include="Interfaces\Plataforma\IOpenAppService.cs" />
-    <Compile Include="Mapper\MundoMapper.cs" />
     <Compile Include="Models\Generic\LinkWebView.cs" />
     <Compile Include="Models\Generic\TypeElement.cs" />
     <Compile Include="Models\MenuItem.cs" />
@@ -252,6 +247,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CustomRenderer\" />
+    <Folder Include="Mapper\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Main\MainMenu.xaml">

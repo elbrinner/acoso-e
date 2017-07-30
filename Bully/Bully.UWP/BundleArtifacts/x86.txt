@@ -1,2 +1,2 @@
-MainPackage=C:\Develop\06 - ejemplos propios\AppBully\Bully\Bully.UWP\bin\x86\Release\Bully.UWP_1.1.9.0_x86.appx
-SymbolPackage=C:\Develop\06 - ejemplos propios\AppBully\Bully\Bully.UWP\AppPackages\Bully.UWP_1.1.9.0_Test\Bully.UWP_1.1.9.0_x86.appxsym
+MainPackage=C:\Develop\06 - ejemplos propios\AppBully\Bully\Bully.UWP\bin\x86\Release\Bully.UWP_1.1.10.0_x86.appx
+SymbolPackage=C:\Develop\06 - ejemplos propios\AppBully\Bully\Bully.UWP\AppPackages\Bully.UWP_1.1.10.0_Test\Bully.UWP_1.1.10.0_x86.appxsym

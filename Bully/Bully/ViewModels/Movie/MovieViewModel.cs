@@ -130,8 +130,10 @@ namespace Bully.ViewModels.Movie
                 UrlShare = "http://www.imdb.com/title/tt0363589/?ref_=fn_al_tt_1",
                 Image = "https://images-na.ssl-images-amazon.com/images/M/MV5BZWRhNDZkMzQtZDQ3Ny00NjdjLWJmZjAtMWQxNDQyZTYzZjU0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
             });
-            
+
+            this.IsBusy = true;
             this.ListMovie = tempList;
+            this.IsBusy = false;
         }
     }
 }

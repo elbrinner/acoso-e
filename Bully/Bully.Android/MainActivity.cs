@@ -6,11 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using Firebase.Messaging;
-using Android.Gms.Common;
-using Firebase.Iid;
 using Android.Util;
-using Firebase;
 using System.Threading.Tasks;
 
 namespace Bully.Droid
@@ -29,33 +25,31 @@ namespace Bully.Droid
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new Bully.App());
-            this.IsPlayServicesAvailable();
+           // this.IsPlayServicesAvailable();
 
 			
 
 		}
 
-        public bool IsPlayServicesAvailable()
-        {
+        //public bool IsPlayServicesAvailable()
+        //{
             
-            int resultCode = GoogleApiAvailability.Instance.IsGooglePlayServicesAvailable(this);
+        //    int resultCode = GoogleApiAvailability.Instance.IsGooglePlayServicesAvailable(this);
             
-            if (resultCode != ConnectionResult.Success)
-            {
-                if (!GoogleApiAvailability.Instance.IsUserResolvableError(resultCode))
-                {
-                    Finish();
-                }
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-            
-          
-
-        }
+        //    if (resultCode != ConnectionResult.Success)
+        //    {
+        //        if (!GoogleApiAvailability.Instance.IsUserResolvableError(resultCode))
+        //        {
+        //            Finish();
+        //        }
+        //        return false;
+        //    }
+        //    else
+        //    {
+        //        return true;
+        //    }
+                
+        //}
 
     }
 }

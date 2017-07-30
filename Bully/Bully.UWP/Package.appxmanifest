@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3" IgnorableNamespaces="uap mp uap3">
-  <Identity Name="22514elbrinner.Accesodirecto" Publisher="CN=3C36884E-B546-4319-B406-78D52C9059DB" Version="1.1.9.0" />
+  <Identity Name="22514elbrinner.Accesodirecto" Publisher="CN=3C36884E-B546-4319-B406-78D52C9059DB" Version="1.1.10.0" />
   <mp:PhoneIdentity PhoneProductId="04cad4cc-284a-4a35-98e8-507da5634649" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>♥ Acceso directo</DisplayName>
@@ -30,7 +30,6 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
-    <Capability Name="internetClientServer" />
     <uap3:Capability Name="userNotificationListener" />
   </Capabilities>
 </Package>

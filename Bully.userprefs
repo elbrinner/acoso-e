@@ -1,19 +1,18 @@
 ﻿<Properties StartupConfiguration="{93799C75-6FE0-4A01-AA5D-151721330DFD}|Default">
   <MonoDevelop.Ide.ItemProperties.Bully.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.0EEC9CD5-DB6A-4CDE-BC9F-403934E5F1B1" />
-  <MonoDevelop.Ide.Workbench>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Bully" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Bully/Bully/Views/Ciberacoso/CiberacosoView.xaml">
+    <Files>
+      <File FileName="Bully/Bully/Views/Ciberacoso/CiberacosoView.xaml" Line="48" Column="15" />
+      <File FileName="Bully/Bully.UWP/App.xaml.cs" Line="121" Column="13" />
+      <File FileName="Bully/Bully/Views/Main/IndexView.xaml.cs" Line="1" Column="1" />
+      <File FileName="Bully/Bully/Views/Main/IndexView.xaml" Line="100" Column="15" />
+    </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Bully.Android PreferredExecutionTarget="Android.Android_ARMv7a" />
+  <MonoDevelop.Ide.ItemProperties.Bully.Android PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

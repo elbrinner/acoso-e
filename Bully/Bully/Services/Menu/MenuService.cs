@@ -27,7 +27,7 @@ namespace Bully.Services.Menu
                 new MenuItem("Noticias", typeof(NewsViewModel)),
                 new MenuItem("Ciberacoso", typeof(CiberacosoViewModel)),
                 new MenuItem("Películas/Series", typeof(MovieViewModel)),                
-                new MenuItem("Protocolo", typeof(ProtocolViewModel)),
+                new MenuItem("Protocolos", typeof(ProtocolViewModel)),
                 new MenuItem("Violencia de Género", typeof(ViolenciaGeneroViewModel)) ,
                 new MenuItem("Acerca de Acceso directo", typeof(AboutViewModel))
         };

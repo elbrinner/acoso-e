@@ -37,6 +37,13 @@ namespace Bully.Views.Main
             header.Opacity = 1 - (factor / imageHeight);
            // headers.Scale = 1 - ((factor) / (imageHeight * 2));
         }
+
+        protected override void OnAppearing()
+        {
+          
+            InitializeComponent();
+            outerScrollView.Scrolled += OnScroll;
+        }
     }
 
 }

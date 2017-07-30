@@ -206,7 +206,7 @@
 
 
 
-            <!--Converte global de inverter un bool-->
+
             <converter:InvertBoolenConverter x:Key="cnvInvert"></converter:InvertBoolenConverter>
         </ResourceDictionary>
 

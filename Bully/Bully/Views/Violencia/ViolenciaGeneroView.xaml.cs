@@ -16,5 +16,11 @@ namespace Bully.Views.Violencia
         {
             InitializeComponent();
         }
+
+        protected override void OnAppearing()
+        {
+
+            InitializeComponent();
+        }
     }
 }
