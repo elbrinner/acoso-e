@@ -2695,7 +2695,7 @@
           "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.231": {
+      "Xamarin.Forms/2.3.4.247": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -5396,7 +5396,7 @@
           "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.231": {
+      "Xamarin.Forms/2.3.4.247": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -8136,7 +8136,7 @@
           "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.231": {
+      "Xamarin.Forms/2.3.4.247": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -10846,7 +10846,7 @@
           "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.231": {
+      "Xamarin.Forms/2.3.4.247": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -13595,7 +13595,7 @@
           "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.231": {
+      "Xamarin.Forms/2.3.4.247": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -16305,7 +16305,7 @@
           "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.231": {
+      "Xamarin.Forms/2.3.4.247": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -19054,7 +19054,7 @@
           "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.231": {
+      "Xamarin.Forms/2.3.4.247": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -28305,10 +28305,10 @@
         "xam.plugins.settings.nuspec"
       ]
     },
-    "Xamarin.Forms/2.3.4.231": {
-      "sha512": "Tar4nHke8Rl0Mz2Y1MdNAMvo8wKc/wVVW2rN7loXMc+2R1ex3n/fzs7eD2F7gDw3TceGLQku52kyc5LuN8Hlgw==",
+    "Xamarin.Forms/2.3.4.247": {
+      "sha512": "+6VN8IBSah7EcNJ4SV3pIhNA8tNlBaPLfr3+hQpPIllueJrXI5QtjM0tAJusPc2V1cYyC4YKvA1fs5c/A8RrBw==",
       "type": "package",
-      "path": "xamarin.forms/2.3.4.231",
+      "path": "xamarin.forms/2.3.4.247",
       "files": [
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Mono.Cecil.Mdb.dll",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Mono.Cecil.Pdb.dll",
@@ -28459,7 +28459,7 @@
         "lib/wpa81/Xamarin.Forms.Platform.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.2.3.4.231.nupkg.sha512",
+        "xamarin.forms.2.3.4.247.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -28482,25 +28482,25 @@
       "WindowsAzure.Messaging.Managed >= 0.1.7.9",
       "Xam.Plugin.Connectivity >= 2.3.0",
       "Xam.Plugins.Settings >= 2.5.8",
-      "Xamarin.Forms >= 2.3.4.231"
+      "Xamarin.Forms >= 2.3.4.247"
     ],
     "UAP,Version=v10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\elbrinner\\.nuget\\packages\\": {}
+    "C:\\Users\\elbri\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Develop\\06 - ejemplos propios\\AcosoEscolarOpenSource\\Bully\\Bully.UWP\\Bully.UWP.csproj",
+      "projectUniqueName": "C:\\AppGroing\\Bully\\Bully\\Bully.UWP\\Bully.UWP.csproj",
       "projectName": "Bully.UWP",
-      "projectPath": "C:\\Develop\\06 - ejemplos propios\\AcosoEscolarOpenSource\\Bully\\Bully.UWP\\Bully.UWP.csproj",
-      "projectJsonPath": "C:\\Develop\\06 - ejemplos propios\\AcosoEscolarOpenSource\\Bully\\Bully.UWP\\project.json",
+      "projectPath": "C:\\AppGroing\\Bully\\Bully\\Bully.UWP\\Bully.UWP.csproj",
+      "projectJsonPath": "C:\\AppGroing\\Bully\\Bully\\Bully.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "C:\\Develop\\06 - ejemplos propios\\AcosoEscolarOpenSource\\Bully\\Bully\\Bully.csproj": {
-              "projectPath": "C:\\Develop\\06 - ejemplos propios\\AcosoEscolarOpenSource\\Bully\\Bully\\Bully.csproj"
+            "C:\\AppGroing\\Bully\\Bully\\Bully\\Bully.csproj": {
+              "projectPath": "C:\\AppGroing\\Bully\\Bully\\Bully\\Bully.csproj"
             }
           }
         }
@@ -28518,7 +28518,7 @@
       "WindowsAzure.Messaging.Managed": "0.1.7.9",
       "Xam.Plugin.Connectivity": "2.3.0",
       "Xam.Plugins.Settings": "2.5.8",
-      "Xamarin.Forms": "2.3.4.231"
+      "Xamarin.Forms": "2.3.4.247"
     },
     "frameworks": {
       "uap10.0": {}
